@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEE3FE0217183C5A00605D33 /* IManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFD17183C5A00605D33 /* IManager.h */; };
+		BEE3FE0317183C5A00605D33 /* ManagerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */; };
+		BEE3FE0417183C5A00605D33 /* ManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFF17183C5A00605D33 /* ManagerFactory.h */; };
+		BEE3FE0817183D5400605D33 /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FE0717183D5400605D33 /* Manager.h */; };
+		BEE3FE11171842EB00605D33 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEE3FE0F171842EB00605D33 /* Window.cpp */; };
+		BEE3FE12171842EB00605D33 /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FE10171842EB00605D33 /* Window.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BEE3FDC917181D3400605D33 /* libLaser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLaser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE3FDFD17183C5A00605D33 /* IManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IManager.h; sourceTree = "<group>"; };
+		BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManagerFactory.cpp; sourceTree = "<group>"; };
+		BEE3FDFF17183C5A00605D33 /* ManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerFactory.h; sourceTree = "<group>"; };
+		BEE3FE0717183D5400605D33 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		BEE3FE0E171842B200605D33 /* IWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IWindow.h; sourceTree = "<group>"; };
+		BEE3FE0F171842EB00605D33 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		BEE3FE10171842EB00605D33 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEE3FDC617181D3400605D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEE3FDC017181D3400605D33 = {
+			isa = PBXGroup;
+			children = (
+				BEE3FDE91718253A00605D33 /* Sources */,
+				BEE3FDCA17181D3400605D33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEE3FDCA17181D3400605D33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3FDC917181D3400605D33 /* libLaser.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEE3FDE91718253A00605D33 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3FDF917183C5A00605D33 /* Laser */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BEE3FDF917183C5A00605D33 /* Laser */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3FDFA17183C5A00605D33 /* Common */,
+				BEE3FE0017183C5A00605D33 /* OpenGL */,
+			);
+			path = Laser;
+			sourceTree = "<group>";
+		};
+		BEE3FDFA17183C5A00605D33 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3FDFC17183C5A00605D33 /* System */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BEE3FDFC17183C5A00605D33 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3FDFD17183C5A00605D33 /* IManager.h */,
+				BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */,
+				BEE3FDFF17183C5A00605D33 /* ManagerFactory.h */,
+				BEE3FE0E171842B200605D33 /* IWindow.h */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		BEE3FE0017183C5A00605D33 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3FE0617183D5400605D33 /* System */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		BEE3FE0617183D5400605D33 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3FE0717183D5400605D33 /* Manager.h */,
+				BEE3FE0F171842EB00605D33 /* Window.cpp */,
+				BEE3FE10171842EB00605D33 /* Window.h */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BEE3FDC717181D3400605D33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE3FE0217183C5A00605D33 /* IManager.h in Headers */,
+				BEE3FE0417183C5A00605D33 /* ManagerFactory.h in Headers */,
+				BEE3FE0817183D5400605D33 /* Manager.h in Headers */,
+				BEE3FE12171842EB00605D33 /* Window.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BEE3FDC817181D3400605D33 /* Laser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE3FDCD17181D3400605D33 /* Build configuration list for PBXNativeTarget "Laser" */;
+			buildPhases = (
+				BEE3FDC517181D3400605D33 /* Sources */,
+				BEE3FDC617181D3400605D33 /* Frameworks */,
+				BEE3FDC717181D3400605D33 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Laser;
+			productName = Laser;
+			productReference = BEE3FDC917181D3400605D33 /* libLaser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEE3FDC117181D3400605D33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Koichiro;
+			};
+			buildConfigurationList = BEE3FDC417181D3400605D33 /* Build configuration list for PBXProject "Laser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEE3FDC017181D3400605D33;
+			productRefGroup = BEE3FDCA17181D3400605D33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEE3FDC817181D3400605D33 /* Laser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEE3FDC517181D3400605D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE3FE0317183C5A00605D33 /* ManagerFactory.cpp in Sources */,
+				BEE3FE11171842EB00605D33 /* Window.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BEE3FDCB17181D3400605D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-I../TGUL/Sources",
+					"-I/opt/local/include",
+					"-I./Sources",
+					"-I/usr/local/include",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BEE3FDCC17181D3400605D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-I../TGUL/Sources",
+					"-I/opt/local/include",
+					"-I./Sources",
+					"-I/usr/local/include",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BEE3FDCE17181D3400605D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEE3FDCF17181D3400605D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEE3FDC417181D3400605D33 /* Build configuration list for PBXProject "Laser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE3FDCB17181D3400605D33 /* Debug */,
+				BEE3FDCC17181D3400605D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE3FDCD17181D3400605D33 /* Build configuration list for PBXNativeTarget "Laser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE3FDCE17181D3400605D33 /* Debug */,
+				BEE3FDCF17181D3400605D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEE3FDC117181D3400605D33 /* Project object */;
+}

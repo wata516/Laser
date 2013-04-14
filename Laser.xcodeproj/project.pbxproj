@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEDD34D0171A7B3300CF09E7 /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEDD34CF171A7B3300CF09E7 /* Manager.cpp */; };
 		BEE3FE0217183C5A00605D33 /* IManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFD17183C5A00605D33 /* IManager.h */; };
 		BEE3FE0317183C5A00605D33 /* ManagerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */; };
 		BEE3FE0417183C5A00605D33 /* ManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFF17183C5A00605D33 /* ManagerFactory.h */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BEDD34CF171A7B3300CF09E7 /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Manager.cpp; sourceTree = "<group>"; };
 		BEE3FDC917181D3400605D33 /* libLaser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLaser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE3FDFD17183C5A00605D33 /* IManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IManager.h; sourceTree = "<group>"; };
 		BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManagerFactory.cpp; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 				BEE3FDCA17181D3400605D33 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		BEE3FDCA17181D3400605D33 /* Products */ = {
 			isa = PBXGroup;
@@ -101,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				BEE3FE0717183D5400605D33 /* Manager.h */,
-				BEE3FE0F171842EB00605D33 /* Window.cpp */,
+				BEDD34CF171A7B3300CF09E7 /* Manager.cpp */,
 				BEE3FE10171842EB00605D33 /* Window.h */,
+				BEE3FE0F171842EB00605D33 /* Window.cpp */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -174,6 +178,7 @@
 			files = (
 				BEE3FE0317183C5A00605D33 /* ManagerFactory.cpp in Sources */,
 				BEE3FE11171842EB00605D33 /* Window.cpp in Sources */,
+				BEDD34D0171A7B3300CF09E7 /* Manager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +263,9 @@
 		BEE3FDCE17181D3400605D33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
 				EXECUTABLE_PREFIX = lib;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -266,7 +273,9 @@
 		BEE3FDCF17181D3400605D33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
 				EXECUTABLE_PREFIX = lib;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -290,6 +299,7 @@
 				BEE3FDCF17181D3400605D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

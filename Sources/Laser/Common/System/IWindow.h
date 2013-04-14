@@ -1,5 +1,10 @@
 #pragma once
 
+namespace TGUL
+{
+	class String;
+}
+
 namespace Laser
 {
     namespace System
@@ -7,7 +12,10 @@ namespace Laser
         class IWindow
         {
         public:
-            virtual bool Create( int32_t x, int32_t y, int32_t width, int32_t height ) = 0;
+            virtual bool Create( const TGUL::String &title, int x, int y, int width, int height ) = 0;
+			virtual void Close( ) = 0;
+			virtual bool Open( ) = 0;
+			virtual bool IsOpen( ) = 0;
         };
     }
 }

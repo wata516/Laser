@@ -6,6 +6,14 @@
 
 namespace Laser
 {
+	namespace System
+	{
+		class IWindow;
+	}
+}
+
+namespace Laser
+{
     namespace System
     {
         class OpenGLManager : public IManager, boost::noncopyable
@@ -16,6 +24,8 @@ namespace Laser
             virtual bool Create( );
             
             virtual void Destroy( );
+
+			virtual bool CreateWindow( IWindow **ppWindow );
 
         private:
             class Impl;

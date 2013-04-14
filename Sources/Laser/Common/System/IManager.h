@@ -2,6 +2,14 @@
 
 namespace Laser
 {
+	namespace System
+	{
+		class IWindow;
+	}
+}
+
+namespace Laser
+{
     namespace System
     {
         class IManager
@@ -13,6 +21,8 @@ namespace Laser
             //! @brief  終了処理.
             virtual void Destroy( ) = 0;
             
+			//!	@brief	ウィンドウを開く.
+			virtual bool CreateWindow( IWindow **ppWindow ) = 0;
         };
     }
 }

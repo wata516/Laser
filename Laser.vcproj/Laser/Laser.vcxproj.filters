@@ -57,6 +57,15 @@
     <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\Keyboard.h">
       <Filter>ソース ファイル\OpenGL\Input</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\ITechniqueManager.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\TechniqueManager.h">
+      <Filter>ソース ファイル\OpenGL\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\TechniqueManager.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Sources\Laser\OpenGL\System\Manager.cpp">
@@ -70,6 +79,12 @@
     </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\Keyboard.cpp">
       <Filter>ソース ファイル\OpenGL\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\TechniqueManager.cpp">
+      <Filter>ソース ファイル\OpenGL\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\System\TechniqueManager.cpp">
+      <Filter>ソース ファイル\Common\System</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

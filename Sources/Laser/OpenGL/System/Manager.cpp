@@ -3,6 +3,8 @@
 #include <Laser/OpenGL/System/Window.h>
 #include <Laser/Common/Input/IKeyboard.h>
 #include <Laser/OpenGL/Input/Keyboard.h>
+#include <Laser/Common/System/ITechniqueManager.h>
+#include <Laser/OpenGL/System/TechniqueManager.h>
 #include <GL/glfw.h>
 
 namespace Laser
@@ -15,6 +17,7 @@ namespace Laser
 			bool Create();
 			void Destroy();
 			bool CreateWindow( IWindow **ppWindow );
+			bool CreateTechniqueManager( ITechniqueManager **ppTechniqueManager );
 			bool CreateKeyboard( Input::IKeyboard **ppKeyboard );
 		};
 		
@@ -47,6 +50,17 @@ namespace Laser
 			return true;
 		}
 
+		bool OpenGLManager::Impl::CreateTechniqueManager( ITechniqueManager **ppTechniqueManager )
+		{
+			*ppTechniqueManager = new OpenGLTechniqueManager( );
+
+			if( *ppTechniqueManager == 0 ) {
+				return false;
+			}
+
+			return true;
+		}
+
 		bool OpenGLManager::Impl::CreateKeyboard( Input::IKeyboard **ppKeyboard )
 		{
 			*ppKeyboard = new Input::OpenGLKeyboard( );
@@ -75,6 +89,11 @@ namespace Laser
 		{
 			return mImpl->CreateWindow( ppWindow );
 		}
+		bool OpenGLManager::CreateTechniqueManager( ITechniqueManager **ppTechniqueManager )
+		{
+			return mImpl->CreateTechniqueManager( ppTechniqueManager );
+		}
+
 		bool OpenGLManager::CreateKeyboard( Input::IKeyboard **ppKeyboard )
 		{
 			return mImpl->CreateKeyboard( ppKeyboard );

@@ -137,16 +137,21 @@
   <ItemGroup>
     <ClInclude Include="..\..\Sources\Laser\Common\Input\IKeyboard.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\IManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\ITechniqueManager.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\IWindow.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\ManagerFactory.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\TechniqueManager.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\Keyboard.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\System\Manager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\TechniqueManager.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\System\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\Common\System\TechniqueManager.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\Keyboard.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\System\Manager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\TechniqueManager.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\System\Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -31,6 +31,8 @@ namespace Laser
 
 			virtual bool CreateWindow( IWindow **ppWindow );
 
+			virtual bool CreateTechniqueManager( ITechniqueManager **ppTechniqueManager );
+
 			virtual bool CreateKeyboard( Input::IKeyboard **ppKeyboard );
 
         private:

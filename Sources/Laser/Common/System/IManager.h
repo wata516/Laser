@@ -5,6 +5,7 @@ namespace Laser
 	namespace System
 	{
 		class IWindow;
+		class ITechniqueManager;
 	}
 
 	namespace Input
@@ -28,6 +29,9 @@ namespace Laser
             
 			//!	@brief	ウィンドウを作成.
 			virtual bool CreateWindow( IWindow **ppWindow ) = 0;
+
+			//!	@brief	TechniqueManagerを作成
+			virtual bool CreateTechniqueManager( ITechniqueManager **ppTechniqueManager ) = 0;
 
 			//!	@brief	キーボードを作成.
 			virtual bool CreateKeyboard( Input::IKeyboard **ppKeyboard ) = 0;

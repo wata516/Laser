@@ -10,6 +10,10 @@ namespace Laser
 	{
 		class IWindow;
 	}
+	namespace Input
+	{
+		class IKeyboard;
+	}
 }
 
 namespace Laser
@@ -26,6 +30,8 @@ namespace Laser
             virtual void Destroy( );
 
 			virtual bool CreateWindow( IWindow **ppWindow );
+
+			virtual bool CreateKeyboard( Input::IKeyboard **ppKeyboard );
 
         private:
             class Impl;

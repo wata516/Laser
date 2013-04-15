@@ -6,6 +6,11 @@ namespace Laser
 	{
 		class IWindow;
 	}
+
+	namespace Input
+	{
+		class IKeyboard;
+	}
 }
 
 namespace Laser
@@ -21,8 +26,11 @@ namespace Laser
             //! @brief  終了処理.
             virtual void Destroy( ) = 0;
             
-			//!	@brief	ウィンドウを開く.
+			//!	@brief	ウィンドウを作成.
 			virtual bool CreateWindow( IWindow **ppWindow ) = 0;
+
+			//!	@brief	キーボードを作成.
+			virtual bool CreateKeyboard( Input::IKeyboard **ppKeyboard ) = 0;
         };
     }
 }

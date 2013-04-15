@@ -1,6 +1,8 @@
 #include <Laser/OpenGL/System/Manager.h>
 #include <Laser/Common/System/IWindow.h>
 #include <Laser/OpenGL/System/Window.h>
+#include <Laser/Common/Input/IKeyboard.h>
+#include <Laser/OpenGL/Input/Keyboard.h>
 #include <GL/glfw.h>
 
 namespace Laser
@@ -13,6 +15,7 @@ namespace Laser
 			bool Create();
 			void Destroy();
 			bool CreateWindow( IWindow **ppWindow );
+			bool CreateKeyboard( Input::IKeyboard **ppKeyboard );
 		};
 		
 		bool OpenGLManager::Impl::Create( )
@@ -44,6 +47,17 @@ namespace Laser
 			return true;
 		}
 
+		bool OpenGLManager::Impl::CreateKeyboard( Input::IKeyboard **ppKeyboard )
+		{
+			*ppKeyboard = new Input::OpenGLKeyboard( );
+
+			if( *ppKeyboard == 0 ) {
+				return false;
+			}
+
+			return true;
+		}
+
 		OpenGLManager::OpenGLManager( )
 		: mImpl( new Impl() )
 		{
@@ -60,6 +74,10 @@ namespace Laser
 		bool OpenGLManager::CreateWindow( IWindow **ppWindow )
 		{
 			return mImpl->CreateWindow( ppWindow );
+		}
+		bool OpenGLManager::CreateKeyboard( Input::IKeyboard **ppKeyboard )
+		{
+			return mImpl->CreateKeyboard( ppKeyboard );
 		}
 	}
 }

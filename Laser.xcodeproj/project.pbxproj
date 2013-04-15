@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEA4458E171C36F500D62652 /* IKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA4458D171C36F500D62652 /* IKeyboard.h */; };
+		BEA44591171C370C00D62652 /* Keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA4458F171C370C00D62652 /* Keyboard.cpp */; };
+		BEA44592171C370C00D62652 /* Keyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA44590171C370C00D62652 /* Keyboard.h */; };
+		BEA44595171C38EE00D62652 /* TechniqueManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA44593171C38EE00D62652 /* TechniqueManager.cpp */; };
+		BEA44596171C38EE00D62652 /* TechniqueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA44594171C38EE00D62652 /* TechniqueManager.h */; };
+		BEA44599171C392200D62652 /* TechniqueManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA44597171C392200D62652 /* TechniqueManager.cpp */; };
+		BEA4459A171C392200D62652 /* TechniqueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA44598171C392200D62652 /* TechniqueManager.h */; };
+		BEA4459C171C392900D62652 /* ITechniqueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA4459B171C392900D62652 /* ITechniqueManager.h */; };
+		BEA445A7171C3BE100D62652 /* ITechnique.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445A4171C3BE100D62652 /* ITechnique.h */; };
+		BEA445A8171C3BE100D62652 /* Technique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA445A5171C3BE100D62652 /* Technique.cpp */; };
+		BEA445A9171C3BE100D62652 /* Technique.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445A6171C3BE100D62652 /* Technique.h */; };
+		BEA445AC171C3D4A00D62652 /* IBase.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445AB171C3D4A00D62652 /* IBase.h */; };
+		BEA445B0171C3D9A00D62652 /* Clear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA445AE171C3D9A00D62652 /* Clear.cpp */; };
+		BEA445B1171C3D9A00D62652 /* Clear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445AF171C3D9A00D62652 /* Clear.h */; };
+		BEA445B3171C3FF500D62652 /* Clear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445B2171C3FF500D62652 /* Clear.h */; };
+		BEA445B6171C48D200D62652 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA445B4171C48D100D62652 /* Window.cpp */; };
+		BEA445B7171C48D200D62652 /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445B5171C48D100D62652 /* Window.h */; };
 		BEDD34D0171A7B3300CF09E7 /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEDD34CF171A7B3300CF09E7 /* Manager.cpp */; };
 		BEE3FE0217183C5A00605D33 /* IManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFD17183C5A00605D33 /* IManager.h */; };
 		BEE3FE0317183C5A00605D33 /* ManagerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */; };
@@ -17,6 +34,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BEA4458D171C36F500D62652 /* IKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IKeyboard.h; path = Input/IKeyboard.h; sourceTree = "<group>"; };
+		BEA4458F171C370C00D62652 /* Keyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Keyboard.cpp; path = Input/Keyboard.cpp; sourceTree = "<group>"; };
+		BEA44590171C370C00D62652 /* Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Keyboard.h; path = Input/Keyboard.h; sourceTree = "<group>"; };
+		BEA44593171C38EE00D62652 /* TechniqueManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TechniqueManager.cpp; sourceTree = "<group>"; };
+		BEA44594171C38EE00D62652 /* TechniqueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechniqueManager.h; sourceTree = "<group>"; };
+		BEA44597171C392200D62652 /* TechniqueManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TechniqueManager.cpp; sourceTree = "<group>"; };
+		BEA44598171C392200D62652 /* TechniqueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechniqueManager.h; sourceTree = "<group>"; };
+		BEA4459B171C392900D62652 /* ITechniqueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITechniqueManager.h; sourceTree = "<group>"; };
+		BEA445A4171C3BE100D62652 /* ITechnique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITechnique.h; path = User/ITechnique.h; sourceTree = "<group>"; };
+		BEA445A5171C3BE100D62652 /* Technique.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Technique.cpp; path = User/Technique.cpp; sourceTree = "<group>"; };
+		BEA445A6171C3BE100D62652 /* Technique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Technique.h; path = User/Technique.h; sourceTree = "<group>"; };
+		BEA445AB171C3D4A00D62652 /* IBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IBase.h; path = Command/IBase.h; sourceTree = "<group>"; };
+		BEA445AE171C3D9A00D62652 /* Clear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Clear.cpp; path = Command/Clear.cpp; sourceTree = "<group>"; };
+		BEA445AF171C3D9A00D62652 /* Clear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Clear.h; path = Command/Clear.h; sourceTree = "<group>"; };
+		BEA445B2171C3FF500D62652 /* Clear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Clear.h; path = Command/Clear.h; sourceTree = "<group>"; };
+		BEA445B4171C48D100D62652 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		BEA445B5171C48D100D62652 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
 		BEDD34CF171A7B3300CF09E7 /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Manager.cpp; sourceTree = "<group>"; };
 		BEE3FDC917181D3400605D33 /* libLaser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLaser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE3FDFD17183C5A00605D33 /* IManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IManager.h; sourceTree = "<group>"; };
@@ -39,6 +73,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEA4458B171C36E100D62652 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				BEA4458D171C36F500D62652 /* IKeyboard.h */,
+			);
+			name = Input;
+			sourceTree = "<group>";
+		};
+		BEA4458C171C36E900D62652 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				BEA4458F171C370C00D62652 /* Keyboard.cpp */,
+				BEA44590171C370C00D62652 /* Keyboard.h */,
+			);
+			name = Input;
+			sourceTree = "<group>";
+		};
+		BEA445A3171C3B0B00D62652 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BEA445A4171C3BE100D62652 /* ITechnique.h */,
+				BEA445A5171C3BE100D62652 /* Technique.cpp */,
+				BEA445A6171C3BE100D62652 /* Technique.h */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		BEA445AA171C3CE800D62652 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				BEA445AB171C3D4A00D62652 /* IBase.h */,
+				BEA445B2171C3FF500D62652 /* Clear.h */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
+		BEA445AD171C3D7900D62652 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				BEA445AE171C3D9A00D62652 /* Clear.cpp */,
+				BEA445AF171C3D9A00D62652 /* Clear.h */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
 		BEE3FDC017181D3400605D33 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +155,9 @@
 		BEE3FDFA17183C5A00605D33 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BEA445AA171C3CE800D62652 /* Command */,
+				BEA445A3171C3B0B00D62652 /* User */,
+				BEA4458B171C36E100D62652 /* Input */,
 				BEE3FDFC17183C5A00605D33 /* System */,
 			);
 			path = Common;
@@ -84,10 +166,15 @@
 		BEE3FDFC17183C5A00605D33 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				BEA4459B171C392900D62652 /* ITechniqueManager.h */,
+				BEA44597171C392200D62652 /* TechniqueManager.cpp */,
+				BEA44598171C392200D62652 /* TechniqueManager.h */,
 				BEE3FDFD17183C5A00605D33 /* IManager.h */,
 				BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */,
 				BEE3FDFF17183C5A00605D33 /* ManagerFactory.h */,
 				BEE3FE0E171842B200605D33 /* IWindow.h */,
+				BEA445B4171C48D100D62652 /* Window.cpp */,
+				BEA445B5171C48D100D62652 /* Window.h */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -95,6 +182,8 @@
 		BEE3FE0017183C5A00605D33 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				BEA445AD171C3D7900D62652 /* Command */,
+				BEA4458C171C36E900D62652 /* Input */,
 				BEE3FE0617183D5400605D33 /* System */,
 			);
 			path = OpenGL;
@@ -103,6 +192,8 @@
 		BEE3FE0617183D5400605D33 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				BEA44594171C38EE00D62652 /* TechniqueManager.h */,
+				BEA44593171C38EE00D62652 /* TechniqueManager.cpp */,
 				BEE3FE0717183D5400605D33 /* Manager.h */,
 				BEDD34CF171A7B3300CF09E7 /* Manager.cpp */,
 				BEE3FE10171842EB00605D33 /* Window.h */,
@@ -122,6 +213,17 @@
 				BEE3FE0417183C5A00605D33 /* ManagerFactory.h in Headers */,
 				BEE3FE0817183D5400605D33 /* Manager.h in Headers */,
 				BEE3FE12171842EB00605D33 /* Window.h in Headers */,
+				BEA4458E171C36F500D62652 /* IKeyboard.h in Headers */,
+				BEA44592171C370C00D62652 /* Keyboard.h in Headers */,
+				BEA44596171C38EE00D62652 /* TechniqueManager.h in Headers */,
+				BEA4459A171C392200D62652 /* TechniqueManager.h in Headers */,
+				BEA4459C171C392900D62652 /* ITechniqueManager.h in Headers */,
+				BEA445A7171C3BE100D62652 /* ITechnique.h in Headers */,
+				BEA445A9171C3BE100D62652 /* Technique.h in Headers */,
+				BEA445AC171C3D4A00D62652 /* IBase.h in Headers */,
+				BEA445B1171C3D9A00D62652 /* Clear.h in Headers */,
+				BEA445B3171C3FF500D62652 /* Clear.h in Headers */,
+				BEA445B7171C48D200D62652 /* Window.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +281,12 @@
 				BEE3FE0317183C5A00605D33 /* ManagerFactory.cpp in Sources */,
 				BEE3FE11171842EB00605D33 /* Window.cpp in Sources */,
 				BEDD34D0171A7B3300CF09E7 /* Manager.cpp in Sources */,
+				BEA44591171C370C00D62652 /* Keyboard.cpp in Sources */,
+				BEA44595171C38EE00D62652 /* TechniqueManager.cpp in Sources */,
+				BEA44599171C392200D62652 /* TechniqueManager.cpp in Sources */,
+				BEA445A8171C3BE100D62652 /* Technique.cpp in Sources */,
+				BEA445B0171C3D9A00D62652 /* Clear.cpp in Sources */,
+				BEA445B6171C48D200D62652 /* Window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

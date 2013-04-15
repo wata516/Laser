@@ -6,7 +6,6 @@ namespace Laser
 	{
 		class ITechniqueManager
 		{
-
 		};
 	}
 }

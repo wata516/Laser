@@ -29,9 +29,9 @@ namespace Laser
             
             virtual void Destroy( );
 
-			virtual bool CreateWindow( IWindow **ppWindow );
+			virtual bool CreateWindow( Window **ppWindow );
 
-			virtual bool CreateTechniqueManager( ITechniqueManager **ppTechniqueManager );
+			virtual bool CreateTechniqueManager( TechniqueManager **ppTechniqueManager );
 
 			virtual bool CreateKeyboard( Input::IKeyboard **ppKeyboard );
 

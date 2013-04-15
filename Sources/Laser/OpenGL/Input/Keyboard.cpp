@@ -2,7 +2,7 @@
 #include <boost/assign.hpp>
 #include <boost/array.hpp>
 #include <boost/optional.hpp>
-#include <hash_map>
+#include <map>
 #include <bitset>
 #include <GL/glfw.h>
 
@@ -12,7 +12,7 @@ namespace Laser
 	{
 		class OpenGLKeyboard::Impl
 		{
-			static std::hash_map< KEY_TYPE, int > mGLFWConvertTable;
+			static std::map< KEY_TYPE, int > mGLFWConvertTable;
 			std::bitset< GLFW_KEY_LAST > mPress, mPrePress;
 			boost::optional<int> GetGLFWKey( KEY_TYPE key );
 
@@ -23,7 +23,7 @@ namespace Laser
 			void Update( );
 		};
 
-		std::hash_map< IKeyboard::KEY_TYPE, int > OpenGLKeyboard::Impl::mGLFWConvertTable = boost::assign::map_list_of
+		std::map< IKeyboard::KEY_TYPE, int > OpenGLKeyboard::Impl::mGLFWConvertTable = boost::assign::map_list_of
 			( IKeyboard::KEY_TYPE_ESCAPE, GLFW_KEY_ESC )( IKeyboard::KEY_TYPE_SPACE, GLFW_KEY_SPACE );
 
 		boost::optional<int> OpenGLKeyboard::Impl::GetGLFWKey( KEY_TYPE key )

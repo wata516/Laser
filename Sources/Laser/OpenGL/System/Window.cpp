@@ -15,6 +15,7 @@ namespace Laser
 			void Close( );
 			bool Open( );
 			bool IsOpen();
+			void Flip();
 		private:
 			bool mIsOpen;
 			TGUL::String mTitle;
@@ -57,6 +58,11 @@ namespace Laser
 		{
 			return mIsOpen;
 		}
+		
+		void OpenGLWindow::Impl::Flip()
+		{
+			glfwSwapBuffers();
+		}
         
 		OpenGLWindow::Impl::Impl()
 		: mIsOpen( false )
@@ -83,6 +89,10 @@ namespace Laser
 		bool OpenGLWindow::IsOpen()
 		{
 			return mImpl->IsOpen();
+		}
+		void OpenGLWindow::Flip()
+		{
+			mImpl->Flip();
 		}
     }
 }

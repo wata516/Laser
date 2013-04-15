@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Laser/Common/System/IWindow.h>
+#include <Laser/Common/System/Window.h>
 #include <TGUL/String.h>
 #include <boost/shared_ptr.hpp>
 
@@ -8,7 +8,7 @@ namespace Laser
 {
     namespace System
     {
-        class OpenGLWindow : public IWindow
+        class OpenGLWindow : public Window
         {
 		public:
 			OpenGLWindow( );
@@ -18,6 +18,7 @@ namespace Laser
 			virtual void Close( );
 			virtual bool Open( );
 			virtual bool IsOpen( );
+			virtual void Flip();
 
         private:
             class Impl;

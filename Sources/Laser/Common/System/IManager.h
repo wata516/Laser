@@ -4,8 +4,8 @@ namespace Laser
 {
 	namespace System
 	{
-		class IWindow;
-		class ITechniqueManager;
+		class Window;
+		class TechniqueManager;
 	}
 
 	namespace Input
@@ -28,10 +28,10 @@ namespace Laser
             virtual void Destroy( ) = 0;
             
 			//!	@brief	ウィンドウを作成.
-			virtual bool CreateWindow( IWindow **ppWindow ) = 0;
+			virtual bool CreateWindow( Window **ppWindow ) = 0;
 
 			//!	@brief	TechniqueManagerを作成
-			virtual bool CreateTechniqueManager( ITechniqueManager **ppTechniqueManager ) = 0;
+			virtual bool CreateTechniqueManager( TechniqueManager **ppTechniqueManager ) = 0;
 
 			//!	@brief	キーボードを作成.
 			virtual bool CreateKeyboard( Input::IKeyboard **ppKeyboard ) = 0;

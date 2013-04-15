@@ -16,8 +16,8 @@ namespace Laser
 		public:
 			bool Create();
 			void Destroy();
-			bool CreateWindow( IWindow **ppWindow );
-			bool CreateTechniqueManager( ITechniqueManager **ppTechniqueManager );
+			bool CreateWindow( Window **ppWindow );
+			bool CreateTechniqueManager( TechniqueManager **ppTechniqueManager );
 			bool CreateKeyboard( Input::IKeyboard **ppKeyboard );
 		};
 		
@@ -39,7 +39,7 @@ namespace Laser
 			glfwTerminate();
 		}
 
-		bool OpenGLManager::Impl::CreateWindow( IWindow **ppWindow )
+		bool OpenGLManager::Impl::CreateWindow( Window **ppWindow )
 		{
 			*ppWindow = new OpenGLWindow( );
 			
@@ -50,7 +50,7 @@ namespace Laser
 			return true;
 		}
 
-		bool OpenGLManager::Impl::CreateTechniqueManager( ITechniqueManager **ppTechniqueManager )
+		bool OpenGLManager::Impl::CreateTechniqueManager( TechniqueManager **ppTechniqueManager )
 		{
 			*ppTechniqueManager = new OpenGLTechniqueManager( );
 
@@ -85,11 +85,11 @@ namespace Laser
 		{
 			mImpl->Destroy();
 		}
-		bool OpenGLManager::CreateWindow( IWindow **ppWindow )
+		bool OpenGLManager::CreateWindow( Window **ppWindow )
 		{
 			return mImpl->CreateWindow( ppWindow );
 		}
-		bool OpenGLManager::CreateTechniqueManager( ITechniqueManager **ppTechniqueManager )
+		bool OpenGLManager::CreateTechniqueManager( TechniqueManager **ppTechniqueManager )
 		{
 			return mImpl->CreateTechniqueManager( ppTechniqueManager );
 		}

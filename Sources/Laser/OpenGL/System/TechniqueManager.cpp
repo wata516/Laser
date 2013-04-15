@@ -9,7 +9,7 @@ namespace Laser
 
 		};
 
-		OpenGLTechniqueManager::OpenGLTechniqueManager()
+		OpenGLTechniqueManager::OpenGLTechniqueManager( )
 			: mImpl( new Impl )
 		{}
 	}

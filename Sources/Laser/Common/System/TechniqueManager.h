@@ -5,12 +5,22 @@
 
 namespace Laser
 {
+	namespace User
+	{
+		class ITechnique;
+	}
+}
+
+namespace Laser
+{
 	namespace System
 	{
 		class TechniqueManager : public ITechniqueManager
 		{
 		public:
 			TechniqueManager();
+
+			bool Regist( const User::ITechnique &technique );
 
 		private:
 			class Impl;

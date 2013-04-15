@@ -16,6 +16,7 @@ namespace Laser
 			virtual void Close( ) = 0;
 			virtual bool Open( ) = 0;
 			virtual bool IsOpen( ) = 0;
+			virtual void Flip() = 0;
         };
     }
 }

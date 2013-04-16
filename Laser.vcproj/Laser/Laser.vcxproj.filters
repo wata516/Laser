@@ -93,6 +93,12 @@
     <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.h">
       <Filter>ソース ファイル\OpenGL\Input</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\User\IPass.h">
+      <Filter>ソース ファイル\Common\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\User\Pass.h">
+      <Filter>ソース ファイル\Common\User</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp">
@@ -121,6 +127,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.cpp">
       <Filter>ソース ファイル\OpenGL\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\User\Pass.cpp">
+      <Filter>ソース ファイル\Common\User</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

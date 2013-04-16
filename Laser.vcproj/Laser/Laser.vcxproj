@@ -144,7 +144,9 @@
     <ClInclude Include="..\..\Sources\Laser\Common\System\ManagerFactory.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\TechniqueManager.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\Window.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\User\IPass.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\User\ITechnique.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\User\Pass.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\User\Technique.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.h" />
@@ -156,6 +158,7 @@
     <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\TechniqueManager.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\Window.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\Common\User\Pass.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\User\Technique.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.cpp" />

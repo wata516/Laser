@@ -21,7 +21,7 @@ namespace Laser
 			TechniqueManager();
 
 			bool Regist( const User::ITechnique &technique );
-
+			void Render( ) const;
 		private:
 			class Impl;
 			boost::shared_ptr< Impl > mImpl;

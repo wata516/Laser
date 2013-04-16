@@ -7,7 +7,7 @@ namespace Laser
 		class ITechnique
 		{
 		public:
-			virtual void Draw( ) = 0;
+			virtual void Render( ) const = 0;
 			virtual unsigned int GetClassSize() const = 0;
 		};
 	}

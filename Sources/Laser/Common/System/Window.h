@@ -21,6 +21,7 @@ namespace Laser
 			Window();
 
 		public:
+			void Render( ) const;
 			void SetTechnique(const Laser::System::TechniqueManager *pTechniqueManager);
 
 		private:

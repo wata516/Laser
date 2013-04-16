@@ -1,10 +1,10 @@
-#include <Laser/OpenGL/System/Manager.h>
+#include <Laser/OpenGL/System/OpenGLManager.h>
 #include <Laser/Common/System/IWindow.h>
-#include <Laser/OpenGL/System/Window.h>
+#include <Laser/OpenGL/System/OpenGLWindow.h>
 #include <Laser/Common/Input/IKeyboard.h>
-#include <Laser/OpenGL/Input/Keyboard.h>
+#include <Laser/OpenGL/Input/OpenGLKeyboard.h>
 #include <Laser/Common/System/ITechniqueManager.h>
-#include <Laser/OpenGL/System/TechniqueManager.h>
+#include <Laser/OpenGL/System/OpenGLTechniqueManager.h>
 #include <GL/glfw.h>
 
 namespace Laser

@@ -135,24 +135,33 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Sources\Laser\Common\Command\Clear.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\Command\IBase.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\Input\IKeyboard.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\IManager.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\ITechniqueManager.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\IWindow.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\ManagerFactory.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\TechniqueManager.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\Keyboard.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\Manager.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\TechniqueManager.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\Window.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\Window.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\User\ITechnique.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\User\Technique.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLTechniqueManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\TechniqueManager.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\Keyboard.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\Manager.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\TechniqueManager.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\Window.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\Common\System\Window.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\Common\User\Technique.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLTechniqueManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,7 +8,7 @@ namespace Laser
 		{
 		public:
 			virtual void Draw( ) = 0;
-			virtual uint GetClassSize() const = 0;
+			virtual unsigned int GetClassSize() const = 0;
 		};
 	}
 }

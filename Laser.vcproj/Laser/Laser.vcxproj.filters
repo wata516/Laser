@@ -31,17 +31,20 @@
     <Filter Include="ソース ファイル\OpenGL\Input">
       <UniqueIdentifier>{8f551ebf-b1bb-4197-9613-8ef07639b7bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Common\User">
+      <UniqueIdentifier>{9bafa781-01c5-44f9-b5ff-2c93bb65de3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Common\Command">
+      <UniqueIdentifier>{175da870-9b92-461a-ab26-35631c72cf8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\OpenGL\Command">
+      <UniqueIdentifier>{de91d3eb-4a5c-4306-b872-33496326b4b7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\Manager.h">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\Window.h">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Sources\Laser\Common\System\IManager.h">
       <Filter>ソース ファイル\Common\System</Filter>
     </ClInclude>
@@ -54,37 +57,70 @@
     <ClInclude Include="..\..\Sources\Laser\Common\Input\IKeyboard.h">
       <Filter>ソース ファイル\Common\Input</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\Keyboard.h">
-      <Filter>ソース ファイル\OpenGL\Input</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Sources\Laser\Common\System\ITechniqueManager.h">
       <Filter>ソース ファイル\Common\System</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\TechniqueManager.h">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Sources\Laser\Common\System\TechniqueManager.h">
       <Filter>ソース ファイル\Common\System</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\Command\Clear.h">
+      <Filter>ソース ファイル\Common\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\Command\IBase.h">
+      <Filter>ソース ファイル\Common\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\User\ITechnique.h">
+      <Filter>ソース ファイル\Common\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\User\Technique.h">
+      <Filter>ソース ファイル\Common\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\Window.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLTechniqueManager.h">
+      <Filter>ソース ファイル\OpenGL\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.h">
+      <Filter>ソース ファイル\OpenGL\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLManager.h">
+      <Filter>ソース ファイル\OpenGL\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.h">
+      <Filter>ソース ファイル\OpenGL\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.h">
+      <Filter>ソース ファイル\OpenGL\Input</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\Manager.cpp">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\Window.cpp">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp">
       <Filter>ソース ファイル\Common\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\Keyboard.cpp">
-      <Filter>ソース ファイル\OpenGL\Input</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\TechniqueManager.cpp">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\Common\System\TechniqueManager.cpp">
       <Filter>ソース ファイル\Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\User\Technique.cpp">
+      <Filter>ソース ファイル\Common\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\System\Window.cpp">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLTechniqueManager.cpp">
+      <Filter>ソース ファイル\OpenGL\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.cpp">
+      <Filter>ソース ファイル\OpenGL\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLManager.cpp">
+      <Filter>ソース ファイル\OpenGL\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.cpp">
+      <Filter>ソース ファイル\OpenGL\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.cpp">
+      <Filter>ソース ファイル\OpenGL\Input</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

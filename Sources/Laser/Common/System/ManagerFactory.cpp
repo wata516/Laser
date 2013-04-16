@@ -1,6 +1,6 @@
 #include "Laser/Common/System/ManagerFactory.h"
 #include "Laser/Common/System/IManager.h"
-#include "Laser/OpenGL/System/Manager.h"
+#include "Laser/OpenGL/System/OpenGLManager.h"
 #include <TGUL/String.h>
 #include <TGUL/Map.h>
 

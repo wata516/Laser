@@ -1,4 +1,4 @@
-#include <Laser/OpenGL/System/Window.h>
+#include <Laser/OpenGL/System/OpenGLWindow.h>
 #include <GL/glfw.h>
 
 namespace Laser

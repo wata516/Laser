@@ -1,4 +1,4 @@
-#include <Laser/OpenGL/System/TechniqueManager.h>
+#include <Laser/OpenGL/System/OpenGLTechniqueManager.h>
 
 namespace Laser
 {

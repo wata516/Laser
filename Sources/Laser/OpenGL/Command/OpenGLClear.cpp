@@ -1,4 +1,4 @@
-#include <Laser/OpenGL/Command/Clear.h>
+#include <Laser/OpenGL/Command/OpenGLClear.h>
 
 namespace Laser
 {

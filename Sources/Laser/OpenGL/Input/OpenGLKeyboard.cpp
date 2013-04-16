@@ -1,4 +1,4 @@
-#include <Laser/OpenGL/Input/Keyboard.h>
+#include <Laser/OpenGL/Input/OpenGLKeyboard.h>
 #include <boost/assign.hpp>
 #include <boost/array.hpp>
 #include <boost/optional.hpp>

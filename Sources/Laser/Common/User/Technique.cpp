@@ -13,24 +13,5 @@ namespace Laser
 				pass->Render();
 			}
 		}
-
-		bool Technique::Regist( const IPass &pass )
-		{
-			IPass *NewPass = reinterpret_cast< IPass * >( new uint8_t[ pass.GetClassSize() ] );
-
-			memcpy( NewPass, &pass, pass.GetClassSize() );
-
-			pass_ptr pBuff( NewPass );
-
-			if( pBuff == 0 ) {
-				return false;
-			}
-
-			*pBuff = pass;//.Clone();
-
-			mPass.push_back( pBuff );
-
-			return true;
-		}
 	}
 }

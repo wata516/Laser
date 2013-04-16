@@ -2,6 +2,7 @@
 
 #include <Laser/Common/System/ITechniqueManager.h>
 #include <boost/shared_ptr.hpp>
+#include <vector>
 
 namespace Laser
 {
@@ -18,13 +19,37 @@ namespace Laser
 		class TechniqueManager : public ITechniqueManager
 		{
 		public:
+			typedef boost::shared_ptr< User::ITechnique > technique_ptr;
+			typedef technique_ptr technique_const_ptr;
+			typedef std::vector<technique_ptr> technique_list;
+
+		public:
 			TechniqueManager();
 
 			bool Regist( const User::ITechnique &technique );
 			void Render( ) const;
+			template< typename T >
+			bool Regist( const T &technique );
+
 		private:
 			class Impl;
 			boost::shared_ptr< Impl > mImpl;
+						
+			technique_list mTechniques;
 		};
+		
+		template< typename T >
+		bool TechniqueManager::Regist(const T &technique)
+		{
+			T *pNewTechnique = new T( technique );
+
+			if( pNewTechnique == 0 ) {
+				return false;
+			}
+			
+			mTechniques.push_back( technique_ptr( pNewTechnique ) );
+			
+			return true;
+		}
 	}
 }

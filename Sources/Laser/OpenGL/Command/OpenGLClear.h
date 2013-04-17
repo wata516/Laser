@@ -13,8 +13,8 @@ namespace Laser
 			OpenGLClear();
 
 		public:
-			void draw();
-			void SetColor( float red, float greeb, float blue, float alpha );
+			void Draw();
+			virtual void SetColor( float red, float greeb, float blue, float alpha );
 
 		private:
 			GLclampf mRed, mGreen, mBlue, mAlpha;

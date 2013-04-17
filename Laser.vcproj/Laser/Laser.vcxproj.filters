@@ -99,6 +99,15 @@
     <ClInclude Include="..\..\Sources\Laser\Common\User\Pass.h">
       <Filter>ソース ファイル\Common\User</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\CommandFactory.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\ClassID.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\Exception.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp">
@@ -130,6 +139,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\Common\User\Pass.cpp">
       <Filter>ソース ファイル\Common\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\System\CommandFactory.cpp">
+      <Filter>ソース ファイル\Common\System</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

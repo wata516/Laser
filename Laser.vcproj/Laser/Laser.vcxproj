@@ -138,6 +138,9 @@
     <ClInclude Include="..\..\Sources\Laser\Common\Command\Clear.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\Command\IBase.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\Input\IKeyboard.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\ClassID.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\CommandFactory.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\Exception.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\IManager.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\ITechniqueManager.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\IWindow.h" />
@@ -155,6 +158,7 @@
     <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Sources\Laser\Common\System\CommandFactory.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\TechniqueManager.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\Window.cpp" />

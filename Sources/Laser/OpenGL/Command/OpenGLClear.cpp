@@ -8,7 +8,7 @@ namespace Laser
 		: mRed( 0.0F ), mGreen( 0.0F ), mBlue( 0.0F ), mAlpha( 1.0F )
 		{ }
 		
-		void OpenGLClear::draw()
+		void OpenGLClear::Draw()
 		{
 			glClearColor(mRed, mGreen, mBlue, mAlpha );
 			glClear( GL_COLOR_BUFFER_BIT );

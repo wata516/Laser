@@ -9,7 +9,7 @@ namespace Laser
 	{
 		void Technique::Render() const
 		{
-			BOOST_FOREACH( pass_ptr_const pass, mPass ) {
+			BOOST_FOREACH( const pass_ptr pass, mPass ) {
 				pass->Render();
 			}
 		}

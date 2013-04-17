@@ -19,8 +19,7 @@ namespace Laser
 		class TechniqueManager : public ITechniqueManager
 		{
 		public:
-			typedef boost::shared_ptr< User::ITechnique > technique_ptr;
-			typedef technique_ptr technique_const_ptr;
+			typedef boost::shared_ptr< const User::ITechnique > technique_ptr;
 			typedef std::vector<technique_ptr> technique_list;
 
 		public:
@@ -41,7 +40,7 @@ namespace Laser
 		template< typename T >
 		bool TechniqueManager::Regist(const T &technique)
 		{
-			T *pNewTechnique = new T( technique );
+			const T *pNewTechnique = new T( technique );
 
 			if( pNewTechnique == 0 ) {
 				return false;

@@ -19,11 +19,10 @@ namespace Laser
 	{
 		class Technique : public ITechnique
 		{
-			typedef boost::shared_ptr< IPass > pass_ptr;
-			typedef const pass_ptr pass_ptr_const;
+			typedef boost::shared_ptr< const IPass > pass_ptr;
 
 		protected:
-			std::vector< pass_ptr_const > mPass;
+			std::vector< pass_ptr > mPass;
 
 		public:
 			virtual void Render( ) const;
@@ -34,14 +33,13 @@ namespace Laser
 		template< typename T >
 		bool Technique::Regist( const T &pass )
 		{
-			T *pNewPass = new T;
+			const T *pNewPass = new T( pass );
 
 			if( pNewPass == 0 ) {
 				return false;
 			}
-			*pNewPass = pass;
 
-			mPass.push_back( pNewPass );
+			mPass.push_back( pass_ptr( pNewPass ) );
 			
 			return true;
 		}

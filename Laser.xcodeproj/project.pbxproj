@@ -28,6 +28,21 @@
 		BEA445B3171C3FF500D62652 /* Clear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445B2171C3FF500D62652 /* Clear.h */; };
 		BEA445B6171C48D200D62652 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA445B4171C48D100D62652 /* Window.cpp */; };
 		BEA445B7171C48D200D62652 /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445B5171C48D100D62652 /* Window.h */; };
+		BED78017171EDB7800BFE2E7 /* ClassID.h in Headers */ = {isa = PBXBuildFile; fileRef = BED78012171EDB7800BFE2E7 /* ClassID.h */; };
+		BED78018171EDB7800BFE2E7 /* CommandFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED78013171EDB7800BFE2E7 /* CommandFactory.cpp */; };
+		BED78019171EDB7900BFE2E7 /* CommandFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BED78014171EDB7800BFE2E7 /* CommandFactory.h */; };
+		BED7801A171EDB7900BFE2E7 /* CommandManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BED78015171EDB7800BFE2E7 /* CommandManager.h */; };
+		BED7801B171EDB7900BFE2E7 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = BED78016171EDB7800BFE2E7 /* Exception.h */; };
+		BED7801F171EDF2800BFE2E7 /* IPass.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7801C171EDF2800BFE2E7 /* IPass.h */; };
+		BED78020171EDF2800BFE2E7 /* Pass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED7801D171EDF2800BFE2E7 /* Pass.cpp */; };
+		BED78021171EDF2800BFE2E7 /* Pass.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7801E171EDF2800BFE2E7 /* Pass.h */; };
+		BED7802B171EE20B00BFE2E7 /* SysmemBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED78029171EE20B00BFE2E7 /* SysmemBuffer.cpp */; };
+		BED7802C171EE20B00BFE2E7 /* SysmemBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7802A171EE20B00BFE2E7 /* SysmemBuffer.h */; };
+		BED7802E171EE23100BFE2E7 /* IBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7802D171EE23100BFE2E7 /* IBuffer.h */; };
+		BED78030171EE27500BFE2E7 /* Object.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7802F171EE27500BFE2E7 /* Object.h */; };
+		BED78033171EE50800BFE2E7 /* ObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED78031171EE50800BFE2E7 /* ObjectManager.cpp */; };
+		BED78034171EE50800BFE2E7 /* ObjectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BED78032171EE50800BFE2E7 /* ObjectManager.h */; };
+		BED78036171EE65100BFE2E7 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED78035171EE65100BFE2E7 /* Object.cpp */; };
 		BEE3FE0217183C5A00605D33 /* IManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFD17183C5A00605D33 /* IManager.h */; };
 		BEE3FE0317183C5A00605D33 /* ManagerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */; };
 		BEE3FE0417183C5A00605D33 /* ManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFF17183C5A00605D33 /* ManagerFactory.h */; };
@@ -55,6 +70,21 @@
 		BEA445B2171C3FF500D62652 /* Clear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Clear.h; path = Command/Clear.h; sourceTree = "<group>"; };
 		BEA445B4171C48D100D62652 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
 		BEA445B5171C48D100D62652 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		BED78012171EDB7800BFE2E7 /* ClassID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassID.h; sourceTree = "<group>"; };
+		BED78013171EDB7800BFE2E7 /* CommandFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandFactory.cpp; sourceTree = "<group>"; };
+		BED78014171EDB7800BFE2E7 /* CommandFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandFactory.h; sourceTree = "<group>"; };
+		BED78015171EDB7800BFE2E7 /* CommandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandManager.h; sourceTree = "<group>"; };
+		BED78016171EDB7800BFE2E7 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		BED7801C171EDF2800BFE2E7 /* IPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPass.h; path = User/IPass.h; sourceTree = "<group>"; };
+		BED7801D171EDF2800BFE2E7 /* Pass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pass.cpp; path = User/Pass.cpp; sourceTree = "<group>"; };
+		BED7801E171EDF2800BFE2E7 /* Pass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pass.h; path = User/Pass.h; sourceTree = "<group>"; };
+		BED78029171EE20B00BFE2E7 /* SysmemBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SysmemBuffer.cpp; path = Resource/SysmemBuffer.cpp; sourceTree = "<group>"; };
+		BED7802A171EE20B00BFE2E7 /* SysmemBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SysmemBuffer.h; path = Resource/SysmemBuffer.h; sourceTree = "<group>"; };
+		BED7802D171EE23100BFE2E7 /* IBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IBuffer.h; path = Resource/IBuffer.h; sourceTree = "<group>"; };
+		BED7802F171EE27500BFE2E7 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		BED78031171EE50800BFE2E7 /* ObjectManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectManager.cpp; sourceTree = "<group>"; };
+		BED78032171EE50800BFE2E7 /* ObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectManager.h; sourceTree = "<group>"; };
+		BED78035171EE65100BFE2E7 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
 		BEE3FDC917181D3400605D33 /* libLaser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLaser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE3FDFD17183C5A00605D33 /* IManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IManager.h; sourceTree = "<group>"; };
 		BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManagerFactory.cpp; sourceTree = "<group>"; };
@@ -93,6 +123,9 @@
 		BEA445A3171C3B0B00D62652 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				BED7801C171EDF2800BFE2E7 /* IPass.h */,
+				BED7801D171EDF2800BFE2E7 /* Pass.cpp */,
+				BED7801E171EDF2800BFE2E7 /* Pass.h */,
 				BEA445A4171C3BE100D62652 /* ITechnique.h */,
 				BEA445A5171C3BE100D62652 /* Technique.cpp */,
 				BEA445A6171C3BE100D62652 /* Technique.h */,
@@ -116,6 +149,16 @@
 				BEA25D4D171D8D8A005349E5 /* OpenGLClear.h */,
 			);
 			name = Command;
+			sourceTree = "<group>";
+		};
+		BED78022171EDFC800BFE2E7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BED78029171EE20B00BFE2E7 /* SysmemBuffer.cpp */,
+				BED7802A171EE20B00BFE2E7 /* SysmemBuffer.h */,
+				BED7802D171EE23100BFE2E7 /* IBuffer.h */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 		BEE3FDC017181D3400605D33 = {
@@ -155,6 +198,7 @@
 		BEE3FDFA17183C5A00605D33 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BED78022171EDFC800BFE2E7 /* Resource */,
 				BEA445AA171C3CE800D62652 /* Command */,
 				BEA445A3171C3B0B00D62652 /* User */,
 				BEA4458B171C36E100D62652 /* Input */,
@@ -166,6 +210,11 @@
 		BEE3FDFC17183C5A00605D33 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				BED78012171EDB7800BFE2E7 /* ClassID.h */,
+				BED78013171EDB7800BFE2E7 /* CommandFactory.cpp */,
+				BED78014171EDB7800BFE2E7 /* CommandFactory.h */,
+				BED78015171EDB7800BFE2E7 /* CommandManager.h */,
+				BED78016171EDB7800BFE2E7 /* Exception.h */,
 				BEA4459B171C392900D62652 /* ITechniqueManager.h */,
 				BEA44597171C392200D62652 /* TechniqueManager.cpp */,
 				BEA44598171C392200D62652 /* TechniqueManager.h */,
@@ -175,6 +224,10 @@
 				BEE3FE0E171842B200605D33 /* IWindow.h */,
 				BEA445B4171C48D100D62652 /* Window.cpp */,
 				BEA445B5171C48D100D62652 /* Window.h */,
+				BED7802F171EE27500BFE2E7 /* Object.h */,
+				BED78035171EE65100BFE2E7 /* Object.cpp */,
+				BED78031171EE50800BFE2E7 /* ObjectManager.cpp */,
+				BED78032171EE50800BFE2E7 /* ObjectManager.h */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -224,6 +277,16 @@
 				BEA25D5B171D8DA7005349E5 /* OpenGLManager.h in Headers */,
 				BEA25D5D171D8DA7005349E5 /* OpenGLTechniqueManager.h in Headers */,
 				BEA25D5F171D8DA7005349E5 /* OpenGLWindow.h in Headers */,
+				BED78017171EDB7800BFE2E7 /* ClassID.h in Headers */,
+				BED78019171EDB7900BFE2E7 /* CommandFactory.h in Headers */,
+				BED7801A171EDB7900BFE2E7 /* CommandManager.h in Headers */,
+				BED7801B171EDB7900BFE2E7 /* Exception.h in Headers */,
+				BED7801F171EDF2800BFE2E7 /* IPass.h in Headers */,
+				BED78021171EDF2800BFE2E7 /* Pass.h in Headers */,
+				BED7802C171EE20B00BFE2E7 /* SysmemBuffer.h in Headers */,
+				BED7802E171EE23100BFE2E7 /* IBuffer.h in Headers */,
+				BED78030171EE27500BFE2E7 /* Object.h in Headers */,
+				BED78034171EE50800BFE2E7 /* ObjectManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +350,11 @@
 				BEA25D5A171D8DA7005349E5 /* OpenGLManager.cpp in Sources */,
 				BEA25D5C171D8DA7005349E5 /* OpenGLTechniqueManager.cpp in Sources */,
 				BEA25D5E171D8DA7005349E5 /* OpenGLWindow.cpp in Sources */,
+				BED78018171EDB7800BFE2E7 /* CommandFactory.cpp in Sources */,
+				BED78020171EDF2800BFE2E7 /* Pass.cpp in Sources */,
+				BED7802B171EE20B00BFE2E7 /* SysmemBuffer.cpp in Sources */,
+				BED78033171EE50800BFE2E7 /* ObjectManager.cpp in Sources */,
+				BED78036171EE65100BFE2E7 /* Object.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,7 +28,7 @@ namespace Laser
 			if( this->GetClassID() == T::ID.number ) {
 				return reinterpret_cast< T * >( this );
 			}
-			Laser::ASSERT( 0, "" );
+		//	Laser::ASSERT( 0, "" );
 			return 0;
 		}
 	}

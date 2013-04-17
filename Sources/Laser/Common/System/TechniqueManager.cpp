@@ -16,7 +16,7 @@ namespace Laser
 
 		void TechniqueManager::Impl::Render( const TechniqueManager::technique_list &techniques) const
 		{
-			BOOST_FOREACH( technique_const_ptr technique, techniques ) {
+			BOOST_FOREACH( const technique_ptr technique, techniques ) {
 				technique->Render();
 			}
 		}

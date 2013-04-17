@@ -65,7 +65,7 @@ namespace Laser
 	};
 
 
-	#define EXCEPT( id, description, src) throw Laser::ExceptionFactory::Create( \
+	#define EXCEPT( id, description, src ) throw Laser::ExceptionFactory::Create( \
 		ExceptionCodeType< id >(), desc, src, __FILE__, __LINE__ );
 
 	#define ASSERT( x, description ) \

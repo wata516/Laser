@@ -14,5 +14,9 @@ namespace Laser
 		ObjectManager::ObjectManager()
 		: mImpl( new Impl )
 		{ }
+		void ObjectManager::Release( const Object &obj )
+		{
+			
+		}
 	}
 }

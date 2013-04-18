@@ -5,9 +5,5 @@ namespace Laser
 {
 	namespace System
 	{
-		Object::~Object()
-		{
-			ObjectManager::GetInstance().Release( *this );
-		}
 	}
 }

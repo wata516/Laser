@@ -17,6 +17,9 @@
 		BEA25D5D171D8DA7005349E5 /* OpenGLTechniqueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA25D57171D8DA7005349E5 /* OpenGLTechniqueManager.h */; };
 		BEA25D5E171D8DA7005349E5 /* OpenGLWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA25D58171D8DA7005349E5 /* OpenGLWindow.cpp */; };
 		BEA25D5F171D8DA7005349E5 /* OpenGLWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA25D59171D8DA7005349E5 /* OpenGLWindow.h */; };
+		BEA267D317201C3900E8A944 /* UUID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA267D217201C3900E8A944 /* UUID.cpp */; };
+		BEA267D517201C9000E8A944 /* UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA267D417201C9000E8A944 /* UUID.h */; };
+		BEA267D7172026CD00E8A944 /* IUnknown.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA267D6172026CD00E8A944 /* IUnknown.h */; };
 		BEA4458E171C36F500D62652 /* IKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA4458D171C36F500D62652 /* IKeyboard.h */; };
 		BEA44599171C392200D62652 /* TechniqueManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA44597171C392200D62652 /* TechniqueManager.cpp */; };
 		BEA4459A171C392200D62652 /* TechniqueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA44598171C392200D62652 /* TechniqueManager.h */; };
@@ -38,7 +41,7 @@
 		BED78021171EDF2800BFE2E7 /* Pass.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7801E171EDF2800BFE2E7 /* Pass.h */; };
 		BED7802B171EE20B00BFE2E7 /* SysmemBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED78029171EE20B00BFE2E7 /* SysmemBuffer.cpp */; };
 		BED7802C171EE20B00BFE2E7 /* SysmemBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7802A171EE20B00BFE2E7 /* SysmemBuffer.h */; };
-		BED7802E171EE23100BFE2E7 /* IBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7802D171EE23100BFE2E7 /* IBuffer.h */; };
+		BED7802E171EE23100BFE2E7 /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7802D171EE23100BFE2E7 /* Buffer.h */; };
 		BED78030171EE27500BFE2E7 /* Object.h in Headers */ = {isa = PBXBuildFile; fileRef = BED7802F171EE27500BFE2E7 /* Object.h */; };
 		BED78033171EE50800BFE2E7 /* ObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED78031171EE50800BFE2E7 /* ObjectManager.cpp */; };
 		BED78034171EE50800BFE2E7 /* ObjectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BED78032171EE50800BFE2E7 /* ObjectManager.h */; };
@@ -59,6 +62,9 @@
 		BEA25D57171D8DA7005349E5 /* OpenGLTechniqueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTechniqueManager.h; sourceTree = "<group>"; };
 		BEA25D58171D8DA7005349E5 /* OpenGLWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLWindow.cpp; sourceTree = "<group>"; };
 		BEA25D59171D8DA7005349E5 /* OpenGLWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLWindow.h; sourceTree = "<group>"; };
+		BEA267D217201C3900E8A944 /* UUID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UUID.cpp; sourceTree = "<group>"; };
+		BEA267D417201C9000E8A944 /* UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUID.h; sourceTree = "<group>"; };
+		BEA267D6172026CD00E8A944 /* IUnknown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnknown.h; sourceTree = "<group>"; };
 		BEA4458D171C36F500D62652 /* IKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IKeyboard.h; path = Input/IKeyboard.h; sourceTree = "<group>"; };
 		BEA44597171C392200D62652 /* TechniqueManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TechniqueManager.cpp; sourceTree = "<group>"; };
 		BEA44598171C392200D62652 /* TechniqueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechniqueManager.h; sourceTree = "<group>"; };
@@ -80,7 +86,7 @@
 		BED7801E171EDF2800BFE2E7 /* Pass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pass.h; path = User/Pass.h; sourceTree = "<group>"; };
 		BED78029171EE20B00BFE2E7 /* SysmemBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SysmemBuffer.cpp; path = Resource/SysmemBuffer.cpp; sourceTree = "<group>"; };
 		BED7802A171EE20B00BFE2E7 /* SysmemBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SysmemBuffer.h; path = Resource/SysmemBuffer.h; sourceTree = "<group>"; };
-		BED7802D171EE23100BFE2E7 /* IBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IBuffer.h; path = Resource/IBuffer.h; sourceTree = "<group>"; };
+		BED7802D171EE23100BFE2E7 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buffer.h; path = Resource/Buffer.h; sourceTree = "<group>"; };
 		BED7802F171EE27500BFE2E7 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
 		BED78031171EE50800BFE2E7 /* ObjectManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectManager.cpp; sourceTree = "<group>"; };
 		BED78032171EE50800BFE2E7 /* ObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectManager.h; sourceTree = "<group>"; };
@@ -156,7 +162,7 @@
 			children = (
 				BED78029171EE20B00BFE2E7 /* SysmemBuffer.cpp */,
 				BED7802A171EE20B00BFE2E7 /* SysmemBuffer.h */,
-				BED7802D171EE23100BFE2E7 /* IBuffer.h */,
+				BED7802D171EE23100BFE2E7 /* Buffer.h */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -228,6 +234,9 @@
 				BED78035171EE65100BFE2E7 /* Object.cpp */,
 				BED78031171EE50800BFE2E7 /* ObjectManager.cpp */,
 				BED78032171EE50800BFE2E7 /* ObjectManager.h */,
+				BEA267D217201C3900E8A944 /* UUID.cpp */,
+				BEA267D417201C9000E8A944 /* UUID.h */,
+				BEA267D6172026CD00E8A944 /* IUnknown.h */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -284,9 +293,11 @@
 				BED7801F171EDF2800BFE2E7 /* IPass.h in Headers */,
 				BED78021171EDF2800BFE2E7 /* Pass.h in Headers */,
 				BED7802C171EE20B00BFE2E7 /* SysmemBuffer.h in Headers */,
-				BED7802E171EE23100BFE2E7 /* IBuffer.h in Headers */,
+				BED7802E171EE23100BFE2E7 /* Buffer.h in Headers */,
 				BED78030171EE27500BFE2E7 /* Object.h in Headers */,
 				BED78034171EE50800BFE2E7 /* ObjectManager.h in Headers */,
+				BEA267D517201C9000E8A944 /* UUID.h in Headers */,
+				BEA267D7172026CD00E8A944 /* IUnknown.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +366,7 @@
 				BED7802B171EE20B00BFE2E7 /* SysmemBuffer.cpp in Sources */,
 				BED78033171EE50800BFE2E7 /* ObjectManager.cpp in Sources */,
 				BED78036171EE65100BFE2E7 /* Object.cpp in Sources */,
+				BEA267D317201C3900E8A944 /* UUID.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

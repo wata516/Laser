@@ -1,5 +1,10 @@
 #pragma once
 
+#if ISCOMPILER(MS_VISUAL_STUDIO)
+#pragma warning(push)
+#pragma warning(disable:4996)
+#endif
+
 #include <boost/uuid/uuid.hpp>
 
 namespace Laser
@@ -17,3 +22,7 @@ namespace Laser
 		};
 	}
 }
+
+#if ISCOMPILER(MS_VISUAL_STUDIO)
+#pragma warning(pop)
+#endif

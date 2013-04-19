@@ -12,6 +12,9 @@ namespace Laser
 		public:
 			static const System::UUID &GetUUID( ) { return System::UUIDS::IBUFFER; }
 			virtual bool QueryInterface( const System::UUID &uuid, void **ppObject );
+
+		public:
+			virtual bool Allocate( size_t size ) { return false; };
 		};
 	
 		bool Buffer::QueryInterface( const System::UUID &uuid, void **ppObject )

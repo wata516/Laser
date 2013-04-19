@@ -40,6 +40,12 @@
     <Filter Include="ソース ファイル\OpenGL\Command">
       <UniqueIdentifier>{de91d3eb-4a5c-4306-b872-33496326b4b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Common\Resource">
+      <UniqueIdentifier>{4a0f4694-6768-4c7a-8eb4-4de6ac00fe20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Common\Global">
+      <UniqueIdentifier>{0aa05084-acb2-4b3d-9a55-b3fa37699361}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -108,6 +114,33 @@
     <ClInclude Include="..\..\Sources\Laser\Common\System\Exception.h">
       <Filter>ソース ファイル\Common\System</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\Resource\Buffer.h">
+      <Filter>ソース ファイル\Common\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\Resource\SysmemBuffer.h">
+      <Filter>ソース ファイル\Common\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\IUnknown.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\Object.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\ObjectManager.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\System\UUID.h">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\Global\Platform.h">
+      <Filter>ソース ファイル\Common\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\Resource\BufferFactory.h">
+      <Filter>ソース ファイル\Common\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\Common\Global\Macros.h">
+      <Filter>ソース ファイル\Common\Global</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp">
@@ -142,6 +175,21 @@
     </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\Common\System\CommandFactory.cpp">
       <Filter>ソース ファイル\Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\Resource\SysmemBuffer.cpp">
+      <Filter>ソース ファイル\Common\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\System\Object.cpp">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\System\ObjectManager.cpp">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\System\UUID.cpp">
+      <Filter>ソース ファイル\Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\Common\Resource\BufferFactory.cpp">
+      <Filter>ソース ファイル\Common\Resource</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

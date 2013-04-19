@@ -89,6 +89,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>../../Sources;C:\Program Files\boost\boost_1_53_0;../../../TGUL/Sources;../../../glfw-2.7.8.bin.WIN64/include</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)../../Sources/Laser/Common/Global/Platform.h;$(ProjectDir)../../Sources/Laser/Common/Global/Macros.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -137,15 +138,24 @@
   <ItemGroup>
     <ClInclude Include="..\..\Sources\Laser\Common\Command\Clear.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\Command\IBase.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\Global\Macros.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\Global\Platform.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\Input\IKeyboard.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\Resource\Buffer.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\Resource\BufferFactory.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\Resource\SysmemBuffer.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\ClassID.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\CommandFactory.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\Exception.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\IManager.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\ITechniqueManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\IUnknown.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\IWindow.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\ManagerFactory.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\Object.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\ObjectManager.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\TechniqueManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\Common\System\UUID.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\System\Window.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\User\IPass.h" />
     <ClInclude Include="..\..\Sources\Laser\Common\User\ITechnique.h" />
@@ -158,9 +168,14 @@
     <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Sources\Laser\Common\Resource\BufferFactory.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\Common\Resource\SysmemBuffer.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\CommandFactory.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\Common\System\Object.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\Common\System\ObjectManager.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\TechniqueManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\Common\System\UUID.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\System\Window.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\User\Pass.cpp" />
     <ClCompile Include="..\..\Sources\Laser\Common\User\Technique.cpp" />

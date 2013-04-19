@@ -2,6 +2,7 @@
 
 #include <Laser/Common/Resource/Buffer.h>
 #include <Laser/Common/System/UUID.h>
+#include <boost/shared_array.hpp>
 
 namespace Laser
 {
@@ -10,18 +11,18 @@ namespace Laser
 		class SysmemBuffer : public Buffer
 		{
 		public:
+			SysmemBuffer();
+			~SysmemBuffer();
+
+		public:
 			static const System::UUID &GetUUID( ) { return System::UUIDS::SYSMEMBUFFER; }
 			virtual bool QueryInterface( const System::UUID &uuid, void **ppObject );
+
+		public:
+			virtual bool Allocate( size_t size );
+
+		private:
+			boost::shared_array< uint8_t > mMemory;
 		};
-		bool SysmemBuffer::QueryInterface( const System::UUID &uuid, void **ppObject )
-		{
-			if( uuid == GetUUID() || uuid == Object::GetUUID() ||
-			   uuid == Buffer::GetUUID() || uuid == SysmemBuffer::GetUUID() ) {
-				*ppObject = this;
-				return true;
-			}
-			
-			return false;
-		}
 	}
 }

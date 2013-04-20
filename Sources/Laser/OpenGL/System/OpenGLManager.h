@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Laser/Common/System/IManager.h>
+#include <Laser/Common/System/Manager.h>
 #include <boost/shared_ptr.hpp>
 #include <boost/noncopyable.hpp>
 
@@ -8,7 +8,7 @@ namespace Laser
 {
 	namespace System
 	{
-		class IWindow;
+		class Window;
 	}
 	namespace Input
 	{
@@ -20,7 +20,7 @@ namespace Laser
 {
     namespace System
     {
-        class OpenGLManager : public IManager, boost::noncopyable
+        class OpenGLManager : public Manager, boost::noncopyable
         {
         public:
             OpenGLManager();

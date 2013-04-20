@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEA13FE1172286BB007DB00C /* BufferFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FE0172286BB007DB00C /* BufferFactory.h */; };
+		BEA13FE3172286C2007DB00C /* BufferFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FE2172286C2007DB00C /* BufferFactory.cpp */; };
+		BEA13FE617228702007DB00C /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FE417228702007DB00C /* Manager.cpp */; };
+		BEA13FE717228702007DB00C /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FE517228702007DB00C /* Manager.h */; };
+		BEA13FE917228979007DB00C /* IManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FE817228979007DB00C /* IManager.h */; };
+		BEA13FED17228B11007DB00C /* OpenGLManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FEB17228B11007DB00C /* OpenGLManager.cpp */; };
+		BEA13FEE17228B11007DB00C /* OpenGLManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FEC17228B11007DB00C /* OpenGLManager.h */; };
+		BEA13FF117228C53007DB00C /* ManagerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FEF17228C53007DB00C /* ManagerFactory.cpp */; };
+		BEA13FF217228C53007DB00C /* ManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FF017228C53007DB00C /* ManagerFactory.h */; };
+		BEA13FF517228EE8007DB00C /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FF317228EE8007DB00C /* Manager.cpp */; };
+		BEA13FF617228EE8007DB00C /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FF417228EE8007DB00C /* Manager.h */; };
+		BEA13FFA17229030007DB00C /* Macros.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FF817229030007DB00C /* Macros.h */; };
+		BEA13FFB17229030007DB00C /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FF917229030007DB00C /* Platform.h */; };
 		BEA25D4E171D8D8A005349E5 /* OpenGLClear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA25D4C171D8D8A005349E5 /* OpenGLClear.cpp */; };
 		BEA25D4F171D8D8A005349E5 /* OpenGLClear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA25D4D171D8D8A005349E5 /* OpenGLClear.h */; };
 		BEA25D52171D8D97005349E5 /* OpenGLKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA25D50171D8D97005349E5 /* OpenGLKeyboard.cpp */; };
@@ -52,6 +65,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BEA13FE0172286BB007DB00C /* BufferFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BufferFactory.h; path = Resource/BufferFactory.h; sourceTree = "<group>"; };
+		BEA13FE2172286C2007DB00C /* BufferFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BufferFactory.cpp; path = Resource/BufferFactory.cpp; sourceTree = "<group>"; };
+		BEA13FE417228702007DB00C /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Manager.cpp; path = Resource/Manager.cpp; sourceTree = "<group>"; };
+		BEA13FE517228702007DB00C /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = Resource/Manager.h; sourceTree = "<group>"; };
+		BEA13FE817228979007DB00C /* IManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IManager.h; path = Resource/IManager.h; sourceTree = "<group>"; };
+		BEA13FEB17228B11007DB00C /* OpenGLManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLManager.cpp; path = Resource/OpenGLManager.cpp; sourceTree = "<group>"; };
+		BEA13FEC17228B11007DB00C /* OpenGLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLManager.h; path = Resource/OpenGLManager.h; sourceTree = "<group>"; };
+		BEA13FEF17228C53007DB00C /* ManagerFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ManagerFactory.cpp; path = Resource/ManagerFactory.cpp; sourceTree = "<group>"; };
+		BEA13FF017228C53007DB00C /* ManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagerFactory.h; path = Resource/ManagerFactory.h; sourceTree = "<group>"; };
+		BEA13FF317228EE8007DB00C /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Manager.cpp; sourceTree = "<group>"; };
+		BEA13FF417228EE8007DB00C /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		BEA13FF817229030007DB00C /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = Global/Macros.h; sourceTree = "<group>"; };
+		BEA13FF917229030007DB00C /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = Global/Platform.h; sourceTree = "<group>"; };
 		BEA25D4C171D8D8A005349E5 /* OpenGLClear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLClear.cpp; path = Command/OpenGLClear.cpp; sourceTree = "<group>"; };
 		BEA25D4D171D8D8A005349E5 /* OpenGLClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLClear.h; path = Command/OpenGLClear.h; sourceTree = "<group>"; };
 		BEA25D50171D8D97005349E5 /* OpenGLKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLKeyboard.cpp; path = Input/OpenGLKeyboard.cpp; sourceTree = "<group>"; };
@@ -109,6 +135,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEA13FEA17228ACB007DB00C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BEA13FEB17228B11007DB00C /* OpenGLManager.cpp */,
+				BEA13FEC17228B11007DB00C /* OpenGLManager.h */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		BEA13FF717229024007DB00C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				BEA13FF817229030007DB00C /* Macros.h */,
+				BEA13FF917229030007DB00C /* Platform.h */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
 		BEA4458B171C36E100D62652 /* Input */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,9 +204,16 @@
 		BED78022171EDFC800BFE2E7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BEA13FE2172286C2007DB00C /* BufferFactory.cpp */,
+				BEA13FE0172286BB007DB00C /* BufferFactory.h */,
 				BED78029171EE20B00BFE2E7 /* SysmemBuffer.cpp */,
 				BED7802A171EE20B00BFE2E7 /* SysmemBuffer.h */,
 				BED7802D171EE23100BFE2E7 /* Buffer.h */,
+				BEA13FE417228702007DB00C /* Manager.cpp */,
+				BEA13FE517228702007DB00C /* Manager.h */,
+				BEA13FE817228979007DB00C /* IManager.h */,
+				BEA13FEF17228C53007DB00C /* ManagerFactory.cpp */,
+				BEA13FF017228C53007DB00C /* ManagerFactory.h */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -204,6 +255,7 @@
 		BEE3FDFA17183C5A00605D33 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BEA13FF717229024007DB00C /* Global */,
 				BED78022171EDFC800BFE2E7 /* Resource */,
 				BEA445AA171C3CE800D62652 /* Command */,
 				BEA445A3171C3B0B00D62652 /* User */,
@@ -237,6 +289,8 @@
 				BEA267D217201C3900E8A944 /* UUID.cpp */,
 				BEA267D417201C9000E8A944 /* UUID.h */,
 				BEA267D6172026CD00E8A944 /* IUnknown.h */,
+				BEA13FF317228EE8007DB00C /* Manager.cpp */,
+				BEA13FF417228EE8007DB00C /* Manager.h */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -244,6 +298,7 @@
 		BEE3FE0017183C5A00605D33 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				BEA13FEA17228ACB007DB00C /* Resource */,
 				BEA445AD171C3D7900D62652 /* Command */,
 				BEA4458C171C36E900D62652 /* Input */,
 				BEE3FE0617183D5400605D33 /* System */,
@@ -298,6 +353,14 @@
 				BED78034171EE50800BFE2E7 /* ObjectManager.h in Headers */,
 				BEA267D517201C9000E8A944 /* UUID.h in Headers */,
 				BEA267D7172026CD00E8A944 /* IUnknown.h in Headers */,
+				BEA13FE1172286BB007DB00C /* BufferFactory.h in Headers */,
+				BEA13FE717228702007DB00C /* Manager.h in Headers */,
+				BEA13FE917228979007DB00C /* IManager.h in Headers */,
+				BEA13FEE17228B11007DB00C /* OpenGLManager.h in Headers */,
+				BEA13FF217228C53007DB00C /* ManagerFactory.h in Headers */,
+				BEA13FF617228EE8007DB00C /* Manager.h in Headers */,
+				BEA13FFA17229030007DB00C /* Macros.h in Headers */,
+				BEA13FFB17229030007DB00C /* Platform.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +430,11 @@
 				BED78033171EE50800BFE2E7 /* ObjectManager.cpp in Sources */,
 				BED78036171EE65100BFE2E7 /* Object.cpp in Sources */,
 				BEA267D317201C3900E8A944 /* UUID.cpp in Sources */,
+				BEA13FE3172286C2007DB00C /* BufferFactory.cpp in Sources */,
+				BEA13FE617228702007DB00C /* Manager.cpp in Sources */,
+				BEA13FED17228B11007DB00C /* OpenGLManager.cpp in Sources */,
+				BEA13FF117228C53007DB00C /* ManagerFactory.cpp in Sources */,
+				BEA13FF517228EE8007DB00C /* Manager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +477,8 @@
 					"-I/opt/local/include",
 					"-I./Sources",
 					"-I/usr/local/include",
+					"-include",
+					Sources/Laser/Common/Global/Platform.h,
 				);
 				SDKROOT = macosx;
 			};
@@ -443,6 +513,8 @@
 					"-I/opt/local/include",
 					"-I./Sources",
 					"-I/usr/local/include",
+					"-include",
+					Sources/Laser/Common/Global/Platform.h,
 				);
 				SDKROOT = macosx;
 			};

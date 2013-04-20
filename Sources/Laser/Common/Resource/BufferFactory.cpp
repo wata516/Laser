@@ -25,7 +25,7 @@ namespace Laser
 		bool BufferFactory::Create( const TGUL::String &name, Buffer **ppBuffer )
 		{
 			std::map< TGUL::String, boost::function< bool( Buffer **) > > functions = boost::assign::map_list_of(
-				"OpenGL", boost::bind( &CreateSysmemBuffer, ppBuffer )   // OpenGL
+				"SysmemBuffer", boost::bind( &CreateSysmemBuffer, ppBuffer )
 				);
 
 			*ppBuffer = 0;

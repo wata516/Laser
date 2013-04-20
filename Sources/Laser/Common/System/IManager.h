@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+//#include <Laser/Common/System/Object.h>
+
 namespace Laser
 {
 	namespace System
@@ -18,7 +20,7 @@ namespace Laser
 {
     namespace System
     {
-        class IManager
+        class IManager// : public Object
         {
         public:
             //! @brief  作成.
@@ -34,7 +36,7 @@ namespace Laser
 			virtual bool CreateTechniqueManager( TechniqueManager **ppTechniqueManager ) = 0;
 
 			//!	@brief	キーボードを作成.
-			virtual bool CreateKeyboard( Input::IKeyboard **ppKeyboard ) = 0;
+			virtual bool CreateKeyboard( Input::IKeyboard **ppKeyboard ) = 0;			
         };
     }
 }

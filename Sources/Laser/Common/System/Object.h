@@ -43,8 +43,5 @@ namespace Laser
 		
 			return false;
 		}
-
-
-
 	}
 }

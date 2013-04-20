@@ -1,5 +1,5 @@
 #include "Laser/Common/System/ManagerFactory.h"
-#include "Laser/Common/System/IManager.h"
+#include "Laser/Common/System/Manager.h"
 #include "Laser/OpenGL/System/OpenGLManager.h"
 #include <TGUL/String.h>
 #include <TGUL/Map.h>
@@ -12,7 +12,7 @@ namespace Laser
 {
     namespace System
     {
-         bool CreateOpenGL( IManager **ppManager )
+         bool CreateOpenGL( Manager **ppManager )
         {
             *ppManager = new OpenGLManager( );
 
@@ -22,10 +22,10 @@ namespace Laser
             
             return true;
         }
-        
-        bool ManagerFactory::Create( const TGUL::String &name, IManager **ppManager )
+
+        bool ManagerFactory::Create( const TGUL::String &name, Manager **ppManager )
         {
-            std::map< TGUL::String, boost::function< bool( IManager **) > > functions = boost::assign::map_list_of(
+            std::map< TGUL::String, boost::function< bool( Manager **) > > functions = boost::assign::map_list_of(
                 "OpenGL", boost::bind( &CreateOpenGL, ppManager )   // OpenGL
             );
             
@@ -38,8 +38,8 @@ namespace Laser
             if( functions[ name ]( ppManager ) == false ) {
                 return false;
             }
-            
-            return true;
-        };
+			return true;
+        }
+
     }
 }

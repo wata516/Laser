@@ -1,6 +1,6 @@
 #include "Laser/Common/System/ManagerFactory.h"
-#include "Laser/Common/System/Manager.h"
-#include "Laser/OpenGL/System/OpenGLManager.h"
+#include "Laser/Common/System/GraphicsManager.h"
+#include "Laser/OpenGL/System/OpenGLGraphicsManager.h"
 #include <TGUL/String.h>
 #include <TGUL/Map.h>
 
@@ -10,11 +10,9 @@
 
 namespace Laser
 {
-    namespace System
-    {
-         bool CreateOpenGL( Manager **ppManager )
+		bool CreateOpenGL( const TGUL::String &name, GraphicsManager **ppManager )
         {
-            *ppManager = new OpenGLManager( );
+            *ppManager = new OpenGLGraphicsManager( name );
 
             if( *ppManager == 0 ) {
                 return false;
@@ -23,10 +21,10 @@ namespace Laser
             return true;
         }
 
-        bool ManagerFactory::Create( const TGUL::String &name, Manager **ppManager )
+        bool GraphicsManagerFactory::Create( const TGUL::String &name, GraphicsManager **ppManager )
         {
-            std::map< TGUL::String, boost::function< bool( Manager **) > > functions = boost::assign::map_list_of(
-                "OpenGL", boost::bind( &CreateOpenGL, ppManager )   // OpenGL
+            std::map< TGUL::String, boost::function< bool( const TGUL::String &, GraphicsManager ** ) > > functions = boost::assign::map_list_of(
+                "OpenGL", boost::bind( &CreateOpenGL, name, ppManager )   // OpenGL
             );
             
             *ppManager = 0;
@@ -35,11 +33,9 @@ namespace Laser
                 return false;
             }
 
-            if( functions[ name ]( ppManager ) == false ) {
+            if( functions[ name ]( name, ppManager ) == false ) {
                 return false;
             }
 			return true;
         }
-
-    }
 }

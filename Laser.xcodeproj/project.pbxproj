@@ -9,23 +9,21 @@
 /* Begin PBXBuildFile section */
 		BEA13FE1172286BB007DB00C /* BufferFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FE0172286BB007DB00C /* BufferFactory.h */; };
 		BEA13FE3172286C2007DB00C /* BufferFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FE2172286C2007DB00C /* BufferFactory.cpp */; };
-		BEA13FE617228702007DB00C /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FE417228702007DB00C /* Manager.cpp */; };
-		BEA13FE717228702007DB00C /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FE517228702007DB00C /* Manager.h */; };
-		BEA13FE917228979007DB00C /* IManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FE817228979007DB00C /* IManager.h */; };
-		BEA13FED17228B11007DB00C /* OpenGLManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FEB17228B11007DB00C /* OpenGLManager.cpp */; };
-		BEA13FEE17228B11007DB00C /* OpenGLManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FEC17228B11007DB00C /* OpenGLManager.h */; };
-		BEA13FF117228C53007DB00C /* ManagerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FEF17228C53007DB00C /* ManagerFactory.cpp */; };
-		BEA13FF217228C53007DB00C /* ManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FF017228C53007DB00C /* ManagerFactory.h */; };
-		BEA13FF517228EE8007DB00C /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FF317228EE8007DB00C /* Manager.cpp */; };
-		BEA13FF617228EE8007DB00C /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FF417228EE8007DB00C /* Manager.h */; };
+		BEA13FE617228702007DB00C /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FE417228702007DB00C /* ResourceManager.cpp */; };
+		BEA13FE717228702007DB00C /* ResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FE517228702007DB00C /* ResourceManager.h */; };
+		BEA13FE917228979007DB00C /* IResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FE817228979007DB00C /* IResourceManager.h */; };
+		BEA13FED17228B11007DB00C /* OpenGLResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FEB17228B11007DB00C /* OpenGLResourceManager.cpp */; };
+		BEA13FEE17228B11007DB00C /* OpenGLResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FEC17228B11007DB00C /* OpenGLResourceManager.h */; };
+		BEA13FF517228EE8007DB00C /* GraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA13FF317228EE8007DB00C /* GraphicsManager.cpp */; };
+		BEA13FF617228EE8007DB00C /* GraphicsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FF417228EE8007DB00C /* GraphicsManager.h */; };
 		BEA13FFA17229030007DB00C /* Macros.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FF817229030007DB00C /* Macros.h */; };
 		BEA13FFB17229030007DB00C /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA13FF917229030007DB00C /* Platform.h */; };
 		BEA25D4E171D8D8A005349E5 /* OpenGLClear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA25D4C171D8D8A005349E5 /* OpenGLClear.cpp */; };
 		BEA25D4F171D8D8A005349E5 /* OpenGLClear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA25D4D171D8D8A005349E5 /* OpenGLClear.h */; };
 		BEA25D52171D8D97005349E5 /* OpenGLKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA25D50171D8D97005349E5 /* OpenGLKeyboard.cpp */; };
 		BEA25D53171D8D97005349E5 /* OpenGLKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA25D51171D8D97005349E5 /* OpenGLKeyboard.h */; };
-		BEA25D5A171D8DA7005349E5 /* OpenGLManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA25D54171D8DA7005349E5 /* OpenGLManager.cpp */; };
-		BEA25D5B171D8DA7005349E5 /* OpenGLManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA25D55171D8DA7005349E5 /* OpenGLManager.h */; };
+		BEA25D5A171D8DA7005349E5 /* OpenGLGraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA25D54171D8DA7005349E5 /* OpenGLGraphicsManager.cpp */; };
+		BEA25D5B171D8DA7005349E5 /* OpenGLGraphicsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA25D55171D8DA7005349E5 /* OpenGLGraphicsManager.h */; };
 		BEA25D5C171D8DA7005349E5 /* OpenGLTechniqueManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA25D56171D8DA7005349E5 /* OpenGLTechniqueManager.cpp */; };
 		BEA25D5D171D8DA7005349E5 /* OpenGLTechniqueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA25D57171D8DA7005349E5 /* OpenGLTechniqueManager.h */; };
 		BEA25D5E171D8DA7005349E5 /* OpenGLWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA25D58171D8DA7005349E5 /* OpenGLWindow.cpp */; };
@@ -44,6 +42,9 @@
 		BEA445B3171C3FF500D62652 /* Clear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445B2171C3FF500D62652 /* Clear.h */; };
 		BEA445B6171C48D200D62652 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA445B4171C48D100D62652 /* Window.cpp */; };
 		BEA445B7171C48D200D62652 /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA445B5171C48D100D62652 /* Window.h */; };
+		BEA909C41723D61F006F6609 /* IVertexDeclare.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA909C31723D61F006F6609 /* IVertexDeclare.h */; };
+		BEA909C71723D671006F6609 /* VertexDeclare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA909C51723D671006F6609 /* VertexDeclare.cpp */; };
+		BEA909C81723D671006F6609 /* VertexDeclare.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA909C61723D671006F6609 /* VertexDeclare.h */; };
 		BED78017171EDB7800BFE2E7 /* ClassID.h in Headers */ = {isa = PBXBuildFile; fileRef = BED78012171EDB7800BFE2E7 /* ClassID.h */; };
 		BED78018171EDB7800BFE2E7 /* CommandFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED78013171EDB7800BFE2E7 /* CommandFactory.cpp */; };
 		BED78019171EDB7900BFE2E7 /* CommandFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BED78014171EDB7800BFE2E7 /* CommandFactory.h */; };
@@ -59,7 +60,7 @@
 		BED78033171EE50800BFE2E7 /* ObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED78031171EE50800BFE2E7 /* ObjectManager.cpp */; };
 		BED78034171EE50800BFE2E7 /* ObjectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BED78032171EE50800BFE2E7 /* ObjectManager.h */; };
 		BED78036171EE65100BFE2E7 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BED78035171EE65100BFE2E7 /* Object.cpp */; };
-		BEE3FE0217183C5A00605D33 /* IManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFD17183C5A00605D33 /* IManager.h */; };
+		BEE3FE0217183C5A00605D33 /* IGraphicsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFD17183C5A00605D33 /* IGraphicsManager.h */; };
 		BEE3FE0317183C5A00605D33 /* ManagerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */; };
 		BEE3FE0417183C5A00605D33 /* ManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE3FDFF17183C5A00605D33 /* ManagerFactory.h */; };
 /* End PBXBuildFile section */
@@ -67,23 +68,21 @@
 /* Begin PBXFileReference section */
 		BEA13FE0172286BB007DB00C /* BufferFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BufferFactory.h; path = Resource/BufferFactory.h; sourceTree = "<group>"; };
 		BEA13FE2172286C2007DB00C /* BufferFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BufferFactory.cpp; path = Resource/BufferFactory.cpp; sourceTree = "<group>"; };
-		BEA13FE417228702007DB00C /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Manager.cpp; path = Resource/Manager.cpp; sourceTree = "<group>"; };
-		BEA13FE517228702007DB00C /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = Resource/Manager.h; sourceTree = "<group>"; };
-		BEA13FE817228979007DB00C /* IManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IManager.h; path = Resource/IManager.h; sourceTree = "<group>"; };
-		BEA13FEB17228B11007DB00C /* OpenGLManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLManager.cpp; path = Resource/OpenGLManager.cpp; sourceTree = "<group>"; };
-		BEA13FEC17228B11007DB00C /* OpenGLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLManager.h; path = Resource/OpenGLManager.h; sourceTree = "<group>"; };
-		BEA13FEF17228C53007DB00C /* ManagerFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ManagerFactory.cpp; path = Resource/ManagerFactory.cpp; sourceTree = "<group>"; };
-		BEA13FF017228C53007DB00C /* ManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagerFactory.h; path = Resource/ManagerFactory.h; sourceTree = "<group>"; };
-		BEA13FF317228EE8007DB00C /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Manager.cpp; sourceTree = "<group>"; };
-		BEA13FF417228EE8007DB00C /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		BEA13FE417228702007DB00C /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceManager.cpp; path = Resource/ResourceManager.cpp; sourceTree = "<group>"; };
+		BEA13FE517228702007DB00C /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = Resource/ResourceManager.h; sourceTree = "<group>"; };
+		BEA13FE817228979007DB00C /* IResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IResourceManager.h; path = Resource/IResourceManager.h; sourceTree = "<group>"; };
+		BEA13FEB17228B11007DB00C /* OpenGLResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLResourceManager.cpp; path = Resource/OpenGLResourceManager.cpp; sourceTree = "<group>"; };
+		BEA13FEC17228B11007DB00C /* OpenGLResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLResourceManager.h; path = Resource/OpenGLResourceManager.h; sourceTree = "<group>"; };
+		BEA13FF317228EE8007DB00C /* GraphicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsManager.cpp; sourceTree = "<group>"; };
+		BEA13FF417228EE8007DB00C /* GraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsManager.h; sourceTree = "<group>"; };
 		BEA13FF817229030007DB00C /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = Global/Macros.h; sourceTree = "<group>"; };
 		BEA13FF917229030007DB00C /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = Global/Platform.h; sourceTree = "<group>"; };
 		BEA25D4C171D8D8A005349E5 /* OpenGLClear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLClear.cpp; path = Command/OpenGLClear.cpp; sourceTree = "<group>"; };
 		BEA25D4D171D8D8A005349E5 /* OpenGLClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLClear.h; path = Command/OpenGLClear.h; sourceTree = "<group>"; };
 		BEA25D50171D8D97005349E5 /* OpenGLKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLKeyboard.cpp; path = Input/OpenGLKeyboard.cpp; sourceTree = "<group>"; };
 		BEA25D51171D8D97005349E5 /* OpenGLKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLKeyboard.h; path = Input/OpenGLKeyboard.h; sourceTree = "<group>"; };
-		BEA25D54171D8DA7005349E5 /* OpenGLManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLManager.cpp; sourceTree = "<group>"; };
-		BEA25D55171D8DA7005349E5 /* OpenGLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLManager.h; sourceTree = "<group>"; };
+		BEA25D54171D8DA7005349E5 /* OpenGLGraphicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLGraphicsManager.cpp; sourceTree = "<group>"; };
+		BEA25D55171D8DA7005349E5 /* OpenGLGraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLGraphicsManager.h; sourceTree = "<group>"; };
 		BEA25D56171D8DA7005349E5 /* OpenGLTechniqueManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLTechniqueManager.cpp; sourceTree = "<group>"; };
 		BEA25D57171D8DA7005349E5 /* OpenGLTechniqueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTechniqueManager.h; sourceTree = "<group>"; };
 		BEA25D58171D8DA7005349E5 /* OpenGLWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLWindow.cpp; sourceTree = "<group>"; };
@@ -102,6 +101,9 @@
 		BEA445B2171C3FF500D62652 /* Clear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Clear.h; path = Command/Clear.h; sourceTree = "<group>"; };
 		BEA445B4171C48D100D62652 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
 		BEA445B5171C48D100D62652 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		BEA909C31723D61F006F6609 /* IVertexDeclare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IVertexDeclare.h; path = Material/IVertexDeclare.h; sourceTree = "<group>"; };
+		BEA909C51723D671006F6609 /* VertexDeclare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VertexDeclare.cpp; path = Material/VertexDeclare.cpp; sourceTree = "<group>"; };
+		BEA909C61723D671006F6609 /* VertexDeclare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VertexDeclare.h; path = Material/VertexDeclare.h; sourceTree = "<group>"; };
 		BED78012171EDB7800BFE2E7 /* ClassID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassID.h; sourceTree = "<group>"; };
 		BED78013171EDB7800BFE2E7 /* CommandFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandFactory.cpp; sourceTree = "<group>"; };
 		BED78014171EDB7800BFE2E7 /* CommandFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandFactory.h; sourceTree = "<group>"; };
@@ -118,7 +120,7 @@
 		BED78032171EE50800BFE2E7 /* ObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectManager.h; sourceTree = "<group>"; };
 		BED78035171EE65100BFE2E7 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
 		BEE3FDC917181D3400605D33 /* libLaser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLaser.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEE3FDFD17183C5A00605D33 /* IManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IManager.h; sourceTree = "<group>"; };
+		BEE3FDFD17183C5A00605D33 /* IGraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGraphicsManager.h; sourceTree = "<group>"; };
 		BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManagerFactory.cpp; sourceTree = "<group>"; };
 		BEE3FDFF17183C5A00605D33 /* ManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerFactory.h; sourceTree = "<group>"; };
 		BEE3FE0E171842B200605D33 /* IWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IWindow.h; sourceTree = "<group>"; };
@@ -138,8 +140,8 @@
 		BEA13FEA17228ACB007DB00C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				BEA13FEB17228B11007DB00C /* OpenGLManager.cpp */,
-				BEA13FEC17228B11007DB00C /* OpenGLManager.h */,
+				BEA13FEB17228B11007DB00C /* OpenGLResourceManager.cpp */,
+				BEA13FEC17228B11007DB00C /* OpenGLResourceManager.h */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -201,6 +203,16 @@
 			name = Command;
 			sourceTree = "<group>";
 		};
+		BEA909C21723D5F0006F6609 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				BEA909C31723D61F006F6609 /* IVertexDeclare.h */,
+				BEA909C51723D671006F6609 /* VertexDeclare.cpp */,
+				BEA909C61723D671006F6609 /* VertexDeclare.h */,
+			);
+			name = Material;
+			sourceTree = "<group>";
+		};
 		BED78022171EDFC800BFE2E7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,11 +221,9 @@
 				BED78029171EE20B00BFE2E7 /* SysmemBuffer.cpp */,
 				BED7802A171EE20B00BFE2E7 /* SysmemBuffer.h */,
 				BED7802D171EE23100BFE2E7 /* Buffer.h */,
-				BEA13FE417228702007DB00C /* Manager.cpp */,
-				BEA13FE517228702007DB00C /* Manager.h */,
-				BEA13FE817228979007DB00C /* IManager.h */,
-				BEA13FEF17228C53007DB00C /* ManagerFactory.cpp */,
-				BEA13FF017228C53007DB00C /* ManagerFactory.h */,
+				BEA13FE417228702007DB00C /* ResourceManager.cpp */,
+				BEA13FE517228702007DB00C /* ResourceManager.h */,
+				BEA13FE817228979007DB00C /* IResourceManager.h */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -255,6 +265,7 @@
 		BEE3FDFA17183C5A00605D33 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BEA909C21723D5F0006F6609 /* Material */,
 				BEA13FF717229024007DB00C /* Global */,
 				BED78022171EDFC800BFE2E7 /* Resource */,
 				BEA445AA171C3CE800D62652 /* Command */,
@@ -276,7 +287,7 @@
 				BEA4459B171C392900D62652 /* ITechniqueManager.h */,
 				BEA44597171C392200D62652 /* TechniqueManager.cpp */,
 				BEA44598171C392200D62652 /* TechniqueManager.h */,
-				BEE3FDFD17183C5A00605D33 /* IManager.h */,
+				BEE3FDFD17183C5A00605D33 /* IGraphicsManager.h */,
 				BEE3FDFE17183C5A00605D33 /* ManagerFactory.cpp */,
 				BEE3FDFF17183C5A00605D33 /* ManagerFactory.h */,
 				BEE3FE0E171842B200605D33 /* IWindow.h */,
@@ -289,8 +300,8 @@
 				BEA267D217201C3900E8A944 /* UUID.cpp */,
 				BEA267D417201C9000E8A944 /* UUID.h */,
 				BEA267D6172026CD00E8A944 /* IUnknown.h */,
-				BEA13FF317228EE8007DB00C /* Manager.cpp */,
-				BEA13FF417228EE8007DB00C /* Manager.h */,
+				BEA13FF317228EE8007DB00C /* GraphicsManager.cpp */,
+				BEA13FF417228EE8007DB00C /* GraphicsManager.h */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -309,8 +320,8 @@
 		BEE3FE0617183D5400605D33 /* System */ = {
 			isa = PBXGroup;
 			children = (
-				BEA25D54171D8DA7005349E5 /* OpenGLManager.cpp */,
-				BEA25D55171D8DA7005349E5 /* OpenGLManager.h */,
+				BEA25D54171D8DA7005349E5 /* OpenGLGraphicsManager.cpp */,
+				BEA25D55171D8DA7005349E5 /* OpenGLGraphicsManager.h */,
 				BEA25D56171D8DA7005349E5 /* OpenGLTechniqueManager.cpp */,
 				BEA25D57171D8DA7005349E5 /* OpenGLTechniqueManager.h */,
 				BEA25D58171D8DA7005349E5 /* OpenGLWindow.cpp */,
@@ -326,7 +337,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE3FE0217183C5A00605D33 /* IManager.h in Headers */,
+				BEE3FE0217183C5A00605D33 /* IGraphicsManager.h in Headers */,
 				BEE3FE0417183C5A00605D33 /* ManagerFactory.h in Headers */,
 				BEA4458E171C36F500D62652 /* IKeyboard.h in Headers */,
 				BEA4459A171C392200D62652 /* TechniqueManager.h in Headers */,
@@ -338,7 +349,7 @@
 				BEA445B7171C48D200D62652 /* Window.h in Headers */,
 				BEA25D4F171D8D8A005349E5 /* OpenGLClear.h in Headers */,
 				BEA25D53171D8D97005349E5 /* OpenGLKeyboard.h in Headers */,
-				BEA25D5B171D8DA7005349E5 /* OpenGLManager.h in Headers */,
+				BEA25D5B171D8DA7005349E5 /* OpenGLGraphicsManager.h in Headers */,
 				BEA25D5D171D8DA7005349E5 /* OpenGLTechniqueManager.h in Headers */,
 				BEA25D5F171D8DA7005349E5 /* OpenGLWindow.h in Headers */,
 				BED78017171EDB7800BFE2E7 /* ClassID.h in Headers */,
@@ -354,13 +365,14 @@
 				BEA267D517201C9000E8A944 /* UUID.h in Headers */,
 				BEA267D7172026CD00E8A944 /* IUnknown.h in Headers */,
 				BEA13FE1172286BB007DB00C /* BufferFactory.h in Headers */,
-				BEA13FE717228702007DB00C /* Manager.h in Headers */,
-				BEA13FE917228979007DB00C /* IManager.h in Headers */,
-				BEA13FEE17228B11007DB00C /* OpenGLManager.h in Headers */,
-				BEA13FF217228C53007DB00C /* ManagerFactory.h in Headers */,
-				BEA13FF617228EE8007DB00C /* Manager.h in Headers */,
+				BEA13FE717228702007DB00C /* ResourceManager.h in Headers */,
+				BEA13FE917228979007DB00C /* IResourceManager.h in Headers */,
+				BEA13FEE17228B11007DB00C /* OpenGLResourceManager.h in Headers */,
+				BEA13FF617228EE8007DB00C /* GraphicsManager.h in Headers */,
 				BEA13FFA17229030007DB00C /* Macros.h in Headers */,
 				BEA13FFB17229030007DB00C /* Platform.h in Headers */,
+				BEA909C41723D61F006F6609 /* IVertexDeclare.h in Headers */,
+				BEA909C81723D671006F6609 /* VertexDeclare.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +433,7 @@
 				BEA445B6171C48D200D62652 /* Window.cpp in Sources */,
 				BEA25D4E171D8D8A005349E5 /* OpenGLClear.cpp in Sources */,
 				BEA25D52171D8D97005349E5 /* OpenGLKeyboard.cpp in Sources */,
-				BEA25D5A171D8DA7005349E5 /* OpenGLManager.cpp in Sources */,
+				BEA25D5A171D8DA7005349E5 /* OpenGLGraphicsManager.cpp in Sources */,
 				BEA25D5C171D8DA7005349E5 /* OpenGLTechniqueManager.cpp in Sources */,
 				BEA25D5E171D8DA7005349E5 /* OpenGLWindow.cpp in Sources */,
 				BED78018171EDB7800BFE2E7 /* CommandFactory.cpp in Sources */,
@@ -431,10 +443,10 @@
 				BED78036171EE65100BFE2E7 /* Object.cpp in Sources */,
 				BEA267D317201C3900E8A944 /* UUID.cpp in Sources */,
 				BEA13FE3172286C2007DB00C /* BufferFactory.cpp in Sources */,
-				BEA13FE617228702007DB00C /* Manager.cpp in Sources */,
-				BEA13FED17228B11007DB00C /* OpenGLManager.cpp in Sources */,
-				BEA13FF117228C53007DB00C /* ManagerFactory.cpp in Sources */,
-				BEA13FF517228EE8007DB00C /* Manager.cpp in Sources */,
+				BEA13FE617228702007DB00C /* ResourceManager.cpp in Sources */,
+				BEA13FED17228B11007DB00C /* OpenGLResourceManager.cpp in Sources */,
+				BEA13FF517228EE8007DB00C /* GraphicsManager.cpp in Sources */,
+				BEA909C71723D671006F6609 /* VertexDeclare.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

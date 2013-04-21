@@ -2,7 +2,7 @@
 
 namespace Laser
 {
-	namespace Macro
+	namespace Macros
 	{
 		template<class T>
 		struct Release{
@@ -12,5 +12,12 @@ namespace Laser
 				}
 			}
 		};
+		
+		template< size_t shift >
+		struct BIT_LSHIFT {
+			enum { value = 1 << shift };
+		};
+		
 	}
 }
+#define BIT(shift) (1<<shift)

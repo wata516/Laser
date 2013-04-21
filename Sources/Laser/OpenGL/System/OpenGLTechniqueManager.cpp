@@ -2,15 +2,12 @@
 
 namespace Laser
 {
-	namespace System
+	class OpenGLTechniqueManager::Impl
 	{
-		class OpenGLTechniqueManager::Impl
-		{
 
-		};
+	};
 
-		OpenGLTechniqueManager::OpenGLTechniqueManager( )
-			: mImpl( new Impl )
-		{}
-	}
+	OpenGLTechniqueManager::OpenGLTechniqueManager( )
+		: mImpl( new Impl )
+	{}
 }

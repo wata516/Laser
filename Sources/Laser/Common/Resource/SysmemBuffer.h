@@ -15,14 +15,17 @@ namespace Laser
 			~SysmemBuffer();
 
 		public:
-			static const System::UUID &GetUUID( ) { return System::UUIDS::SYSMEMBUFFER; }
-			virtual bool QueryInterface( const System::UUID &uuid, void **ppObject );
+			static const UUID &GetUUID( ) { return UUIDS::SYSMEMBUFFER; }
+			virtual bool QueryInterface( const UUID &uuid, void **ppObject );
 
 		public:
-			virtual bool Allocate( size_t size );
+			virtual bool Allocate( size_t VertexSize, size_t ArrayNum );
+			virtual bool Write( WriteType WriteFunction );
 
 		private:
 			boost::shared_array< uint8_t > mMemory;
+			size_t mVertexSize;
+			size_t mArrayNum;
 		};
 	}
 }

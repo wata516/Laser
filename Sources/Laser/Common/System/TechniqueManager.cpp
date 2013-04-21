@@ -4,30 +4,26 @@
 
 namespace Laser
 {
-	namespace System
+	class TechniqueManager::Impl
 	{
-		class TechniqueManager::Impl
-		{
+	public:
+		bool Regist(const User::ITechnique &technique);
+		void Render( const TechniqueManager::technique_list &techniques ) const;
+	};
 
-		public:
-			bool Regist(const User::ITechnique &technique);
-			void Render( const TechniqueManager::technique_list &techniques ) const;
-		};
-
-		void TechniqueManager::Impl::Render( const TechniqueManager::technique_list &techniques) const
-		{
-			BOOST_FOREACH( const technique_ptr technique, techniques ) {
-				technique->Render();
-			}
+	void TechniqueManager::Impl::Render( const TechniqueManager::technique_list &techniques) const
+	{
+		BOOST_FOREACH( const technique_ptr technique, techniques ) {
+			technique->Render();
 		}
+	}
 
-		TechniqueManager::TechniqueManager()
-			: mImpl( new Impl )
-		{}
+	TechniqueManager::TechniqueManager()
+		: mImpl( new Impl )
+	{}
 
-		void TechniqueManager::Render( ) const
-		{
-			mImpl->Render( mTechniques );
-		}
+	void TechniqueManager::Render( ) const
+	{
+		mImpl->Render( mTechniques );
 	}
 }

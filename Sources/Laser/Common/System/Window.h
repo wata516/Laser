@@ -5,28 +5,22 @@
 
 namespace Laser
 {
-	namespace System
-	{
-		class TechniqueManager;
-	}
+	class TechniqueManager;
 }
 
 namespace Laser
 {
-	namespace System
+	class Window : public IWindow
 	{
-		class Window : public IWindow
-		{
-		public:
-			Window();
+	public:
+		Window();
 
-		public:
-			void Render( ) const;
-			void SetTechnique(const Laser::System::TechniqueManager *pTechniqueManager);
+	public:
+		void Render( ) const;
+		void SetTechnique(const TechniqueManager *pTechniqueManager);
 
-		private:
-			class Impl;
-			boost::shared_ptr< Impl > mImpl;
-		};
-	}
+	private:
+		class Impl;
+		boost::shared_ptr< Impl > mImpl;
+	};
 }

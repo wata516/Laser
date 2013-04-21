@@ -15,12 +15,9 @@ namespace Laser
 
 namespace Laser
 {
-	namespace System
-	{
 		class CommandFactory
 		{
 		public:
 			static bool CreateCommand( const TGUL::String &name, Command::IBase **ppBase );
 		};
-	}
 }

@@ -3,8 +3,6 @@
 
 namespace Laser
 {
-	namespace System
-	{
 		class ObjectManager::Impl
 		{
 			std::map< Object *, Object *> mObject;
@@ -18,5 +16,4 @@ namespace Laser
 		{
 			
 		}
-	}
 }

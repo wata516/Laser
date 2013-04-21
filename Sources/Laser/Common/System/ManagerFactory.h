@@ -5,23 +5,17 @@ namespace TGUL {
 }
 
 namespace Laser {
-    namespace System
-    {
-        class Manager;
-    }
+	class GraphicsManager;
 }
 
 namespace Laser
 {
-    namespace System
-    {
-        class ManagerFactory
+        class GraphicsManagerFactory
         {
         public:
             //! @brief  マネージャーを作成します
             //! @param  name    OpenGL  OpenGLのマネージャーを作成する.
-            static bool Create( const TGUL::String &name, Manager **ppManager );
+            static bool Create( const TGUL::String &name, GraphicsManager **ppManager );
             
         };
-    }
 }

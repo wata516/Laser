@@ -28,4 +28,5 @@ enum {
 #define LASER_IS_COMPILER( COMPILER ) ( LASER_COMPILER == COMPILER_##COMPILER )
 #define LASER_IS_PLATFORM( PLATFORM ) ( LASER_COMPILER == PLATFORM_##PLATFORM )
 
+#include <stddef.h>
 #include <Laser/Common/Global/Macros.h>

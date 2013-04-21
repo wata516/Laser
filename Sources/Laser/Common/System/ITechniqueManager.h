@@ -2,10 +2,7 @@
 
 namespace Laser
 {
-	namespace System
+	class ITechniqueManager
 	{
-		class ITechniqueManager
-		{
-		};
-	}
+	};
 }

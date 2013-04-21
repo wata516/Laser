@@ -10,8 +10,6 @@
 
 namespace Laser
 {
-	namespace System
-	{
 		bool CreateClear( Command::IBase **ppBase )
 		{
 			*ppBase = new Command::OpenGLClear();
@@ -38,5 +36,4 @@ namespace Laser
 			}
 			return true;
 		}
-	}
 }

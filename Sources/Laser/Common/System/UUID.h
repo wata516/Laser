@@ -9,8 +9,6 @@
 
 namespace Laser
 {
-	namespace System
-	{
 		typedef boost::uuids::uuid UUID;
 
 		struct UUIDS {
@@ -22,7 +20,6 @@ namespace Laser
 			static const UUID RESOURCE_MANAGER;
 
 		};
-	}
 }
 
 #if LASER_IS_COMPILER(MSVC)

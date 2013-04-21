@@ -4,8 +4,6 @@
 
 namespace Laser
 {
-	namespace System
-	{
 		class Object;
 
 		class ObjectManager
@@ -20,5 +18,4 @@ namespace Laser
 			class Impl;
 			boost::shared_ptr<Impl> mImpl;
 		};
-	}
 }

@@ -4,14 +4,12 @@
 
 namespace Laser
 {
-	namespace System
-	{
 		class Object : public IUnknown
 		{
 			unsigned int mReference;
 
 		public:
-			static const System::UUID &GetUUID( ) { return System::UUIDS::OBJECT; }
+			static const UUID &GetUUID( ) { return UUIDS::OBJECT; }
 			
 		public:
 			Object( )
@@ -32,16 +30,15 @@ namespace Laser
 
 				return false;
 			}
-			virtual bool QueryInterface( const System::UUID &uuid, void **ppObject );
+			virtual bool QueryInterface( const UUID &uuid, void **ppObject );
 		};
-		bool Object::QueryInterface( const System::UUID &uuid, void **ppObject )
+		bool Object::QueryInterface( const UUID &uuid, void **ppObject )
 		{
-			if( uuid == GetUUID() || uuid == System::UUIDS::IUNKNOWN) {
+			if( uuid == GetUUID() || uuid == UUIDS::IUNKNOWN) {
 				*ppObject = this;
 				return true;
 			}
 		
 			return false;
 		}
-	}
 }

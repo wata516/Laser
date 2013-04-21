@@ -3,8 +3,6 @@
 
 namespace Laser
 {
-    namespace System
-    {
         class OpenGLWindow::Impl
         {
 		public:
@@ -94,5 +92,4 @@ namespace Laser
 		{
 			mImpl->Flip();
 		}
-    }
 }

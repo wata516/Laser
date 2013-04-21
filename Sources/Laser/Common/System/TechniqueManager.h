@@ -14,41 +14,38 @@ namespace Laser
 
 namespace Laser
 {
-	namespace System
+	class TechniqueManager : public ITechniqueManager
 	{
-		class TechniqueManager : public ITechniqueManager
-		{
-		public:
-			typedef boost::shared_ptr< const User::ITechnique > technique_ptr;
-			typedef std::vector<technique_ptr> technique_list;
+	public:
+		typedef boost::shared_ptr< const User::ITechnique > technique_ptr;
+		typedef std::vector<technique_ptr> technique_list;
 
-		public:
-			TechniqueManager();
+	public:
+		TechniqueManager();
 
-			bool Regist( const User::ITechnique &technique );
-			void Render( ) const;
-			template< typename T >
-			bool Regist( const T &technique );
-
-		private:
-			class Impl;
-			boost::shared_ptr< Impl > mImpl;
-						
-			technique_list mTechniques;
-		};
-		
+		bool Regist( const User::ITechnique &technique );
+		void Render( ) const;
 		template< typename T >
-		bool TechniqueManager::Regist(const T &technique)
-		{
-			const T *pNewTechnique = new T( technique );
+		bool Regist( const T &technique );
 
-			if( pNewTechnique == 0 ) {
-				return false;
-			}
-			
-			mTechniques.push_back( technique_ptr( pNewTechnique ) );
-			
-			return true;
+	private:
+		class Impl;
+		boost::shared_ptr< Impl > mImpl;
+						
+		technique_list mTechniques;
+	};
+		
+	template< typename T >
+	bool TechniqueManager::Regist(const T &technique)
+	{
+		const T *pNewTechnique = new T( technique );
+
+		if( pNewTechnique == 0 ) {
+			return false;
 		}
+			
+		mTechniques.push_back( technique_ptr( pNewTechnique ) );
+			
+		return true;
 	}
 }

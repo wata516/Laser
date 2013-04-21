@@ -2,22 +2,28 @@
 
 #include <Laser/Common/System/Object.h>
 #include <Laser/Common/System/UUID.h>
+#include <boost/function.hpp>
+#include <boost/shared_array.hpp>
 
 namespace Laser
 {
 	namespace Resource
 	{
-		class Buffer : public System::Object
+		class Buffer : public Object
 		{
 		public:
-			static const System::UUID &GetUUID( ) { return System::UUIDS::IBUFFER; }
-			virtual bool QueryInterface( const System::UUID &uuid, void **ppObject );
+			typedef boost::function< void( void *pAddress, size_t a, size_t n ) > WriteType;
 
 		public:
-			virtual bool Allocate( size_t size ) { return false; };
+			static const UUID &GetUUID( ) { return UUIDS::IBUFFER; }
+			virtual bool QueryInterface( const UUID &uuid, void **ppObject );
+
+		public:
+			virtual bool Allocate( size_t VertexSize, size_t ArrayNum ) { return false; }
+			virtual bool Write( WriteType WriteFunction ) { return false; }
 		};
 	
-		bool Buffer::QueryInterface( const System::UUID &uuid, void **ppObject )
+		bool Buffer::QueryInterface( const UUID &uuid, void **ppObject )
 		{
 			if( uuid == GetUUID() || uuid == Object::GetUUID()) {
 				*ppObject = this;

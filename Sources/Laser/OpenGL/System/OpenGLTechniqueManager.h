@@ -5,16 +5,13 @@
 
 namespace Laser
 {
-	namespace System
+	class OpenGLTechniqueManager : public TechniqueManager
 	{
-		class OpenGLTechniqueManager : public TechniqueManager
-		{
-		public:
-			OpenGLTechniqueManager();
+	public:
+		OpenGLTechniqueManager();
 
-		private:
-			class Impl;
-			boost::shared_ptr< Impl > mImpl;
-		};
-	}
+	private:
+		class Impl;
+		boost::shared_ptr< Impl > mImpl;
+	};
 }

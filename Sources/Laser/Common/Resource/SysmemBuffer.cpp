@@ -1,4 +1,5 @@
 #include <Laser/Common/Resource/SysmemBuffer.h>
+#include <Laser/Common/System/Exception.h>
 
 namespace Laser
 {
@@ -28,13 +29,17 @@ namespace Laser
 
 		bool SysmemBuffer::Write( WriteType WriteFunction )
 		{
+			size_t TotalSize = 0;
 			uint8_t *pCurrent = mMemory.get();
 			
 			for( size_t i = 0 ; i < mArrayNum ; ++ i ) {
-				WriteFunction( pCurrent, mVertexSize, i );
-				pCurrent += mVertexSize;
+				size_t MoveSize = WriteFunction( pCurrent, mVertexSize, i );
+				pCurrent += MoveSize;
+				TotalSize += MoveSize;
+
+				EXCEPT( TotalSize >= mVertexSize, Exception::EXCEPTION_INVALIED_ACCESS , "SysemBuffer Write Over.", "" );
 			}
-			
+
 			return true;
 		}
 

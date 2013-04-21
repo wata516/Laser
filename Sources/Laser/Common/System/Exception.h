@@ -16,7 +16,8 @@ namespace Laser
 
 	public:
         enum ExceptionCodes {
-			EXCEPTION_ASSERT
+			EXCEPTION_ASSERT,
+			EXCEPTION_INVALIED_ACCESS,
         };
 
 		Exception( int number, const TGUL::String& description, const TGUL::String& source, const char* type, const char* file, long line )
@@ -48,6 +49,12 @@ namespace Laser
 		AssertException(int id, const TGUL::String& description, const TGUL::String& source, const char * pFilename, long line)
 			: Exception(id, description, source, "Assert", pFilename, line ) {}
 	};
+	class InvaliedAccessException : public Exception
+	{
+	public:
+		InvaliedAccessException(int id, const TGUL::String& description, const TGUL::String& source, const char * pFilename, long line)
+		: Exception(id, description, source, "Invalied Access", pFilename, line ) {}
+	};
 
 	class ExceptionFactory
 	{
@@ -62,13 +69,20 @@ namespace Laser
 		{
 			return AssertException(code.number, desc, src, file, line);
 		}
+		static InvaliedAccessException Create(
+									  ExceptionCodeType< Exception::EXCEPTION_INVALIED_ACCESS > code,
+									  const TGUL::String& desc,
+									  const TGUL::String& src, const char* file, long line)
+		{
+			return InvaliedAccessException(code.number, desc, src, file, line);
+		}
+		
 	};
 
 
-	#define EXCEPT( id, description, src ) throw Laser::ExceptionFactory::Create( \
-		ExceptionCodeType< id >(), desc, src, __FILE__, __LINE__ );
+	#define EXCEPT( cond, id, description, src ) if( cond ) throw Laser::ExceptionFactory::Create( \
+	ExceptionCodeType< id >(), description, src, __FILE__, __LINE__ )
 
-	#define ASSERT( x, description ) \
-		if( !(x) ) EXCEPT( Exception::EXCEPTION_ASSERT, description, __FUNC__ ) 
+	#define ASSERT( cond, description ) EXCEPT( !cond, Exception::EXCEPTION_ASSERT, description, __FUNC__ ) 
 
 }

@@ -12,7 +12,7 @@ namespace Laser
 		class Buffer : public Object
 		{
 		public:
-			typedef boost::function< void( void *pAddress, size_t a, size_t n ) > WriteType;
+			typedef boost::function< size_t( void *pAddress, size_t a, size_t n ) > WriteType;
 
 		public:
 			static const UUID &GetUUID( ) { return UUIDS::IBUFFER; }

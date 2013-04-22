@@ -88,8 +88,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../Sources;C:\Program Files\boost\boost_1_53_0;../../../TGUL/Sources;../../../glfw-2.7.8.bin.WIN64/include</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ProjectDir)../../Sources/Laser/Common/Global/Platform.h;$(ProjectDir)../../Sources/Laser/Common/Global/Macros.h</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>../../include;../../Sources;C:\Program Files\boost\boost_1_53_0;../../../TGUL/Sources;../../../glfw-2.7.8.bin.WIN64/include</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)../../include/Laser/Platform.h</ForcedIncludeFiles>
+      <TreatSpecificWarningsAsErrors>
+      </TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -136,54 +139,65 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Sources\Laser\Common\Command\Clear.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\Command\IBase.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\Global\Macros.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\Global\Platform.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\Input\IKeyboard.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\Resource\Buffer.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\Resource\BufferFactory.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\Resource\SysmemBuffer.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\ClassID.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\CommandFactory.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\Exception.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\IManager.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\ITechniqueManager.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\IUnknown.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\IWindow.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\ManagerFactory.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\Object.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\ObjectManager.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\TechniqueManager.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\UUID.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\System\Window.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\User\IPass.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\User\ITechnique.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\User\Pass.h" />
-    <ClInclude Include="..\..\Sources\Laser\Common\User\Technique.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLManager.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLTechniqueManager.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.h" />
+    <ClInclude Include="..\..\include\Laser\Buffer.h" />
+    <ClInclude Include="..\..\include\Laser\ClassID.h" />
+    <ClInclude Include="..\..\include\Laser\Clear.h" />
+    <ClInclude Include="..\..\include\Laser\Exception.h" />
+    <ClInclude Include="..\..\include\Laser\GraphicsManager.h" />
+    <ClInclude Include="..\..\include\Laser\IBase.h" />
+    <ClInclude Include="..\..\include\Laser\IGraphicsManager.h" />
+    <ClInclude Include="..\..\include\Laser\IKeyboard.h" />
+    <ClInclude Include="..\..\include\Laser\IPass.h" />
+    <ClInclude Include="..\..\include\Laser\IResourceManager.h" />
+    <ClInclude Include="..\..\include\Laser\ITechnique.h" />
+    <ClInclude Include="..\..\include\Laser\ITechniqueManager.h" />
+    <ClInclude Include="..\..\include\Laser\IUnknown.h" />
+    <ClInclude Include="..\..\include\Laser\IVertexDeclare.h" />
+    <ClInclude Include="..\..\include\Laser\IWindow.h" />
+    <ClInclude Include="..\..\include\Laser\Macros.h" />
+    <ClInclude Include="..\..\include\Laser\ManagerFactory.h" />
+    <ClInclude Include="..\..\include\Laser\Object.h" />
+    <ClInclude Include="..\..\include\Laser\ObjectManager.h" />
+    <ClInclude Include="..\..\include\Laser\Pass.h" />
+    <ClInclude Include="..\..\include\Laser\Platform.h" />
+    <ClInclude Include="..\..\include\Laser\ResourceManager.h" />
+    <ClInclude Include="..\..\include\Laser\SysmemBuffer.h" />
+    <ClInclude Include="..\..\include\Laser\Technique.h" />
+    <ClInclude Include="..\..\include\Laser\TechniqueManager.h" />
+    <ClInclude Include="..\..\include\Laser\UUID.h" />
+    <ClInclude Include="..\..\include\Laser\VertexDeclare.h" />
+    <ClInclude Include="..\..\include\Laser\Window.h" />
+    <ClInclude Include="..\..\Sources\Laser\common\BufferFactory.h" />
+    <ClInclude Include="..\..\Sources\Laser\common\CommandFactory.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLClear.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLKeyboard.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLResourceManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLTechniqueManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLWindow.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Sources\Laser\Common\Resource\BufferFactory.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\Resource\SysmemBuffer.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\System\CommandFactory.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\System\Object.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\System\ObjectManager.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\System\TechniqueManager.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\System\UUID.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\System\Window.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\User\Pass.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\Common\User\Technique.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLManager.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLTechniqueManager.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\Buffer.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\BufferFactory.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\CommandFactory.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\GraphicsManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\ManagerFactory.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\Object.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\ObjectManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\Pass.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\ResourceManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\SysmemBuffer.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\Technique.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\TechniqueManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\UUID.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\VertexDeclare.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\Window.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLClear.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLKeyboard.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLResourceManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLTechniqueManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

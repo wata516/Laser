@@ -14,182 +14,188 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="ソース ファイル\Common">
-      <UniqueIdentifier>{4b31dae3-9f8b-47e1-82b3-ba2aa530b7e2}</UniqueIdentifier>
+      <UniqueIdentifier>{3f27e9dc-effc-4991-b211-a314e7d574d6}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\OpenGL">
-      <UniqueIdentifier>{536ea622-b0ce-4010-961e-96a9babc0ff1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\OpenGL\System">
-      <UniqueIdentifier>{92d90b44-b03e-4a46-8eca-29a25c5f3cfc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Common\System">
-      <UniqueIdentifier>{fa591dcd-f54f-431f-90ab-4040ecf25834}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Common\Input">
-      <UniqueIdentifier>{a1c19b08-f327-4171-b807-a387f9e0d519}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\OpenGL\Input">
-      <UniqueIdentifier>{8f551ebf-b1bb-4197-9613-8ef07639b7bc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Common\User">
-      <UniqueIdentifier>{9bafa781-01c5-44f9-b5ff-2c93bb65de3c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Common\Command">
-      <UniqueIdentifier>{175da870-9b92-461a-ab26-35631c72cf8c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\OpenGL\Command">
-      <UniqueIdentifier>{de91d3eb-4a5c-4306-b872-33496326b4b7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Common\Resource">
-      <UniqueIdentifier>{4a0f4694-6768-4c7a-8eb4-4de6ac00fe20}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Common\Global">
-      <UniqueIdentifier>{0aa05084-acb2-4b3d-9a55-b3fa37699361}</UniqueIdentifier>
+      <UniqueIdentifier>{2b45375d-dc74-438f-ae95-3e04d68b9c57}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\IManager.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\Sources\Laser\common\BufferFactory.h">
+      <Filter>ソース ファイル\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\IWindow.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\Sources\Laser\common\CommandFactory.h">
+      <Filter>ソース ファイル\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\ManagerFactory.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLClear.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\Input\IKeyboard.h">
-      <Filter>ソース ファイル\Common\Input</Filter>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\ITechniqueManager.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLKeyboard.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\TechniqueManager.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLResourceManager.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\Command\Clear.h">
-      <Filter>ソース ファイル\Common\Command</Filter>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLTechniqueManager.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\Command\IBase.h">
-      <Filter>ソース ファイル\Common\Command</Filter>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLWindow.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\User\ITechnique.h">
-      <Filter>ソース ファイル\Common\User</Filter>
+    <ClInclude Include="..\..\include\Laser\Buffer.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\User\Technique.h">
-      <Filter>ソース ファイル\Common\User</Filter>
+    <ClInclude Include="..\..\include\Laser\ClassID.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\Window.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\include\Laser\Clear.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLTechniqueManager.h">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
+    <ClInclude Include="..\..\include\Laser\Exception.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.h">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
+    <ClInclude Include="..\..\include\Laser\GraphicsManager.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\System\OpenGLManager.h">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
+    <ClInclude Include="..\..\include\Laser\IBase.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.h">
-      <Filter>ソース ファイル\OpenGL\Command</Filter>
+    <ClInclude Include="..\..\include\Laser\IGraphicsManager.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.h">
-      <Filter>ソース ファイル\OpenGL\Input</Filter>
+    <ClInclude Include="..\..\include\Laser\IKeyboard.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\User\IPass.h">
-      <Filter>ソース ファイル\Common\User</Filter>
+    <ClInclude Include="..\..\include\Laser\IPass.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\User\Pass.h">
-      <Filter>ソース ファイル\Common\User</Filter>
+    <ClInclude Include="..\..\include\Laser\IResourceManager.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\CommandFactory.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\include\Laser\ITechnique.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\ClassID.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\include\Laser\ITechniqueManager.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\Exception.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\include\Laser\IUnknown.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\Resource\Buffer.h">
-      <Filter>ソース ファイル\Common\Resource</Filter>
+    <ClInclude Include="..\..\include\Laser\IVertexDeclare.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\Resource\SysmemBuffer.h">
-      <Filter>ソース ファイル\Common\Resource</Filter>
+    <ClInclude Include="..\..\include\Laser\IWindow.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\IUnknown.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\include\Laser\Macros.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\Object.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\include\Laser\ManagerFactory.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\ObjectManager.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\include\Laser\Object.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\System\UUID.h">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClInclude Include="..\..\include\Laser\ObjectManager.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\Global\Platform.h">
-      <Filter>ソース ファイル\Common\Global</Filter>
+    <ClInclude Include="..\..\include\Laser\Pass.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\Resource\BufferFactory.h">
-      <Filter>ソース ファイル\Common\Resource</Filter>
+    <ClInclude Include="..\..\include\Laser\Platform.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\Common\Global\Macros.h">
-      <Filter>ソース ファイル\Common\Global</Filter>
+    <ClInclude Include="..\..\include\Laser\ResourceManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\SysmemBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\Technique.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\TechniqueManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\UUID.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\VertexDeclare.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\Window.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Sources\Laser\Common\System\ManagerFactory.cpp">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLClear.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\System\TechniqueManager.cpp">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\User\Technique.cpp">
-      <Filter>ソース ファイル\Common\User</Filter>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLKeyboard.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\System\Window.cpp">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLResourceManager.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLTechniqueManager.cpp">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLTechniqueManager.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLWindow.cpp">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLWindow.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\System\OpenGLManager.cpp">
-      <Filter>ソース ファイル\OpenGL\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\BufferFactory.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\Command\OpenGLClear.cpp">
-      <Filter>ソース ファイル\OpenGL\Command</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\CommandFactory.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\Input\OpenGLKeyboard.cpp">
-      <Filter>ソース ファイル\OpenGL\Input</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\GraphicsManager.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\User\Pass.cpp">
-      <Filter>ソース ファイル\Common\User</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\ManagerFactory.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\System\CommandFactory.cpp">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\Object.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\Resource\SysmemBuffer.cpp">
-      <Filter>ソース ファイル\Common\Resource</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\ObjectManager.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\System\Object.cpp">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\Pass.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\System\ObjectManager.cpp">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\ResourceManager.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\System\UUID.cpp">
-      <Filter>ソース ファイル\Common\System</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\SysmemBuffer.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\Common\Resource\BufferFactory.cpp">
-      <Filter>ソース ファイル\Common\Resource</Filter>
+    <ClCompile Include="..\..\Sources\Laser\common\Technique.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\TechniqueManager.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\UUID.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\VertexDeclare.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\Window.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\Buffer.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

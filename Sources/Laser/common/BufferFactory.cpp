@@ -13,7 +13,7 @@ namespace Laser
 	{
 		bool CreateSysmemBuffer( Buffer **ppBuffer )
 		{
-//			*ppBuffer = new SysmemBuffer();
+			*ppBuffer = new SysmemBuffer();
 
 			if( *ppBuffer == 0 ) {
 				return false;

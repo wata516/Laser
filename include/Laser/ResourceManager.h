@@ -18,11 +18,13 @@ namespace TGUL
 
 namespace Laser
 {
+	class IShader;
+
 	class ResourceManager : IResourceManager
 	{
 	public:
 		bool CreateBuffer( const TGUL::String &name, Resource::Buffer **ppBuffer ) const;
-
+		virtual bool CreateShader( const TGUL::String &name, IShader **ppShader ) const = 0;
 	private:
 		class Impl;
 		boost::shared_ptr< Impl > mImpl;

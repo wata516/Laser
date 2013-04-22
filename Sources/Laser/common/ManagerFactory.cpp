@@ -36,6 +36,7 @@ namespace Laser
             if( functions[ name ]( name, ppManager ) == false ) {
                 return false;
             }
+
 			return true;
         }
 }

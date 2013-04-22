@@ -1,14 +1,19 @@
 #pragma once
 
 #include <Laser/ResourceManager.h>
-#include <boost/shared_ptr.hpp>
+
+namespace TGUL
+{
+	class String;
+}
 
 namespace Laser
 {
+	class IShader;
+
 	class OpenGLResourceManager : public ResourceManager
 	{
-	private:
-		class Impl;
-		boost::shared_ptr< Impl > mImpl;
+	public:
+		virtual bool CreateShader( const TGUL::String &name, IShader **ppShader ) const;
 	};
 }

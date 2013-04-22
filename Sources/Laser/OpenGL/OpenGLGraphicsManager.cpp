@@ -64,7 +64,7 @@ namespace Laser
 		
 	bool OpenGLGraphicsManager::Impl::CreateResourceManager( ResourceManager **ppResourceManager )
 	{
-		*ppResourceManager = new OpenGLResourceManager();
+		*ppResourceManager = new OpenGLResourceManager( );
 		
 		if( *ppResourceManager == 0 ) {
 			return false;

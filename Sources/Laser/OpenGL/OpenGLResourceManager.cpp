@@ -1,8 +1,10 @@
 #include "OpenGLResourceManager.h"
+#include "OpenGLShaderFactory.h"
 
 namespace Laser
 {
-	class OpenGLResourceManager::Impl
+	bool OpenGLResourceManager::CreateShader( const TGUL::String &name, IShader **ppShader ) const
 	{
-	};
+		return OpenGLShaderFactory::Create( name, ppShader );
+	}
 }

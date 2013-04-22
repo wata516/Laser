@@ -13,5 +13,8 @@ namespace Laser
 
 			return false;
 		}
+		Buffer::Buffer()
+		: mStatus( STATUS_NONE )
+		{}
 	}
 }

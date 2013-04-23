@@ -19,6 +19,7 @@ namespace Laser
 			virtual bool QueryInterface( const UUID &uuid, void **ppObject );
 
 		public:
+			virtual bool Read( const TGUL::String &FileName ) { return false; }
 			virtual bool Allocate( size_t VertexSize, size_t ArrayNum );
 			virtual bool Write( WriteType WriteFunction );
 

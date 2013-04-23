@@ -175,6 +175,7 @@
 				BEA7084A172563770050B71F /* IKeyboard.h */,
 				BEA7084B172563770050B71F /* IPass.h */,
 				BEA7084C172563770050B71F /* IResourceManager.h */,
+				BEA70882172568AC0050B71F /* IShader.h */,
 				BEA7084D172563770050B71F /* ITechnique.h */,
 				BEA7084E172563770050B71F /* ITechniqueManager.h */,
 				BEA7084F172563770050B71F /* IUnknown.h */,
@@ -193,7 +194,6 @@
 				BEA7085C172563770050B71F /* UUID.h */,
 				BEA7085D172563770050B71F /* VertexDeclare.h */,
 				BEA7085E172563770050B71F /* Window.h */,
-				BEA70882172568AC0050B71F /* IShader.h */,
 			);
 			name = include;
 			sourceTree = "<group>";
@@ -235,11 +235,6 @@
 		BEE3FDFA17183C5A00605D33 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				BEA70820172563560050B71F /* Technique.cpp */,
-				BEA70821172563560050B71F /* TechniqueManager.cpp */,
-				BEA70822172563560050B71F /* UUID.cpp */,
-				BEA70823172563560050B71F /* VertexDeclare.cpp */,
-				BEA70824172563560050B71F /* Window.cpp */,
 				BEA7080A172563480050B71F /* Buffer.cpp */,
 				BEA7080B172563480050B71F /* BufferFactory.cpp */,
 				BEA7080C172563480050B71F /* BufferFactory.h */,
@@ -251,6 +246,11 @@
 				BEA70812172563480050B71F /* Pass.cpp */,
 				BEA70813172563480050B71F /* ResourceManager.cpp */,
 				BEA70814172563480050B71F /* SysmemBuffer.cpp */,
+				BEA70820172563560050B71F /* Technique.cpp */,
+				BEA70821172563560050B71F /* TechniqueManager.cpp */,
+				BEA70822172563560050B71F /* UUID.cpp */,
+				BEA70823172563560050B71F /* VertexDeclare.cpp */,
+				BEA70824172563560050B71F /* Window.cpp */,
 			);
 			path = Common;
 			sourceTree = "<group>";

@@ -12,8 +12,6 @@ namespace Laser
 	class OpenGLFragmentShader : public IShader
 	{
 	public:
-		virtual bool Read( const TGUL::String &FileName );
-		virtual bool Compile( const TGUL::String &source );
-		virtual bool Load( );
+		virtual bool Load( const TGUL::String &FileName, size_t ReadSize );
 	};
 }

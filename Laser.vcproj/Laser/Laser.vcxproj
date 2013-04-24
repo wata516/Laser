@@ -149,6 +149,7 @@
     <ClInclude Include="..\..\include\Laser\IKeyboard.h" />
     <ClInclude Include="..\..\include\Laser\IPass.h" />
     <ClInclude Include="..\..\include\Laser\IResourceManager.h" />
+    <ClInclude Include="..\..\include\Laser\IShader.h" />
     <ClInclude Include="..\..\include\Laser\ITechnique.h" />
     <ClInclude Include="..\..\include\Laser\ITechniqueManager.h" />
     <ClInclude Include="..\..\include\Laser\IUnknown.h" />
@@ -170,10 +171,13 @@
     <ClInclude Include="..\..\Sources\Laser\common\BufferFactory.h" />
     <ClInclude Include="..\..\Sources\Laser\common\CommandFactory.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLClear.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLFragmentShader.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLKeyboard.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLResourceManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShaderFactory.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLTechniqueManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLVertexShader.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLWindow.h" />
   </ItemGroup>
   <ItemGroup>
@@ -193,10 +197,13 @@
     <ClCompile Include="..\..\Sources\Laser\common\VertexDeclare.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\Window.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLClear.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLFragmentShader.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLKeyboard.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLResourceManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShaderFactory.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLTechniqueManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLVertexShader.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

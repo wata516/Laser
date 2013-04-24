@@ -7,7 +7,15 @@ namespace Laser
 	class OpenGLVertexShader : public IShader
 	{
 	public:
-		virtual bool Read( const TGUL::String &FileName );
-		
+		OpenGLVertexShader();
+
+	public:
+		virtual bool Load( const TGUL::String &FileName, size_t ReadSize );
+
+	protected:
+		bool ReadComplete( void *pBuffer, size_t BufferSize );
+
+	private:
+		Status mStatus;
 	};
 }

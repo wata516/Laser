@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <Laser/Object.h>
 #include <Laser/UUID.h>
@@ -22,7 +22,13 @@ namespace Laser
 			enum Status {
 				STATUS_NONE,	//!< 作成されていない状態
 				STATUS_READ,	//!< ファイル読み込み中状態
-				STATUS_NORMAL	//!< 通常状態
+				STATUS_NORMAL,	//!< 通常状態
+				STATUS_MAX
+
+			};
+
+			enum Parameter {
+				PARAM_DEFAULT_READ = 20
 			};
 		public:
 			Buffer( );
@@ -35,13 +41,14 @@ namespace Laser
 			bool Execute( );
 
 		public:
-			virtual bool Read( const TGUL::String &FileName ) = 0;
 			virtual bool Allocate( size_t VertexSize, size_t ArrayNum ) { return false; }
 			virtual bool Write( WriteType WriteFunction ) { return false; }
-			
+
 		protected:
-			virtual bool ReadCompleteFunction( ) { return false; };
+			bool ReadASync( const TGUL::String &FileName, size_t ReadSize = PARAM_DEFAULT_READ );
 			
+			virtual bool ReadComplete( void *pBuffer, size_t BufferSize ) { return true; };
+
 		private:
 			class Impl;
 			boost::shared_ptr< Impl > mImpl;

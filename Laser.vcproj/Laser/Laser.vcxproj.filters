@@ -132,6 +132,18 @@
     <ClInclude Include="..\..\include\Laser\Window.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLFragmentShader.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLVertexShader.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\IShader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShaderFactory.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLClear.cpp">
@@ -196,6 +208,15 @@
     </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\common\Buffer.cpp">
       <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLFragmentShader.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLVertexShader.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShaderFactory.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

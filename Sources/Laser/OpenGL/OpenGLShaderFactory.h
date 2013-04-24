@@ -7,10 +7,10 @@ namespace TGUL
 
 namespace Laser
 {
-	class IShader;
+	class Shader;
 	class OpenGLShaderFactory
 	{
 	public:
-		static bool Create( const TGUL::String &name, IShader **ppShader );
+		static bool Create( const TGUL::String &name, Shader **ppShader );
 	};
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <laser/IShader.h>
+#include <laser/Shader.h>
 
 namespace TGUL
 {
@@ -9,7 +9,7 @@ namespace TGUL
 
 namespace Laser
 {
-	class OpenGLFragmentShader : public IShader
+	class OpenGLFragmentShader : public Shader
 	{
 	public:
 		virtual bool Load( const TGUL::String &FileName, size_t ReadSize );

@@ -1,10 +1,10 @@
 #pragma once
 
-#include <Laser/IShader.h>
+#include <Laser/Shader.h>
 
 namespace Laser
 {
-	class OpenGLVertexShader : public IShader
+	class OpenGLVertexShader : public Shader
 	{
 	public:
 		OpenGLVertexShader();

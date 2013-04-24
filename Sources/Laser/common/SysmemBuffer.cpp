@@ -37,7 +37,7 @@ namespace Laser
 				pCurrent += MoveSize;
 				TotalSize += MoveSize;
 
-				EXCEPT( TotalSize >= mVertexSize, Exception::EXCEPTION_INVALIED_ACCESS , "SysemBuffer Write Over.", "" );
+				EXCEPT( TotalSize > mVertexSize * mArrayNum, Exception::EXCEPTION_INVALIED_ACCESS , "SysemBuffer Write Over.", "" );
 			}
 
 			return true;

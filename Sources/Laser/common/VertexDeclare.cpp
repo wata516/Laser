@@ -13,8 +13,9 @@ namespace Laser
 	};
 
 	VertexDeclare::VertexDeclare( const VertexType &type )
-	: mTypes( type )
-	{}
+	{
+		mTypes |= type;
+	}
 
 	size_t VertexDeclare::GetSize() const
 	{

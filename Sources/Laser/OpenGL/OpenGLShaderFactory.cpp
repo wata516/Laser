@@ -1,6 +1,6 @@
 #include "OpenGLShaderFactory.h"
 
-#include <Laser/IShader.h>
+#include <Laser/Shader.h>
 #include "OpenGLVertexShader.h"
 #include "OpenGLFragmentShader.h"
 #include <TGUL/String.h>
@@ -11,7 +11,7 @@
 
 namespace Laser
 {
-	bool CreateOpenGLVertexShader( const TGUL::String &name, IShader **ppShader )
+	bool CreateOpenGLVertexShader( const TGUL::String &name, Shader **ppShader )
 	{
 		*ppShader = new OpenGLVertexShader( );
 		
@@ -22,7 +22,7 @@ namespace Laser
 		return true;
 	}
 	
-	bool CreateOpenGLFragmentShader( const TGUL::String &name, IShader **ppShader )
+	bool CreateOpenGLFragmentShader( const TGUL::String &name, Shader **ppShader )
 	{
 		*ppShader = new OpenGLFragmentShader( );
 		
@@ -33,9 +33,9 @@ namespace Laser
 		return true;
 	}
 
-	bool OpenGLShaderFactory::Create( const TGUL::String &name, IShader **ppShader )
+	bool OpenGLShaderFactory::Create( const TGUL::String &name, Shader **ppShader )
 	{
-		std::map< TGUL::String, boost::function< bool( const TGUL::String &, IShader ** ) > > functions
+		std::map< TGUL::String, boost::function< bool( const TGUL::String &, Shader ** ) > > functions
 		= boost::assign::map_list_of
 								( "VertexShader", boost::bind( &CreateOpenGLVertexShader, name, ppShader ))		// VertexShader
 								("FragmentShader", boost::bind( &CreateOpenGLFragmentShader, name, ppShader ))	// FragmentShader

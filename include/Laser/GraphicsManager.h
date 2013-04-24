@@ -24,7 +24,7 @@ namespace Laser
 
 	public:
 		const TGUL::String &GetFactoryName() const;
-		const ResourceManager &GetResourceManager() const { return *mResourceManager; }
+		ResourceManager &GetResourceManager() const { return *mResourceManager; }
 
 	protected:
 		ResourceManager *mResourceManager;

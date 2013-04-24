@@ -9,11 +9,11 @@ namespace TGUL
 
 namespace Laser
 {
-	class IShader;
+	class Shader;
 
 	class OpenGLResourceManager : public ResourceManager
 	{
 	public:
-		virtual bool CreateShader( const TGUL::String &name, IShader **ppShader ) const;
+		virtual bool CreateShader( const TGUL::String &name, Shader **ppShader );
 	};
 }

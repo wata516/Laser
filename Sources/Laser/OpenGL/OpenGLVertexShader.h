@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Laser/Shader.h>
+#include <GL/glew.h>
 
 namespace Laser
 {
@@ -17,5 +18,6 @@ namespace Laser
 
 	private:
 		Status mStatus;
+		GLuint mShader;
 	};
 }

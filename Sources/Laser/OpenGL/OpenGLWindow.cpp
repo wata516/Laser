@@ -1,4 +1,5 @@
 #include "OpenGLWindow.h"
+#include <GL/glew.h>
 #include <GL/glfw.h>
 
 namespace Laser
@@ -42,7 +43,11 @@ namespace Laser
 			if( glfwOpenWindow( mWidth, mHeight, 0, 0, 0, 0, 0, 0, GLFW_WINDOW ) == GL_FALSE ) {
 				return false;
 			}
-			
+
+			if( glewInit() != GLEW_OK ) {
+				return false;
+			}
+
 			glfwSetWindowTitle( mTitle );
 			
 			glfwSwapInterval(1);

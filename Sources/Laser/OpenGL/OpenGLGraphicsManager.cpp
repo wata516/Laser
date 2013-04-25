@@ -7,6 +7,8 @@
 #include <Laser/IKeyboard.h>
 #include <Laser/ITechniqueManager.h>
 #include <Laser/ResourceManager.h>
+#define GLFW_NO_GLU
+#include <GL/glew.h>
 #include <GL/glfw.h>
 
 namespace Laser

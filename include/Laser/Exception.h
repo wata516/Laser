@@ -83,6 +83,6 @@ namespace Laser
 	#define EXCEPT( cond, id, description, src ) if( cond ) throw Laser::ExceptionFactory::Create( \
 	ExceptionCodeType< id >(), description, src, __FILE__, __LINE__ )
 
-	#define ASSERT( cond, description ) EXCEPT( !cond, Exception::EXCEPTION_ASSERT, (description), __FUNC__ ) 
+	#define ASSERT( cond, description ) EXCEPT( !cond, Exception::EXCEPTION_ASSERT, (description), "" ) 
 
 }

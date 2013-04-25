@@ -88,7 +88,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../include;../../Sources;C:\Program Files\boost\boost_1_53_0;../../../TGUL/Sources;../../../glfw-2.7.8.bin.WIN64/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../include;../../Sources;C:\Program Files\boost\boost_1_53_0;../../../TGUL/Sources;../../../glfw-2.7.8.bin.WIN64/include;../../../glew-1.9.0\include</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)../../include/Laser/Platform.h</ForcedIncludeFiles>
       <TreatSpecificWarningsAsErrors>
       </TreatSpecificWarningsAsErrors>
@@ -162,6 +162,7 @@
     <ClInclude Include="..\..\include\Laser\Pass.h" />
     <ClInclude Include="..\..\include\Laser\Platform.h" />
     <ClInclude Include="..\..\include\Laser\ResourceManager.h" />
+    <ClInclude Include="..\..\include\Laser\Shader.h" />
     <ClInclude Include="..\..\include\Laser\SysmemBuffer.h" />
     <ClInclude Include="..\..\include\Laser\Technique.h" />
     <ClInclude Include="..\..\include\Laser\TechniqueManager.h" />

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <laser/Shader.h>
+#include <Laser/Shader.h>
 
 namespace TGUL
 {

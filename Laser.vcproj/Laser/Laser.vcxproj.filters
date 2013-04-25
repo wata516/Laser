@@ -144,6 +144,9 @@
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShaderFactory.h">
       <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\Laser\Shader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLClear.cpp">

@@ -58,7 +58,7 @@ namespace Laser
 		{
 			if( mIFStream.is_open() == false ) {
 
-				mIFStream.open( mFileName.c_str() );
+				mIFStream.open( mFileName.c_str(), std::ios::in | std::ios::binary  );
 				if( mIFStream.fail() ) {
 					mStatus = Buffer::STATUS_NONE;
 					return STATUS_ERROR;
@@ -73,8 +73,8 @@ namespace Laser
 					mStatus = Buffer::STATUS_NONE;
 					return STATUS_ERROR;
 				}
-
-				mIFStream.read( &mBuffer[ mIFStream.tellg() ], mReadSize );
+				size_t pos = mIFStream.tellg();
+				mIFStream.read( &mBuffer[ pos ], mReadSize );
 				if( mIFStream.bad() ) {
 					mIFStream.close();
 					mStatus = Buffer::STATUS_NONE;

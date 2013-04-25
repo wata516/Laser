@@ -26,14 +26,15 @@ namespace Laser
 		GLint BufferSizeGL;
 		try {
 			BufferSizeGL = boost::numeric::converter< GLint, size_t >::convert( BufferSize );
-		} catch( boost::numeric::positive_overflow const& ) {
+		} catch( std::exception const& ) {
 			ASSERT( 0, "" );
 			return false;
 		}
 
 		const GLchar *pa = static_cast< GLchar * >( pBuffer );
 
-		glShaderSource( mShader, sizeof( char ), &pa, &BufferSizeGL );
+		printf("%s\n", pBuffer);
+		glShaderSource( mShader, 1, &pa, &BufferSizeGL );
 		glCompileShader( mShader );
 
 		GLint compiled;

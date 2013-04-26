@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEA6BC3B172ABD73006215BF /* OpenGLCommandClear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */; };
+		BEA6BC3C172ABD73006215BF /* OpenGLCommandClear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */; };
+		BEA6BC3D172ABD73006215BF /* OpenGLCommandShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */; };
+		BEA6BC3E172ABD73006215BF /* OpenGLCommandShader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC39172ABD73006215BF /* OpenGLCommandShader.h */; };
+		BEA6BC3F172ABD73006215BF /* OpenGLFragmentShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */; };
+		BEA6BC42172ABD9B006215BF /* CommandClear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC40172ABD9B006215BF /* CommandClear.h */; };
+		BEA6BC43172ABD9B006215BF /* CommandShader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC41172ABD9B006215BF /* CommandShader.h */; };
+		BEA6BC46172ABFFC006215BF /* OpenGLShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC44172ABFFC006215BF /* OpenGLShader.cpp */; };
+		BEA6BC47172ABFFC006215BF /* OpenGLShader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC45172ABFFC006215BF /* OpenGLShader.h */; };
 		BEA70815172563480050B71F /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7080A172563480050B71F /* Buffer.cpp */; };
 		BEA70816172563480050B71F /* BufferFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7080B172563480050B71F /* BufferFactory.cpp */; };
 		BEA70817172563480050B71F /* BufferFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7080C172563480050B71F /* BufferFactory.h */; };
@@ -23,8 +32,6 @@
 		BEA70827172563560050B71F /* UUID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70822172563560050B71F /* UUID.cpp */; };
 		BEA70828172563560050B71F /* VertexDeclare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70823172563560050B71F /* VertexDeclare.cpp */; };
 		BEA70829172563560050B71F /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70824172563560050B71F /* Window.cpp */; };
-		BEA70836172563630050B71F /* OpenGLClear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7082A172563630050B71F /* OpenGLClear.cpp */; };
-		BEA70837172563630050B71F /* OpenGLClear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7082B172563630050B71F /* OpenGLClear.h */; };
 		BEA70838172563630050B71F /* OpenGLGraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7082C172563630050B71F /* OpenGLGraphicsManager.cpp */; };
 		BEA70839172563630050B71F /* OpenGLGraphicsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7082D172563630050B71F /* OpenGLGraphicsManager.h */; };
 		BEA7083A172563630050B71F /* OpenGLKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7082E172563630050B71F /* OpenGLKeyboard.cpp */; };
@@ -37,7 +44,6 @@
 		BEA70841172563630050B71F /* OpenGLWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70835172563630050B71F /* OpenGLWindow.h */; };
 		BEA7085F172563770050B71F /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70842172563770050B71F /* Buffer.h */; };
 		BEA70860172563770050B71F /* ClassID.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70843172563770050B71F /* ClassID.h */; };
-		BEA70861172563770050B71F /* Clear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70844172563770050B71F /* Clear.h */; };
 		BEA70862172563770050B71F /* CommandFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70845172563770050B71F /* CommandFactory.h */; };
 		BEA70863172563770050B71F /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70846172563770050B71F /* Exception.h */; };
 		BEA70864172563770050B71F /* GraphicsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70847172563770050B71F /* GraphicsManager.h */; };
@@ -75,6 +81,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandClear.cpp; sourceTree = "<group>"; };
+		BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandClear.h; sourceTree = "<group>"; };
+		BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandShader.cpp; sourceTree = "<group>"; };
+		BEA6BC39172ABD73006215BF /* OpenGLCommandShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandShader.h; sourceTree = "<group>"; };
+		BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLFragmentShader.cpp; sourceTree = "<group>"; };
+		BEA6BC40172ABD9B006215BF /* CommandClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandClear.h; path = include/Laser/CommandClear.h; sourceTree = SOURCE_ROOT; };
+		BEA6BC41172ABD9B006215BF /* CommandShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandShader.h; path = include/Laser/CommandShader.h; sourceTree = SOURCE_ROOT; };
+		BEA6BC44172ABFFC006215BF /* OpenGLShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLShader.cpp; sourceTree = "<group>"; };
+		BEA6BC45172ABFFC006215BF /* OpenGLShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLShader.h; sourceTree = "<group>"; };
 		BEA7080A172563480050B71F /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
 		BEA7080B172563480050B71F /* BufferFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BufferFactory.cpp; sourceTree = "<group>"; };
 		BEA7080C172563480050B71F /* BufferFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferFactory.h; sourceTree = "<group>"; };
@@ -91,8 +106,6 @@
 		BEA70822172563560050B71F /* UUID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UUID.cpp; sourceTree = "<group>"; };
 		BEA70823172563560050B71F /* VertexDeclare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexDeclare.cpp; sourceTree = "<group>"; };
 		BEA70824172563560050B71F /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
-		BEA7082A172563630050B71F /* OpenGLClear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLClear.cpp; sourceTree = "<group>"; };
-		BEA7082B172563630050B71F /* OpenGLClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLClear.h; sourceTree = "<group>"; };
 		BEA7082C172563630050B71F /* OpenGLGraphicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLGraphicsManager.cpp; sourceTree = "<group>"; };
 		BEA7082D172563630050B71F /* OpenGLGraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLGraphicsManager.h; sourceTree = "<group>"; };
 		BEA7082E172563630050B71F /* OpenGLKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLKeyboard.cpp; sourceTree = "<group>"; };
@@ -105,7 +118,6 @@
 		BEA70835172563630050B71F /* OpenGLWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLWindow.h; sourceTree = "<group>"; };
 		BEA70842172563770050B71F /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buffer.h; path = include/Laser/Buffer.h; sourceTree = SOURCE_ROOT; };
 		BEA70843172563770050B71F /* ClassID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassID.h; path = include/Laser/ClassID.h; sourceTree = SOURCE_ROOT; };
-		BEA70844172563770050B71F /* Clear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Clear.h; path = include/Laser/Clear.h; sourceTree = SOURCE_ROOT; };
 		BEA70845172563770050B71F /* CommandFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandFactory.h; path = include/Laser/CommandFactory.h; sourceTree = SOURCE_ROOT; };
 		BEA70846172563770050B71F /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exception.h; path = include/Laser/Exception.h; sourceTree = SOURCE_ROOT; };
 		BEA70847172563770050B71F /* GraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphicsManager.h; path = include/Laser/GraphicsManager.h; sourceTree = SOURCE_ROOT; };
@@ -168,10 +180,10 @@
 			children = (
 				BEA70842172563770050B71F /* Buffer.h */,
 				BEA70843172563770050B71F /* ClassID.h */,
-				BEA70844172563770050B71F /* Clear.h */,
+				BEA6BC40172ABD9B006215BF /* CommandClear.h */,
 				BEA70845172563770050B71F /* CommandFactory.h */,
+				BEA6BC41172ABD9B006215BF /* CommandShader.h */,
 				BEA70846172563770050B71F /* Exception.h */,
-				BEA74BF0172A0A5B0089549C /* Shader.h */,
 				BEA70847172563770050B71F /* GraphicsManager.h */,
 				BEA70848172563770050B71F /* IBase.h */,
 				BEA70849172563770050B71F /* IGraphicsManager.h */,
@@ -191,6 +203,7 @@
 				BEA70856172563770050B71F /* Pass.h */,
 				BEA70857172563770050B71F /* Platform.h */,
 				BEA70858172563770050B71F /* ResourceManager.h */,
+				BEA74BF0172A0A5B0089549C /* Shader.h */,
 				BEA70859172563770050B71F /* SysmemBuffer.h */,
 				BEA7085A172563770050B71F /* Technique.h */,
 				BEA7085B172563770050B71F /* TechniqueManager.h */,
@@ -261,24 +274,29 @@
 		BEE3FE0017183C5A00605D33 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				BEA7088417256E320050B71F /* OpenGLVertexShader.h */,
-				BEA7088617256E7F0050B71F /* OpenGLVertexShader.cpp */,
-				BEA7088817256EBF0050B71F /* OpenGLFragmentShader.cpp */,
+				BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */,
+				BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */,
+				BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */,
+				BEA6BC39172ABD73006215BF /* OpenGLCommandShader.h */,
+				BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */,
 				BEA7088917256EBF0050B71F /* OpenGLFragmentShader.h */,
-				BEA7082A172563630050B71F /* OpenGLClear.cpp */,
-				BEA7082B172563630050B71F /* OpenGLClear.h */,
 				BEA7082C172563630050B71F /* OpenGLGraphicsManager.cpp */,
 				BEA7082D172563630050B71F /* OpenGLGraphicsManager.h */,
 				BEA7082E172563630050B71F /* OpenGLKeyboard.cpp */,
 				BEA7082F172563630050B71F /* OpenGLKeyboard.h */,
 				BEA70830172563630050B71F /* OpenGLResourceManager.cpp */,
 				BEA70831172563630050B71F /* OpenGLResourceManager.h */,
-				BEA70832172563630050B71F /* OpenGLTechniqueManager.cpp */,
-				BEA70833172563630050B71F /* OpenGLTechniqueManager.h */,
-				BEA70834172563630050B71F /* OpenGLWindow.cpp */,
-				BEA70835172563630050B71F /* OpenGLWindow.h */,
+				BEA6BC44172ABFFC006215BF /* OpenGLShader.cpp */,
+				BEA6BC45172ABFFC006215BF /* OpenGLShader.h */,
 				BEA7088C172572590050B71F /* OpenGLShaderFactory.cpp */,
 				BEA7088D172572590050B71F /* OpenGLShaderFactory.h */,
+				BEA70832172563630050B71F /* OpenGLTechniqueManager.cpp */,
+				BEA70833172563630050B71F /* OpenGLTechniqueManager.h */,
+				BEA7088617256E7F0050B71F /* OpenGLVertexShader.cpp */,
+				BEA7088417256E320050B71F /* OpenGLVertexShader.h */,
+				BEA70834172563630050B71F /* OpenGLWindow.cpp */,
+				BEA70835172563630050B71F /* OpenGLWindow.h */,
+				BEA7088817256EBF0050B71F /* OpenGLFragmentShader.cpp */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -291,7 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA70817172563480050B71F /* BufferFactory.h in Headers */,
-				BEA70837172563630050B71F /* OpenGLClear.h in Headers */,
 				BEA70839172563630050B71F /* OpenGLGraphicsManager.h in Headers */,
 				BEA7083B172563630050B71F /* OpenGLKeyboard.h in Headers */,
 				BEA7083D172563630050B71F /* OpenGLResourceManager.h in Headers */,
@@ -299,7 +316,6 @@
 				BEA70841172563630050B71F /* OpenGLWindow.h in Headers */,
 				BEA7085F172563770050B71F /* Buffer.h in Headers */,
 				BEA70860172563770050B71F /* ClassID.h in Headers */,
-				BEA70861172563770050B71F /* Clear.h in Headers */,
 				BEA70862172563770050B71F /* CommandFactory.h in Headers */,
 				BEA70863172563770050B71F /* Exception.h in Headers */,
 				BEA70864172563770050B71F /* GraphicsManager.h in Headers */,
@@ -331,6 +347,11 @@
 				BEA7088B17256EBF0050B71F /* OpenGLFragmentShader.h in Headers */,
 				BEA7088F172572590050B71F /* OpenGLShaderFactory.h in Headers */,
 				BEA74BF1172A0A5B0089549C /* Shader.h in Headers */,
+				BEA6BC3C172ABD73006215BF /* OpenGLCommandClear.h in Headers */,
+				BEA6BC3E172ABD73006215BF /* OpenGLCommandShader.h in Headers */,
+				BEA6BC42172ABD9B006215BF /* CommandClear.h in Headers */,
+				BEA6BC43172ABD9B006215BF /* CommandShader.h in Headers */,
+				BEA6BC47172ABFFC006215BF /* OpenGLShader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +421,6 @@
 				BEA70827172563560050B71F /* UUID.cpp in Sources */,
 				BEA70828172563560050B71F /* VertexDeclare.cpp in Sources */,
 				BEA70829172563560050B71F /* Window.cpp in Sources */,
-				BEA70836172563630050B71F /* OpenGLClear.cpp in Sources */,
 				BEA70838172563630050B71F /* OpenGLGraphicsManager.cpp in Sources */,
 				BEA7083A172563630050B71F /* OpenGLKeyboard.cpp in Sources */,
 				BEA7083C172563630050B71F /* OpenGLResourceManager.cpp in Sources */,
@@ -409,6 +429,10 @@
 				BEA7088717256E7F0050B71F /* OpenGLVertexShader.cpp in Sources */,
 				BEA7088A17256EBF0050B71F /* OpenGLFragmentShader.cpp in Sources */,
 				BEA7088E172572590050B71F /* OpenGLShaderFactory.cpp in Sources */,
+				BEA6BC3B172ABD73006215BF /* OpenGLCommandClear.cpp in Sources */,
+				BEA6BC3D172ABD73006215BF /* OpenGLCommandShader.cpp in Sources */,
+				BEA6BC3F172ABD73006215BF /* OpenGLFragmentShader.cpp in Sources */,
+				BEA6BC46172ABFFC006215BF /* OpenGLShader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

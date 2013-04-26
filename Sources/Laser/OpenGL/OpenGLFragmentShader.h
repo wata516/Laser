@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Laser/Shader.h>
+#include <OpenGLShader.h>
 #include <GL/glew.h>
 
 namespace TGUL
@@ -10,16 +10,17 @@ namespace TGUL
 
 namespace Laser
 {
-	class OpenGLFragmentShader : public Shader
+	class OpenGLFragmentShader : public OpenGLShader
 	{
 	public:
 		virtual bool Load( const TGUL::String &FileName, size_t ReadSize );
 		
 	protected:
 		bool ReadComplete( void *pBuffer, size_t BufferSize );
-		
+
+	public:
+		virtual bool QueryInterface( const UUID &uuid, void **ppObject );
 	private:
 		Status mStatus;
-		GLuint mShader;
 	};
 }

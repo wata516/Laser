@@ -1,11 +1,11 @@
 #pragma once
 
-#include <Laser/Shader.h>
+#include "OpenGLShader.h"
 #include <GL/glew.h>
 
 namespace Laser
 {
-	class OpenGLVertexShader : public Shader
+	class OpenGLVertexShader : public OpenGLShader
 	{
 	public:
 		OpenGLVertexShader();
@@ -15,6 +15,9 @@ namespace Laser
 
 	protected:
 		bool ReadComplete( void *pBuffer, size_t BufferSize );
+
+	public:
+		virtual bool QueryInterface( const UUID &uuid, void **ppObject );
 
 	private:
 		Status mStatus;

@@ -21,42 +21,31 @@ namespace Laser
 
 	bool OpenGLVertexShader::ReadComplete( void *pBuffer, size_t BufferSize )
 	{
-		mShader = glCreateShader( GL_VERTEX_SHADER );
-
 		GLint BufferSizeGL;
+		
 		try {
 			BufferSizeGL = boost::numeric::converter< GLint, size_t >::convert( BufferSize );
 		} catch( std::exception const& ) {
 			ASSERT( 0, "numeric cast exception." );
 			return false;
 		}
-
-		const GLchar *pa = static_cast< GLchar * >( pBuffer );
-
-		glShaderSource( mShader, 1, &pa, &BufferSizeGL );
-		glCompileShader( mShader );
-
-		GLint compiled;
-		glGetShaderiv( mShader, GL_COMPILE_STATUS, &compiled);
-
-		if ( compiled == GL_FALSE ) {
-			int  nLogLength, nCharsWritten;
-			glGetShaderiv( mShader, GL_INFO_LOG_LENGTH, &nLogLength ); 
-
-			// ÉGÉâÅ[ÉçÉOÇéÊìæ
-			boost::scoped_array< GLchar > pLogInfo( new GLchar[ nLogLength ] );  
-
-			glGetShaderInfoLog( mShader, nLogLength, &nCharsWritten, pLogInfo.get() );
-
-			printf("%s\n", pLogInfo.get() );
-
-			return false;
-		}
-
-		return true;
+		
+		const GLchar *pBufferGL = static_cast< GLchar * >( pBuffer );
+		
+		return CompileShader( GL_VERTEX_SHADER, pBufferGL, BufferSizeGL );
 	}
 
 	OpenGLVertexShader::OpenGLVertexShader()
 		: mStatus( STATUS_NONE )
 	{ }
+
+	bool OpenGLVertexShader::QueryInterface( const UUID &uuid, void **ppObject )
+	{
+		if( uuid == GetUUID() || uuid == UUIDS::IUNKNOWN || uuid == UUIDS::OPENGL_VERTEX_SHADER ) {
+			*ppObject = this;
+			return true;
+		}
+		
+		return false;
+	}
 }

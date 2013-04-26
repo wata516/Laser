@@ -23,7 +23,8 @@ namespace Laser
 
 		public:
 			virtual ClassID GetClassID( ) const { return CLASS_ID_COMMAND_SHADER;}
-			virtual void SetShader( ShaderType type, const Laser::Shader *pShader ) = 0;
+			virtual void SetShader( ShaderType type, Laser::Shader *pShader ) = 0;
+			virtual bool Create( ) = 0;
 
 		};
 	}

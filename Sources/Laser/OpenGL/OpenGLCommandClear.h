@@ -1,7 +1,7 @@
 #pragma once
 
 #include <Laser/CommandClear.h>
-#include <GL/glfw.h>
+#include <GL/glew.h>
 
 namespace Laser
 {

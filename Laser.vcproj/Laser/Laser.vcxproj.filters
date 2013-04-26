@@ -30,9 +30,6 @@
     <ClInclude Include="..\..\Sources\Laser\common\CommandFactory.h">
       <Filter>ソース ファイル\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLClear.h">
-      <Filter>ソース ファイル\OpenGL</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.h">
       <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
@@ -52,9 +49,6 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\Laser\ClassID.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\Laser\Clear.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\Laser\Exception.h">
@@ -147,11 +141,20 @@
     <ClInclude Include="..\..\include\Laser\Shader.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\Laser\CommandShader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\CommandClear.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandClear.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandShader.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLClear.cpp">
-      <Filter>ソース ファイル\OpenGL</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.cpp">
       <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
@@ -219,6 +222,15 @@
       <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShaderFactory.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\Shader.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandShader.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandClear.cpp">
       <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
   </ItemGroup>

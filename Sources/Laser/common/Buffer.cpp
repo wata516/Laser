@@ -18,7 +18,7 @@ namespace Laser
 			enum Status {
 				STATUS_OK,
 				STATUS_ERROR,
-				STATUS_CALL_READ_COMPLETE
+				STATUS_CALL_READ_COMPLETE,
 			};
 			typedef boost::optional< Status > ExecuteResoultType;
 
@@ -40,6 +40,8 @@ namespace Laser
 		public:
 			void *GetBuffer() { return mBuffer.get(); }
 			size_t GetBufferSize() { return mBufferSize; }
+			Buffer::Status GetStatus() const { return mStatus; }
+
 		private:
 			Buffer::Status mStatus;
 			std::ifstream mIFStream;
@@ -83,7 +85,6 @@ namespace Laser
 
 				if( mIFStream.eof() ) {
 					mStatus = Buffer::STATUS_NORMAL;
-					mIFStream.close();
 					return STATUS_CALL_READ_COMPLETE;
 				}
 			}
@@ -129,6 +130,12 @@ namespace Laser
 		{
 			return mImpl->ReadASync( FileName, ReadSize );
 		}
+
+		Buffer::Status Buffer::GetStatus() const
+		{
+			return mImpl->GetStatus();
+		}
+
 		bool Buffer::Execute( )
 		{
 			Buffer::Impl::ExecuteResoultType Result = mImpl->Execute();

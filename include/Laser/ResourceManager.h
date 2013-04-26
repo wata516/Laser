@@ -27,12 +27,15 @@ namespace Laser
 
 	public:
 		bool CreateBuffer( const TGUL::String &name, Resource::Buffer **ppBuffer ) const;
-		virtual bool CreateShader( const TGUL::String &name, Shader **ppShader ) = 0;
+		virtual bool CreateShader( const TGUL::String &CreateName, const TGUL::String &ShaderName, Shader **ppShader ) = 0;
 		
 		void Execute();
 
+	public:
+		bool GetShader( const TGUL::String &ShaderName, Shader **ppShader ) const;
+
 	protected:
-		void AddShader( Shader &shader );
+		bool AddShader( const TGUL::String &name, Shader &shader );
 
 	private:
 		class Impl;

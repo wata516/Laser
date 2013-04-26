@@ -3,12 +3,12 @@
 
 namespace Laser
 {
-	bool OpenGLResourceManager::CreateShader( const TGUL::String &name, Shader **ppShader )
+	bool OpenGLResourceManager::CreateShader( const TGUL::String &CreateName, const TGUL::String &ShaderName, Shader **ppShader )
 	{
-		bool result = OpenGLShaderFactory::Create( name, ppShader );
+		bool result = OpenGLShaderFactory::Create( CreateName, ppShader );
 		
 		if( result ) {
-			AddShader( **ppShader );
+			return AddShader( ShaderName, **ppShader );
 		}
 		
 		return result;

@@ -27,13 +27,12 @@ namespace Laser
 		try {
 			BufferSizeGL = boost::numeric::converter< GLint, size_t >::convert( BufferSize );
 		} catch( std::exception const& ) {
-			ASSERT( 0, "" );
+			ASSERT( 0, "numeric cast exception." );
 			return false;
 		}
 
 		const GLchar *pa = static_cast< GLchar * >( pBuffer );
 
-		printf("%s\n", pBuffer);
 		glShaderSource( mShader, 1, &pa, &BufferSizeGL );
 		glCompileShader( mShader );
 

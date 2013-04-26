@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Laser/Clear.h>
+#include <Laser/CommandClear.h>
 #include <GL/glfw.h>
 
 namespace Laser

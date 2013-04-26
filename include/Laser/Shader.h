@@ -22,6 +22,6 @@ namespace Laser
 
 	public:
 		virtual bool Load( const TGUL::String &FileName, size_t ReadSize ) = 0;
-		
+		bool IsAvailable( ) const;
 	};
 }

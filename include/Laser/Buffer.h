@@ -43,6 +43,7 @@ namespace Laser
 		public:
 			virtual bool Allocate( size_t VertexSize, size_t ArrayNum ) { return false; }
 			virtual bool Write( WriteType WriteFunction ) { return false; }
+			Status GetStatus() const;
 
 		protected:
 			bool ReadASync( const TGUL::String &FileName, size_t ReadSize = PARAM_DEFAULT_READ );

@@ -14,6 +14,6 @@ namespace Laser
 	class OpenGLResourceManager : public ResourceManager
 	{
 	public:
-		virtual bool CreateShader( const TGUL::String &name, Shader **ppShader );
+		virtual bool CreateShader( const TGUL::String &CreateName, const TGUL::String &ShaderName, Shader **ppShader );
 	};
 }

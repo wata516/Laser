@@ -10,23 +10,46 @@ namespace Laser
 {
 	class ResourceManager::Impl
 	{
-		typedef std::map< void *, Shader * > ShadersType;
-		std::map< Resource::Buffer *, boost::shared_ptr< Resource::Buffer > > mBuffers;
+		typedef std::map< TGUL::String, Shader * > ShadersType;
+		typedef std::map< TGUL::String, Resource::Buffer * > BuffersType;
+		BuffersType mBuffers;
 		ShadersType mShaders;
 		
 	public:
 		void Execute( );
-		void AddShader( Shader &shader );
+		bool AddShader( const TGUL::String &name, Shader &shader );
+		bool GetShader( const TGUL::String &ShaderName, Shader **ppShader ) const;
 	};
 	
-	void ResourceManager::Impl::AddShader( Shader &shader )
+	bool ResourceManager::Impl::AddShader( const TGUL::String &name, Shader &shader )
 	{
-		mShaders.insert( ShadersType::value_type( &shader, &shader ) );
+		if( mShaders.find( name ) != mShaders.end() ) {
+			return false;
+		}
+
+		mShaders.insert( ShadersType::value_type( name, &shader ) );
+		return true;
+	}
+
+	bool ResourceManager::Impl::GetShader( const TGUL::String &ShaderName, Shader **ppShader ) const
+	{
+		ShadersType::const_iterator i = mShaders.find( ShaderName );
+		if( i == mShaders.end() ) {
+			return false;
+		}
+
+		ShadersType::value_type result = *i;
+		*ppShader = result.second;
+
+		return true;
 	}
 		
 	bool ResourceManager::CreateBuffer( const TGUL::String &name, Resource::Buffer **ppBuffer ) const
 	{
-		return Resource::BufferFactory::Create( name, ppBuffer );
+		if( Resource::BufferFactory::Create( name, ppBuffer ) == false ) {
+			return false;
+		}
+		return true;
 	}
 	
 	void ResourceManager::Impl::Execute( )
@@ -45,9 +68,14 @@ namespace Laser
 		mImpl->Execute();
 	}
 	
-	void ResourceManager::AddShader( Shader &shader )
+	bool ResourceManager::GetShader( const TGUL::String &ShaderName, Shader **ppShader ) const
 	{
-		mImpl->AddShader( shader );
+		return mImpl->GetShader( ShaderName, ppShader );
+	}
+
+	bool ResourceManager::AddShader( const TGUL::String &name, Shader &shader )
+	{
+		return mImpl->AddShader( name, shader );
 	}
 
 	bool IResourceManager::QueryInterface( const UUID &uuid, void **ppObject )

@@ -10,7 +10,7 @@ namespace Laser
 {
 	class ResourceManager::Impl
 	{
-		typedef std::map< int, Shader * > ShadersType;
+		typedef std::map< void *, Shader * > ShadersType;
 		std::map< Resource::Buffer *, boost::shared_ptr< Resource::Buffer > > mBuffers;
 		ShadersType mShaders;
 		
@@ -21,7 +21,7 @@ namespace Laser
 	
 	void ResourceManager::Impl::AddShader( Shader &shader )
 	{
-		mShaders.insert( ShadersType::value_type( 0, &shader ) );
+		mShaders.insert( ShadersType::value_type( &shader, &shader ) );
 	}
 		
 	bool ResourceManager::CreateBuffer( const TGUL::String &name, Resource::Buffer **ppBuffer ) const

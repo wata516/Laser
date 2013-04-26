@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE9C125E17281BB0008059A8 /* Shader.h in Headers */ = {isa = PBXBuildFile; fileRef = BE9C125D17281BB0008059A8 /* Shader.h */; };
 		BEA70815172563480050B71F /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7080A172563480050B71F /* Buffer.cpp */; };
 		BEA70816172563480050B71F /* BufferFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7080B172563480050B71F /* BufferFactory.cpp */; };
 		BEA70817172563480050B71F /* BufferFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7080C172563480050B71F /* BufferFactory.h */; };
@@ -72,10 +71,10 @@
 		BEA7088B17256EBF0050B71F /* OpenGLFragmentShader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7088917256EBF0050B71F /* OpenGLFragmentShader.h */; };
 		BEA7088E172572590050B71F /* OpenGLShaderFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7088C172572590050B71F /* OpenGLShaderFactory.cpp */; };
 		BEA7088F172572590050B71F /* OpenGLShaderFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7088D172572590050B71F /* OpenGLShaderFactory.h */; };
+		BEA74BF1172A0A5B0089549C /* Shader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA74BF0172A0A5B0089549C /* Shader.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BE9C125D17281BB0008059A8 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = Common/Shader.h; sourceTree = "<group>"; };
 		BEA7080A172563480050B71F /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
 		BEA7080B172563480050B71F /* BufferFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BufferFactory.cpp; sourceTree = "<group>"; };
 		BEA7080C172563480050B71F /* BufferFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferFactory.h; sourceTree = "<group>"; };
@@ -140,6 +139,7 @@
 		BEA7088917256EBF0050B71F /* OpenGLFragmentShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLFragmentShader.h; sourceTree = "<group>"; };
 		BEA7088C172572590050B71F /* OpenGLShaderFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLShaderFactory.cpp; sourceTree = "<group>"; };
 		BEA7088D172572590050B71F /* OpenGLShaderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLShaderFactory.h; sourceTree = "<group>"; };
+		BEA74BF0172A0A5B0089549C /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = include/Laser/Shader.h; sourceTree = SOURCE_ROOT; };
 		BEE3FDC917181D3400605D33 /* libLaser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLaser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,6 +171,7 @@
 				BEA70844172563770050B71F /* Clear.h */,
 				BEA70845172563770050B71F /* CommandFactory.h */,
 				BEA70846172563770050B71F /* Exception.h */,
+				BEA74BF0172A0A5B0089549C /* Shader.h */,
 				BEA70847172563770050B71F /* GraphicsManager.h */,
 				BEA70848172563770050B71F /* IBase.h */,
 				BEA70849172563770050B71F /* IGraphicsManager.h */,
@@ -196,7 +197,6 @@
 				BEA7085C172563770050B71F /* UUID.h */,
 				BEA7085D172563770050B71F /* VertexDeclare.h */,
 				BEA7085E172563770050B71F /* Window.h */,
-				BE9C125D17281BB0008059A8 /* Shader.h */,
 			);
 			name = include;
 			sourceTree = "<group>";
@@ -330,7 +330,7 @@
 				BEA7088517256E320050B71F /* OpenGLVertexShader.h in Headers */,
 				BEA7088B17256EBF0050B71F /* OpenGLFragmentShader.h in Headers */,
 				BEA7088F172572590050B71F /* OpenGLShaderFactory.h in Headers */,
-				BE9C125E17281BB0008059A8 /* Shader.h in Headers */,
+				BEA74BF1172A0A5B0089549C /* Shader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +454,7 @@
 					"-include",
 					Platform.h,
 					"-linclude",
+					"-I/usr/include",
 				);
 				SDKROOT = macosx;
 			};
@@ -491,6 +492,7 @@
 					"-include",
 					Platform.h,
 					"-linclude",
+					"-I/usr/include",
 				);
 				SDKROOT = macosx;
 			};

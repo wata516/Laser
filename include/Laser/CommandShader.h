@@ -5,6 +5,7 @@
 namespace Laser
 {
 	class Shader;
+	class VertexDeclare;
 
 	namespace Command
 	{
@@ -25,6 +26,11 @@ namespace Laser
 			virtual ClassID GetClassID( ) const { return CLASS_ID_COMMAND_SHADER;}
 			virtual void SetShader( ShaderType type, Laser::Shader *pShader ) = 0;
 			virtual bool Create( ) = 0;
+			virtual bool IsAvailable( ) const = 0;
+			virtual void BindVertexDeclare( const VertexDeclare &declare ) { mVertexDeclare = &declare; }
+
+		private:
+			const VertexDeclare *mVertexDeclare;
 
 		};
 	}

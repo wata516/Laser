@@ -15,12 +15,13 @@ namespace Laser
 		static const UUID IUNKNOWN;
 		static const UUID IBUFFER;
 		static const UUID OBJECT;
-		static const UUID SYSMEMBUFFER;
+		static const UUID VERTEX_BUFFER;
 		static const UUID RESOURCE_IMANAGER;
 		static const UUID RESOURCE_MANAGER;
 			
 		static const UUID OPENGL_VERTEX_SHADER;
 		static const UUID OPENGL_FRAGMENT_SHADER;
+		static const UUID OPENGL_VERTEX_BUFFER;
 	};
 }
 

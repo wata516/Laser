@@ -1,6 +1,6 @@
 #include "BufferFactory.h"
 #include <Laser/Buffer.h>
-#include <Laser/SysmemBuffer.h>
+#include <Laser/VertexBuffer.h>
 #include <TGUL/String.h>
 #include <boost/function.hpp>
 #include <boost/bind.hpp>
@@ -11,9 +11,9 @@ namespace Laser
 {
 	namespace Resource
 	{
-		bool CreateSysmemBuffer( Buffer **ppBuffer )
+		bool CreateVertexBuffer( Buffer **ppBuffer )
 		{
-			*ppBuffer = new SysmemBuffer();
+			*ppBuffer = new VertexBuffer();
 
 			if( *ppBuffer == 0 ) {
 				return false;
@@ -25,7 +25,7 @@ namespace Laser
 		bool BufferFactory::Create( const TGUL::String &name, Buffer **ppBuffer )
 		{
 			std::map< TGUL::String, boost::function< bool( Buffer **) > > functions = boost::assign::map_list_of(
-				"SysmemBuffer", boost::bind( &CreateSysmemBuffer, ppBuffer )
+				"VertexBuffer", boost::bind( &CreateVertexBuffer, ppBuffer )
 				);
 
 			*ppBuffer = 0;

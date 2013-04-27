@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Laser/CommandShader.h>
+#include <Laser/VertexDeclare.h>
 #include <boost/array.hpp>
 #include <GL/glew.h>
 
@@ -18,10 +19,13 @@ namespace Laser
 			void Draw();
 			virtual void SetShader( ShaderType type, Laser::Shader *pShader );
 			virtual bool Create( );
+			
+			virtual bool IsAvailable() const;
 
 		private:
 			boost::array< Laser::OpenGLShader *, SHADER_TYPE_MAX > mShaders;
 			GLuint mProgram;
+			bool mIsAvailable;
 		};
 	}
 }

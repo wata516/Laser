@@ -26,7 +26,7 @@
 		BEA7081C172563480050B71F /* ObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70811172563480050B71F /* ObjectManager.cpp */; };
 		BEA7081D172563480050B71F /* Pass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70812172563480050B71F /* Pass.cpp */; };
 		BEA7081E172563480050B71F /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70813172563480050B71F /* ResourceManager.cpp */; };
-		BEA7081F172563480050B71F /* SysmemBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70814172563480050B71F /* SysmemBuffer.cpp */; };
+		BEA7081F172563480050B71F /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70814172563480050B71F /* VertexBuffer.cpp */; };
 		BEA70825172563560050B71F /* Technique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70820172563560050B71F /* Technique.cpp */; };
 		BEA70826172563560050B71F /* TechniqueManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70821172563560050B71F /* TechniqueManager.cpp */; };
 		BEA70827172563560050B71F /* UUID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA70822172563560050B71F /* UUID.cpp */; };
@@ -64,7 +64,7 @@
 		BEA70873172563770050B71F /* Pass.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70856172563770050B71F /* Pass.h */; };
 		BEA70874172563770050B71F /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70857172563770050B71F /* Platform.h */; };
 		BEA70875172563770050B71F /* ResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70858172563770050B71F /* ResourceManager.h */; };
-		BEA70876172563770050B71F /* SysmemBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70859172563770050B71F /* SysmemBuffer.h */; };
+		BEA70876172563770050B71F /* VertexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA70859172563770050B71F /* VertexBuffer.h */; };
 		BEA70877172563770050B71F /* Technique.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7085A172563770050B71F /* Technique.h */; };
 		BEA70878172563770050B71F /* TechniqueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7085B172563770050B71F /* TechniqueManager.h */; };
 		BEA70879172563770050B71F /* UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7085C172563770050B71F /* UUID.h */; };
@@ -78,6 +78,13 @@
 		BEA7088E172572590050B71F /* OpenGLShaderFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7088C172572590050B71F /* OpenGLShaderFactory.cpp */; };
 		BEA7088F172572590050B71F /* OpenGLShaderFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7088D172572590050B71F /* OpenGLShaderFactory.h */; };
 		BEA74BF1172A0A5B0089549C /* Shader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA74BF0172A0A5B0089549C /* Shader.h */; };
+		BEC880EA172B9B3C00784B29 /* OpenGLVertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC880E8172B9B3C00784B29 /* OpenGLVertexBuffer.cpp */; };
+		BEC880EB172B9B3C00784B29 /* OpenGLVertexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC880E9172B9B3C00784B29 /* OpenGLVertexBuffer.h */; };
+		BEC880EE172BE50500784B29 /* OpenGLBufferFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC880EC172BE50500784B29 /* OpenGLBufferFactory.cpp */; };
+		BEC880EF172BE50500784B29 /* OpenGLBufferFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC880ED172BE50500784B29 /* OpenGLBufferFactory.h */; };
+		BEC880F2172C04C400784B29 /* OpenGLCommandVertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC880F0172C04C200784B29 /* OpenGLCommandVertexBuffer.cpp */; };
+		BEC880F3172C04C400784B29 /* OpenGLCommandVertexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC880F1172C04C300784B29 /* OpenGLCommandVertexBuffer.h */; };
+		BEC880F5172C051200784B29 /* CommandVertexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC880F4172C051200784B29 /* CommandVertexBuffer.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,7 +107,7 @@
 		BEA70811172563480050B71F /* ObjectManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectManager.cpp; sourceTree = "<group>"; };
 		BEA70812172563480050B71F /* Pass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pass.cpp; sourceTree = "<group>"; };
 		BEA70813172563480050B71F /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
-		BEA70814172563480050B71F /* SysmemBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SysmemBuffer.cpp; sourceTree = "<group>"; };
+		BEA70814172563480050B71F /* VertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
 		BEA70820172563560050B71F /* Technique.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Technique.cpp; sourceTree = "<group>"; };
 		BEA70821172563560050B71F /* TechniqueManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TechniqueManager.cpp; sourceTree = "<group>"; };
 		BEA70822172563560050B71F /* UUID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UUID.cpp; sourceTree = "<group>"; };
@@ -138,7 +145,7 @@
 		BEA70856172563770050B71F /* Pass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pass.h; path = include/Laser/Pass.h; sourceTree = SOURCE_ROOT; };
 		BEA70857172563770050B71F /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = include/Laser/Platform.h; sourceTree = SOURCE_ROOT; };
 		BEA70858172563770050B71F /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = include/Laser/ResourceManager.h; sourceTree = SOURCE_ROOT; };
-		BEA70859172563770050B71F /* SysmemBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SysmemBuffer.h; path = include/Laser/SysmemBuffer.h; sourceTree = SOURCE_ROOT; };
+		BEA70859172563770050B71F /* VertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VertexBuffer.h; path = include/Laser/VertexBuffer.h; sourceTree = SOURCE_ROOT; };
 		BEA7085A172563770050B71F /* Technique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Technique.h; path = include/Laser/Technique.h; sourceTree = SOURCE_ROOT; };
 		BEA7085B172563770050B71F /* TechniqueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TechniqueManager.h; path = include/Laser/TechniqueManager.h; sourceTree = SOURCE_ROOT; };
 		BEA7085C172563770050B71F /* UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UUID.h; path = include/Laser/UUID.h; sourceTree = SOURCE_ROOT; };
@@ -152,6 +159,13 @@
 		BEA7088C172572590050B71F /* OpenGLShaderFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLShaderFactory.cpp; sourceTree = "<group>"; };
 		BEA7088D172572590050B71F /* OpenGLShaderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLShaderFactory.h; sourceTree = "<group>"; };
 		BEA74BF0172A0A5B0089549C /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = include/Laser/Shader.h; sourceTree = SOURCE_ROOT; };
+		BEC880E8172B9B3C00784B29 /* OpenGLVertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLVertexBuffer.cpp; sourceTree = "<group>"; };
+		BEC880E9172B9B3C00784B29 /* OpenGLVertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLVertexBuffer.h; sourceTree = "<group>"; };
+		BEC880EC172BE50500784B29 /* OpenGLBufferFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLBufferFactory.cpp; sourceTree = "<group>"; };
+		BEC880ED172BE50500784B29 /* OpenGLBufferFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLBufferFactory.h; sourceTree = "<group>"; };
+		BEC880F0172C04C200784B29 /* OpenGLCommandVertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandVertexBuffer.cpp; sourceTree = "<group>"; };
+		BEC880F1172C04C300784B29 /* OpenGLCommandVertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandVertexBuffer.h; sourceTree = "<group>"; };
+		BEC880F4172C051200784B29 /* CommandVertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandVertexBuffer.h; path = include/Laser/CommandVertexBuffer.h; sourceTree = SOURCE_ROOT; };
 		BEE3FDC917181D3400605D33 /* libLaser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLaser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -183,6 +197,7 @@
 				BEA6BC40172ABD9B006215BF /* CommandClear.h */,
 				BEA70845172563770050B71F /* CommandFactory.h */,
 				BEA6BC41172ABD9B006215BF /* CommandShader.h */,
+				BEC880F4172C051200784B29 /* CommandVertexBuffer.h */,
 				BEA70846172563770050B71F /* Exception.h */,
 				BEA70847172563770050B71F /* GraphicsManager.h */,
 				BEA70848172563770050B71F /* IBase.h */,
@@ -204,10 +219,10 @@
 				BEA70857172563770050B71F /* Platform.h */,
 				BEA70858172563770050B71F /* ResourceManager.h */,
 				BEA74BF0172A0A5B0089549C /* Shader.h */,
-				BEA70859172563770050B71F /* SysmemBuffer.h */,
 				BEA7085A172563770050B71F /* Technique.h */,
 				BEA7085B172563770050B71F /* TechniqueManager.h */,
 				BEA7085C172563770050B71F /* UUID.h */,
+				BEA70859172563770050B71F /* VertexBuffer.h */,
 				BEA7085D172563770050B71F /* VertexDeclare.h */,
 				BEA7085E172563770050B71F /* Window.h */,
 			);
@@ -261,7 +276,7 @@
 				BEA70811172563480050B71F /* ObjectManager.cpp */,
 				BEA70812172563480050B71F /* Pass.cpp */,
 				BEA70813172563480050B71F /* ResourceManager.cpp */,
-				BEA70814172563480050B71F /* SysmemBuffer.cpp */,
+				BEA70814172563480050B71F /* VertexBuffer.cpp */,
 				BEA70820172563560050B71F /* Technique.cpp */,
 				BEA70821172563560050B71F /* TechniqueManager.cpp */,
 				BEA70822172563560050B71F /* UUID.cpp */,
@@ -274,10 +289,14 @@
 		BEE3FE0017183C5A00605D33 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				BEC880EC172BE50500784B29 /* OpenGLBufferFactory.cpp */,
+				BEC880ED172BE50500784B29 /* OpenGLBufferFactory.h */,
 				BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */,
 				BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */,
 				BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */,
 				BEA6BC39172ABD73006215BF /* OpenGLCommandShader.h */,
+				BEC880F0172C04C200784B29 /* OpenGLCommandVertexBuffer.cpp */,
+				BEC880F1172C04C300784B29 /* OpenGLCommandVertexBuffer.h */,
 				BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */,
 				BEA7088917256EBF0050B71F /* OpenGLFragmentShader.h */,
 				BEA7082C172563630050B71F /* OpenGLGraphicsManager.cpp */,
@@ -292,6 +311,8 @@
 				BEA7088D172572590050B71F /* OpenGLShaderFactory.h */,
 				BEA70832172563630050B71F /* OpenGLTechniqueManager.cpp */,
 				BEA70833172563630050B71F /* OpenGLTechniqueManager.h */,
+				BEC880E8172B9B3C00784B29 /* OpenGLVertexBuffer.cpp */,
+				BEC880E9172B9B3C00784B29 /* OpenGLVertexBuffer.h */,
 				BEA7088617256E7F0050B71F /* OpenGLVertexShader.cpp */,
 				BEA7088417256E320050B71F /* OpenGLVertexShader.h */,
 				BEA70834172563630050B71F /* OpenGLWindow.cpp */,
@@ -336,7 +357,7 @@
 				BEA70873172563770050B71F /* Pass.h in Headers */,
 				BEA70874172563770050B71F /* Platform.h in Headers */,
 				BEA70875172563770050B71F /* ResourceManager.h in Headers */,
-				BEA70876172563770050B71F /* SysmemBuffer.h in Headers */,
+				BEA70876172563770050B71F /* VertexBuffer.h in Headers */,
 				BEA70877172563770050B71F /* Technique.h in Headers */,
 				BEA70878172563770050B71F /* TechniqueManager.h in Headers */,
 				BEA70879172563770050B71F /* UUID.h in Headers */,
@@ -352,6 +373,10 @@
 				BEA6BC42172ABD9B006215BF /* CommandClear.h in Headers */,
 				BEA6BC43172ABD9B006215BF /* CommandShader.h in Headers */,
 				BEA6BC47172ABFFC006215BF /* OpenGLShader.h in Headers */,
+				BEC880EB172B9B3C00784B29 /* OpenGLVertexBuffer.h in Headers */,
+				BEC880EF172BE50500784B29 /* OpenGLBufferFactory.h in Headers */,
+				BEC880F3172C04C400784B29 /* OpenGLCommandVertexBuffer.h in Headers */,
+				BEC880F5172C051200784B29 /* CommandVertexBuffer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +440,7 @@
 				BEA7081C172563480050B71F /* ObjectManager.cpp in Sources */,
 				BEA7081D172563480050B71F /* Pass.cpp in Sources */,
 				BEA7081E172563480050B71F /* ResourceManager.cpp in Sources */,
-				BEA7081F172563480050B71F /* SysmemBuffer.cpp in Sources */,
+				BEA7081F172563480050B71F /* VertexBuffer.cpp in Sources */,
 				BEA70825172563560050B71F /* Technique.cpp in Sources */,
 				BEA70826172563560050B71F /* TechniqueManager.cpp in Sources */,
 				BEA70827172563560050B71F /* UUID.cpp in Sources */,
@@ -433,6 +458,9 @@
 				BEA6BC3D172ABD73006215BF /* OpenGLCommandShader.cpp in Sources */,
 				BEA6BC3F172ABD73006215BF /* OpenGLFragmentShader.cpp in Sources */,
 				BEA6BC46172ABFFC006215BF /* OpenGLShader.cpp in Sources */,
+				BEC880EA172B9B3C00784B29 /* OpenGLVertexBuffer.cpp in Sources */,
+				BEC880EE172BE50500784B29 /* OpenGLBufferFactory.cpp in Sources */,
+				BEC880F2172C04C400784B29 /* OpenGLCommandVertexBuffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

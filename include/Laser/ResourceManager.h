@@ -19,6 +19,7 @@ namespace TGUL
 namespace Laser
 {
 	class Shader;
+	class Buffer;
 
 	class ResourceManager : IResourceManager
 	{
@@ -26,16 +27,18 @@ namespace Laser
 		ResourceManager();
 
 	public:
-		bool CreateBuffer( const TGUL::String &name, Resource::Buffer **ppBuffer ) const;
+		virtual bool CreateBuffer( const TGUL::String &CreateName, const TGUL::String &BufferName, Resource::Buffer **ppBuffer ) = 0;
 		virtual bool CreateShader( const TGUL::String &CreateName, const TGUL::String &ShaderName, Shader **ppShader ) = 0;
 		
 		void Execute();
 
 	public:
 		bool GetShader( const TGUL::String &ShaderName, Shader **ppShader ) const;
+		bool GetBuffer( const TGUL::String &BufferName, Resource::Buffer **ppBuffer ) const;
 
 	protected:
 		bool AddShader( const TGUL::String &name, Shader &shader );
+		bool AddBuffer( const TGUL::String &name, Resource::Buffer &buffer );
 
 	private:
 		class Impl;

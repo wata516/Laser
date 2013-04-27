@@ -3,8 +3,14 @@
 
 namespace Laser
 {
+	OpenGLShader::OpenGLShader()
+	: mIsAvailable( false )
+	{}
+
 	bool OpenGLShader::CompileShader( GLint ShaderType, const GLchar *pSourceCode, GLint SourceCodeSize )
 	{
+		mIsAvailable = false;
+
 		mShader = glCreateShader( ShaderType );
 
 		glShaderSource( mShader, 1, &pSourceCode, &SourceCodeSize );
@@ -28,6 +34,13 @@ namespace Laser
 			return false;
 		}
 
+		mIsAvailable = true;
+
 		return true;
+	}
+	
+	bool OpenGLShader::IsAvailable() const
+	{
+		return mIsAvailable;
 	}
 }

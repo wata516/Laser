@@ -17,7 +17,7 @@ namespace Laser
 		class Buffer : public Object
 		{
 		public:
-			typedef boost::function< size_t( void *pAddress, size_t a, size_t n ) > WriteType;
+			typedef boost::function< size_t( void *pAddress, size_t a ) > WriteType;
 
 			enum Status {
 				STATUS_NONE,	//!< 作成されていない状態

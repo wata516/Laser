@@ -2,6 +2,11 @@
 
 #include <bitset>
 
+namespace TGUL
+{
+	class String;
+}
+
 namespace Laser
 {
 	class IVertexDeclare
@@ -10,6 +15,7 @@ namespace Laser
 		enum TYPE
 		{
 			TYPE_P32,	//!<	POSITION float*4
+			TYPE_C32,	//!<	COLOR float*4
 			TYPE_MAX
 		};
 		typedef std::bitset< IVertexDeclare::TYPE_MAX > VertexType;

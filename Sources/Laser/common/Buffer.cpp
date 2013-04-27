@@ -84,6 +84,7 @@ namespace Laser
 				}
 
 				if( mIFStream.eof() ) {
+					mIFStream.close();
 					mStatus = Buffer::STATUS_NORMAL;
 					return STATUS_CALL_READ_COMPLETE;
 				}

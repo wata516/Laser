@@ -18,7 +18,6 @@ namespace Laser
 
 	public:
 		VertexDeclare() {}
-		explicit VertexDeclare( const VertexType &type );
 		~VertexDeclare() {}
 		
 	public:

@@ -27,6 +27,7 @@ namespace Laser
 		
 	bool OpenGLGraphicsManager::Impl::Create( const TGUL::String &name )
 	{
+		glewExperimental = GL_TRUE;
 		if( glfwInit() == GL_FALSE ) {
 			return false;
 		}

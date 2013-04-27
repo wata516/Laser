@@ -13,18 +13,6 @@ namespace Laser
 		GetVertexSize< sizeof( float ), 4 >::value	// C32
 	};
 
-	VertexDeclare::VertexDeclare( const VertexType &type )
-	{
-		for( size_t i = 0 ; i < IVertexDeclare::TYPE_MAX ; ++ i ) {
-			if( type[i] ) {
-				mTypes |= i;
-			}
-		}
-		mTypes.reset();
-		mTypes[0] = 1;
-		mTypes[1] = 1;
-	}
-
 	size_t VertexDeclare::GetSize( ) const
 	{
 		size_t result = 0;
@@ -40,6 +28,7 @@ namespace Laser
 
 	void VertexDeclare::CreateVertexElement( IVertexDeclare::TYPE type, const TGUL::String &VariableName, int Locate )
 	{
+		mTypes[type] = 1;
 		mVertexElements[ type ].VariableName = VariableName;
 		mVertexElements[ type ].Locate = Locate;
 	}

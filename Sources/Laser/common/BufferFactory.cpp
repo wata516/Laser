@@ -13,12 +13,13 @@ namespace Laser
 	{
 		bool CreateVertexBuffer( Buffer **ppBuffer )
 		{
-			*ppBuffer = new VertexBuffer();
+#if 0
+			*ppBuffer = new OpenGLVertexBuffer();
 
 			if( *ppBuffer == 0 ) {
 				return false;
 			}
-
+#endif
 			return true;
 		}
 

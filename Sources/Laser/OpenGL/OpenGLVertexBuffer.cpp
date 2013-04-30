@@ -22,7 +22,7 @@ namespace Laser
 		
 		GLint GLElementSize;
 		
-		try {
+		try { 
 			GLElementSize = boost::numeric::converter< GLint, size_t >::convert( mDeclare.GetElementNum() );
 		} catch( std::exception const& ) {
 			ASSERT( 0, "numeric cast exception." );
@@ -49,6 +49,7 @@ namespace Laser
 
 		char *pCurrent = pTempolary.get();
 		for( size_t i = 0 ; i < mDeclare.GetElementNum() ; ++ i ) {
+
 			IVertexDeclare::TYPE type;
 			if( mDeclare.GetVertexType( i, &type ) ) {
 				size_t BufferSize = mDeclare.GetTypeVertexSize(type) * mVertexNum;
@@ -62,19 +63,19 @@ namespace Laser
 
 		glGenVertexArrays( 1, &mHandle );
 		glBindVertexArray( mHandle );
-		
+
 		for( size_t i = 0 ; i < mDeclare.GetElementNum() ; ++ i ) {
 			const VertexDeclare::VertexElement *pElm = mDeclare.GetElement( i );
 			IVertexDeclare::TYPE type;
 			if( mDeclare.GetVertexType( i, &type ) ) {
 				if( pElm != 0 ) {
+					glBindBuffer( GL_ARRAY_BUFFER, mVertexBuffers[i] );
 					glVertexAttribPointer(pElm->Locate, 4, gVertexType[type], GL_FALSE, 0, 0);
 					glEnableVertexAttribArray( pElm->Locate );
 				}
 			}
 		}
 		
-		// 頂点バッファオブジェクトと頂点配列オブジェクトの結合を解除する
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 		glBindVertexArray(0);
 

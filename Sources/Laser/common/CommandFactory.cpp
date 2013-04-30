@@ -9,6 +9,7 @@
 #include "../OpenGL/OpenGLCommandClear.h"
 #include "../OpenGL/OpenGLCommandShader.h"
 #include "../OpenGL/OpenGLCommandVertexBuffer.h"
+#include "../OpenGL/OpenGLCommandMaterial.h"
 
 namespace Laser
 {
@@ -45,12 +46,24 @@ namespace Laser
 		return true;
 	}
 
+	bool CreateMaterial( Command::IBase **ppBase )
+	{
+		*ppBase = new Command::OpenGLMaterial();
+		
+		if( *ppBase == 0 ) {
+			return false;
+		}
+		
+		return true;
+	}
+
 	bool CommandFactory::CreateCommand( const TGUL::String &name, Command::IBase **ppBase )
 	{
 		std::map< TGUL::String, boost::function< bool( Command::IBase **) > > functions = boost::assign::map_list_of
 			("Clear", boost::bind( &CreateClear, ppBase ))
 			("Shader", boost::bind( &CreateShader, ppBase ))
 			("VertexBuffer", boost::bind( &CreateVertexBuffer, ppBase ))
+			("Material", boost::bind( &CreateMaterial, ppBase ))
 		
 		;
 

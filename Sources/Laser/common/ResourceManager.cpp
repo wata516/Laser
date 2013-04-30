@@ -91,6 +91,11 @@ namespace Laser
 		return mImpl->GetShader( ShaderName, ppShader );
 	}
 
+	bool ResourceManager::GetBuffer( const TGUL::String &BufferName, Resource::Buffer **ppBuffer ) const
+	{
+		return mImpl->GetBuffer( BufferName, ppBuffer );
+	}
+
 	bool ResourceManager::AddShader( const TGUL::String &name, Shader &shader )
 	{
 		return mImpl->AddShader( name, shader );

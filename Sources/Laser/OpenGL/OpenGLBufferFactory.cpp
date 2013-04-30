@@ -1,5 +1,6 @@
 #include "OpenGLBufferFactory.h"
 #include "OpenGLVertexBuffer.h"
+#include "OpenGLShaderUniformBuffer.h"
 
 #include <TGUL/String.h>
 
@@ -20,11 +21,23 @@ namespace Laser
 		return true;
 	}
 	
+	bool CreateOpenGLShaderUniformBuffer( const TGUL::String &name, Resource::Buffer **ppBuffer )
+	{
+		*ppBuffer = new OpenGLShaderUniformBuffer( );
+		
+		if( *ppBuffer == 0 ) {
+			return false;
+		}
+		
+		return true;
+	}
+	
 	bool OpenGLBufferFactory::Create( const TGUL::String &name, Resource::Buffer **ppBuffer )
 	{
 		std::map< TGUL::String, boost::function< bool( const TGUL::String &, Resource::Buffer ** ) > > functions
 		= boost::assign::map_list_of
 		( "VertexBuffer", boost::bind( &CreateOpenGLVertexBuffer, name, ppBuffer ))		// VertexBuffer
+		( "UniformBuffer", boost::bind( &CreateOpenGLShaderUniformBuffer, name, ppBuffer ))		// VertexBuffer
 		;
 		*ppBuffer = 0;
 		

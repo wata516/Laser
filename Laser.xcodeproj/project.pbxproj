@@ -78,6 +78,14 @@
 		BEA7088E172572590050B71F /* OpenGLShaderFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7088C172572590050B71F /* OpenGLShaderFactory.cpp */; };
 		BEA7088F172572590050B71F /* OpenGLShaderFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7088D172572590050B71F /* OpenGLShaderFactory.h */; };
 		BEA74BF1172A0A5B0089549C /* Shader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA74BF0172A0A5B0089549C /* Shader.h */; };
+		BEA87A09172FC6D800F8833E /* ShaderUniformBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA87A08172FC6D800F8833E /* ShaderUniformBuffer.h */; };
+		BEA87A0B172FCA8700F8833E /* OpenGLShaderUniformBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA87A0A172FCA8700F8833E /* OpenGLShaderUniformBuffer.h */; };
+		BEA87A0D172FCB6700F8833E /* OpenGLShaderUniformBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA87A0C172FCB6700F8833E /* OpenGLShaderUniformBuffer.cpp */; };
+		BEA87A0F172FE7F500F8833E /* CommandMaterial.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA87A0E172FE7F500F8833E /* CommandMaterial.h */; };
+		BEA87A12172FE92C00F8833E /* OpenGLCommandMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA87A10172FE92B00F8833E /* OpenGLCommandMaterial.cpp */; };
+		BEA87A13172FE92C00F8833E /* OpenGLCommandMaterial.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */; };
+		BEA87A15172FEEAF00F8833E /* CommandMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA87A14172FEEAF00F8833E /* CommandMaterial.cpp */; };
+		BEA87A17172FF23400F8833E /* ShaderUniformBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */; };
 		BEC880EA172B9B3C00784B29 /* OpenGLVertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC880E8172B9B3C00784B29 /* OpenGLVertexBuffer.cpp */; };
 		BEC880EB172B9B3C00784B29 /* OpenGLVertexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC880E9172B9B3C00784B29 /* OpenGLVertexBuffer.h */; };
 		BEC880EE172BE50500784B29 /* OpenGLBufferFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC880EC172BE50500784B29 /* OpenGLBufferFactory.cpp */; };
@@ -159,6 +167,14 @@
 		BEA7088C172572590050B71F /* OpenGLShaderFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLShaderFactory.cpp; sourceTree = "<group>"; };
 		BEA7088D172572590050B71F /* OpenGLShaderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLShaderFactory.h; sourceTree = "<group>"; };
 		BEA74BF0172A0A5B0089549C /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = include/Laser/Shader.h; sourceTree = SOURCE_ROOT; };
+		BEA87A08172FC6D800F8833E /* ShaderUniformBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderUniformBuffer.h; path = include/Laser/ShaderUniformBuffer.h; sourceTree = SOURCE_ROOT; };
+		BEA87A0A172FCA8700F8833E /* OpenGLShaderUniformBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLShaderUniformBuffer.h; sourceTree = "<group>"; };
+		BEA87A0C172FCB6700F8833E /* OpenGLShaderUniformBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLShaderUniformBuffer.cpp; sourceTree = "<group>"; };
+		BEA87A0E172FE7F500F8833E /* CommandMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandMaterial.h; path = include/Laser/CommandMaterial.h; sourceTree = SOURCE_ROOT; };
+		BEA87A10172FE92B00F8833E /* OpenGLCommandMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandMaterial.cpp; sourceTree = "<group>"; };
+		BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandMaterial.h; sourceTree = "<group>"; };
+		BEA87A14172FEEAF00F8833E /* CommandMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandMaterial.cpp; sourceTree = "<group>"; };
+		BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderUniformBuffer.cpp; sourceTree = "<group>"; };
 		BEC880E8172B9B3C00784B29 /* OpenGLVertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLVertexBuffer.cpp; sourceTree = "<group>"; };
 		BEC880E9172B9B3C00784B29 /* OpenGLVertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLVertexBuffer.h; sourceTree = "<group>"; };
 		BEC880EC172BE50500784B29 /* OpenGLBufferFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLBufferFactory.cpp; sourceTree = "<group>"; };
@@ -196,6 +212,7 @@
 				BEA70843172563770050B71F /* ClassID.h */,
 				BEA6BC40172ABD9B006215BF /* CommandClear.h */,
 				BEA70845172563770050B71F /* CommandFactory.h */,
+				BEA87A0E172FE7F500F8833E /* CommandMaterial.h */,
 				BEA6BC41172ABD9B006215BF /* CommandShader.h */,
 				BEC880F4172C051200784B29 /* CommandVertexBuffer.h */,
 				BEA70846172563770050B71F /* Exception.h */,
@@ -219,6 +236,7 @@
 				BEA70857172563770050B71F /* Platform.h */,
 				BEA70858172563770050B71F /* ResourceManager.h */,
 				BEA74BF0172A0A5B0089549C /* Shader.h */,
+				BEA87A08172FC6D800F8833E /* ShaderUniformBuffer.h */,
 				BEA7085A172563770050B71F /* Technique.h */,
 				BEA7085B172563770050B71F /* TechniqueManager.h */,
 				BEA7085C172563770050B71F /* UUID.h */,
@@ -270,18 +288,20 @@
 				BEA7080B172563480050B71F /* BufferFactory.cpp */,
 				BEA7080C172563480050B71F /* BufferFactory.h */,
 				BEA7080D172563480050B71F /* CommandFactory.cpp */,
+				BEA87A14172FEEAF00F8833E /* CommandMaterial.cpp */,
 				BEA7080E172563480050B71F /* GraphicsManager.cpp */,
 				BEA7080F172563480050B71F /* ManagerFactory.cpp */,
 				BEA70810172563480050B71F /* Object.cpp */,
 				BEA70811172563480050B71F /* ObjectManager.cpp */,
 				BEA70812172563480050B71F /* Pass.cpp */,
 				BEA70813172563480050B71F /* ResourceManager.cpp */,
-				BEA70814172563480050B71F /* VertexBuffer.cpp */,
 				BEA70820172563560050B71F /* Technique.cpp */,
 				BEA70821172563560050B71F /* TechniqueManager.cpp */,
 				BEA70822172563560050B71F /* UUID.cpp */,
+				BEA70814172563480050B71F /* VertexBuffer.cpp */,
 				BEA70823172563560050B71F /* VertexDeclare.cpp */,
 				BEA70824172563560050B71F /* Window.cpp */,
+				BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -293,6 +313,8 @@
 				BEC880ED172BE50500784B29 /* OpenGLBufferFactory.h */,
 				BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */,
 				BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */,
+				BEA87A10172FE92B00F8833E /* OpenGLCommandMaterial.cpp */,
+				BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */,
 				BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */,
 				BEA6BC39172ABD73006215BF /* OpenGLCommandShader.h */,
 				BEC880F0172C04C200784B29 /* OpenGLCommandVertexBuffer.cpp */,
@@ -309,6 +331,8 @@
 				BEA6BC45172ABFFC006215BF /* OpenGLShader.h */,
 				BEA7088C172572590050B71F /* OpenGLShaderFactory.cpp */,
 				BEA7088D172572590050B71F /* OpenGLShaderFactory.h */,
+				BEA87A0C172FCB6700F8833E /* OpenGLShaderUniformBuffer.cpp */,
+				BEA87A0A172FCA8700F8833E /* OpenGLShaderUniformBuffer.h */,
 				BEA70832172563630050B71F /* OpenGLTechniqueManager.cpp */,
 				BEA70833172563630050B71F /* OpenGLTechniqueManager.h */,
 				BEC880E8172B9B3C00784B29 /* OpenGLVertexBuffer.cpp */,
@@ -377,6 +401,10 @@
 				BEC880EF172BE50500784B29 /* OpenGLBufferFactory.h in Headers */,
 				BEC880F3172C04C400784B29 /* OpenGLCommandVertexBuffer.h in Headers */,
 				BEC880F5172C051200784B29 /* CommandVertexBuffer.h in Headers */,
+				BEA87A09172FC6D800F8833E /* ShaderUniformBuffer.h in Headers */,
+				BEA87A0B172FCA8700F8833E /* OpenGLShaderUniformBuffer.h in Headers */,
+				BEA87A0F172FE7F500F8833E /* CommandMaterial.h in Headers */,
+				BEA87A13172FE92C00F8833E /* OpenGLCommandMaterial.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +489,10 @@
 				BEC880EA172B9B3C00784B29 /* OpenGLVertexBuffer.cpp in Sources */,
 				BEC880EE172BE50500784B29 /* OpenGLBufferFactory.cpp in Sources */,
 				BEC880F2172C04C400784B29 /* OpenGLCommandVertexBuffer.cpp in Sources */,
+				BEA87A0D172FCB6700F8833E /* OpenGLShaderUniformBuffer.cpp in Sources */,
+				BEA87A12172FE92C00F8833E /* OpenGLCommandMaterial.cpp in Sources */,
+				BEA87A15172FEEAF00F8833E /* CommandMaterial.cpp in Sources */,
+				BEA87A17172FF23400F8833E /* ShaderUniformBuffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

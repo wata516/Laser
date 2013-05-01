@@ -16,7 +16,7 @@ namespace Laser
 			virtual bool Create( Laser::VertexBuffer *pVertexBuffer );
 
 		public:
-			void Draw();
+			virtual void Draw( DrawStatus &Status );
 			
 		private:
 			const Laser::OpenGLVertexBuffer *mVertexBuffer;

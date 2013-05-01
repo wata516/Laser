@@ -1,4 +1,5 @@
 #include "OpenGLShaderUniformBuffer.h"
+#include <TGUL/String.h>
 
 namespace Laser
 {
@@ -30,8 +31,10 @@ namespace Laser
 		return true;
 	}
 	
-	void OpenGLShaderUniformBuffer::Bind( int location ) const
+	void OpenGLShaderUniformBuffer::Bind( int location, const TGUL::String &name )
 	{
+		mLocation = location;
+		mName = name;
 		glBindBufferBase( GL_UNIFORM_BUFFER, location, mHandle );
 	}
 	

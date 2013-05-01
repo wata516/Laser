@@ -23,7 +23,7 @@ namespace Laser
 			return false;
 		}
 		
-		void OpenGLVertexBuffer::Draw()
+		void OpenGLVertexBuffer::Draw( DrawStatus &Status )
 		{
 			if( mVertexBuffer ) {
 				glBindVertexArray( mVertexBuffer->GetHandle() );

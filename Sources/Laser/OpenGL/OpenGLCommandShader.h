@@ -16,7 +16,8 @@ namespace Laser
 			OpenGLShader();
 
 		public:
-			void Draw();
+			virtual void Draw( DrawStatus &Status );
+			virtual Laser::Shader *GetShader( ShaderType type ) const;
 			virtual void SetShader( ShaderType type, Laser::Shader *pShader );
 			virtual bool Create( );
 			

@@ -5,6 +5,7 @@
 
 namespace Laser
 {
+	class DrawStatus;
 	namespace Command
 	{
 		class IBase
@@ -17,7 +18,7 @@ namespace Laser
 
 		public:
 			virtual ClassID GetClassID( ) const = 0;
-			virtual void Draw() = 0;
+			virtual void Draw( DrawStatus &Status ) = 0;
 
 			template< class T >
 			T *Get( );

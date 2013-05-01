@@ -12,6 +12,7 @@ namespace Laser
 
 	public:
 		GLuint GetShader() const { return mShader; }
+		bool GetUniformIndex( const TGUL::String &Name, unsigned int *pIndex ) const;
 		
 		virtual bool IsAvailable( ) const;
 

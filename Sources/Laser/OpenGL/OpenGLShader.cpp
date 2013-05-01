@@ -1,5 +1,6 @@
 #include "OpenGLShader.h"
 #include <boost/scoped_array.hpp>
+#include <TGUL/String.h>
 
 namespace Laser
 {
@@ -43,4 +44,19 @@ namespace Laser
 	{
 		return mIsAvailable;
 	}
+	
+	bool OpenGLShader::GetUniformIndex( const TGUL::String &Name, unsigned int *pIndex ) const
+	{
+		if( mIsAvailable == false ) {
+			return false;
+		}
+		GLuint index = glGetUniformBlockIndex( mShader, Name.c_str() );
+		if( index == GL_INVALID_INDEX ) {
+			return false;
+		}
+		*pIndex = index;
+		
+		return true;
+	}
+
 }

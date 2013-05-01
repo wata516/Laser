@@ -19,7 +19,7 @@ namespace Laser
 
 			virtual bool Create( ShaderUniformBuffer *pShaderUniformBuffer ) = 0;
 			
-			virtual void UpdateShaderUniformBuffer( const ShaderUniformBufferClassBase &base ) = 0;
+			virtual void UpdateShaderUniformBuffer( const ShaderUniformBufferClassBase &base, int location, const TGUL::String &name ) = 0;
 
 		protected:
 			ShaderUniformBuffer * mShaderUniformBuffers;

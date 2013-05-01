@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE7E370F17314BAE0004A3D2 /* DrawStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7E370E17314BAD0004A3D2 /* DrawStatus.h */; };
 		BEA6BC3B172ABD73006215BF /* OpenGLCommandClear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */; };
 		BEA6BC3C172ABD73006215BF /* OpenGLCommandClear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */; };
 		BEA6BC3D172ABD73006215BF /* OpenGLCommandShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */; };
@@ -96,6 +97,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE7E370E17314BAD0004A3D2 /* DrawStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawStatus.h; path = include/Laser/DrawStatus.h; sourceTree = SOURCE_ROOT; };
 		BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandClear.cpp; sourceTree = "<group>"; };
 		BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandClear.h; sourceTree = "<group>"; };
 		BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandShader.cpp; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				BEA87A0E172FE7F500F8833E /* CommandMaterial.h */,
 				BEA6BC41172ABD9B006215BF /* CommandShader.h */,
 				BEC880F4172C051200784B29 /* CommandVertexBuffer.h */,
+				BE7E370E17314BAD0004A3D2 /* DrawStatus.h */,
 				BEA70846172563770050B71F /* Exception.h */,
 				BEA70847172563770050B71F /* GraphicsManager.h */,
 				BEA70848172563770050B71F /* IBase.h */,
@@ -405,6 +408,7 @@
 				BEA87A0B172FCA8700F8833E /* OpenGLShaderUniformBuffer.h in Headers */,
 				BEA87A0F172FE7F500F8833E /* CommandMaterial.h in Headers */,
 				BEA87A13172FE92C00F8833E /* OpenGLCommandMaterial.h in Headers */,
+				BE7E370F17314BAE0004A3D2 /* DrawStatus.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

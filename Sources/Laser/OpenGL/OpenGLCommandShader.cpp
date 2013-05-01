@@ -1,6 +1,7 @@
 #include "OpenGLCommandShader.h"
 #include <boost/foreach.hpp>
-#include "Laser/OpenGLShader.h"
+#include "OpenGLShader.h"
+#include <Laser/DrawStatus.h>
 #include <boost/scoped_array.hpp>
 
 namespace Laser
@@ -16,11 +17,18 @@ namespace Laser
 			}
 		}
 
-		void OpenGLShader::Draw()
+		void OpenGLShader::Draw( DrawStatus &Status )
 		{
 			if( mIsAvailable ) {
+				Status.SetShader( Command::Shader::SHADER_TYPE_VERTEX, mShaders[ Command::Shader::SHADER_TYPE_VERTEX ] );
+				Status.SetShader( Command::Shader::SHADER_TYPE_FRAGMENT, mShaders[ Command::Shader::SHADER_TYPE_FRAGMENT ] );
 				glUseProgram( mProgram );
 			}
+		}
+
+		Laser::Shader *OpenGLShader::GetShader( ShaderType type ) const
+		{
+			return mShaders[ type ];
 		}
 
 		void OpenGLShader::SetShader( ShaderType type, Laser::Shader *pShader )

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Laser/ShaderUniformBuffer.h>
+#include <TGUL/String.H>
 #include <GL/glew.h>
 
 namespace Laser
@@ -19,9 +20,13 @@ namespace Laser
 		virtual bool Create();
 		virtual bool Update( const ShaderUniformBufferClassBase &base );
 		
-		void Bind( int location ) const;
+		void Bind( int location, const TGUL::String &name );
+		GLuint GetHandle() const { return mHandle; }
+		const TGUL::String &GetName() const { return mName; }
 
 	private:
 		GLuint mHandle;
+		int mLocation;
+		TGUL::String mName;
 	};
 }

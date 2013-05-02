@@ -4,6 +4,7 @@
 
 namespace Laser
 {
+	class Shader;
 	class ShaderUniformBuffer;
 	class ShaderUniformBufferBase;
 	class ShaderUniformBufferClassBase;
@@ -17,9 +18,10 @@ namespace Laser
 		public:
 			virtual ClassID GetClassID( ) const { return CLASS_ID_COMMAND_MATERIAL;}
 
-			virtual bool Create( ShaderUniformBuffer *pShaderUniformBuffer ) = 0;
+			virtual bool Create( Shader *pVertexShader, Shader *pFragmentShader, ShaderUniformBuffer *pShaderUniformBuffer ) = 0;
 			
 			virtual void UpdateShaderUniformBuffer( const ShaderUniformBufferClassBase &base, int location, const TGUL::String &name ) = 0;
+			virtual bool IsAvailable() const = 0;
 
 		protected:
 			ShaderUniformBuffer * mShaderUniformBuffers;

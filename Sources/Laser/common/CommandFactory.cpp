@@ -7,7 +7,6 @@
 #include <map>
 
 #include "../OpenGL/OpenGLCommandClear.h"
-#include "../OpenGL/OpenGLCommandShader.h"
 #include "../OpenGL/OpenGLCommandVertexBuffer.h"
 #include "../OpenGL/OpenGLCommandMaterial.h"
 
@@ -16,17 +15,6 @@ namespace Laser
 	bool CreateClear( Command::IBase **ppBase )
 	{
 		*ppBase = new Command::OpenGLClear();
-
-		if( *ppBase == 0 ) {
-			return false;
-		}
-
-		return true;
-	}
-
-	bool CreateShader( Command::IBase **ppBase )
-	{
-		*ppBase = new Command::OpenGLShader();
 
 		if( *ppBase == 0 ) {
 			return false;
@@ -61,7 +49,6 @@ namespace Laser
 	{
 		std::map< TGUL::String, boost::function< bool( Command::IBase **) > > functions = boost::assign::map_list_of
 			("Clear", boost::bind( &CreateClear, ppBase ))
-			("Shader", boost::bind( &CreateShader, ppBase ))
 			("VertexBuffer", boost::bind( &CreateVertexBuffer, ppBase ))
 			("Material", boost::bind( &CreateMaterial, ppBase ))
 		

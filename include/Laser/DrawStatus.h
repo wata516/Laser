@@ -1,18 +1,29 @@
 #pragma once
 
-#include <Laser/CommandShader.h>
 #include <boost/array.hpp>
 
 namespace Laser
 {
+	namespace Command
+	{
+		class Material;
+	};
+
 	class Shader;
 	class DrawStatus
 	{
 	public:
-		void SetShader( Command::Shader::ShaderType type, Shader *pShader ) { mShaders[ type ] = pShader; }
-		Shader *GetShader( Command::Shader::ShaderType type ) { return mShaders[type]; }
+		struct DrawCommand {
+			DrawCommand()
+			: mCommandMaterial( 0 )
+			{}
+
+			Command::Material *mCommandMaterial;
+		};
+		
+		DrawCommand &GetPrevCommand() { return mPrevCommand; }
 
 	private:
-		boost::array< Shader *, Command::Shader::SHADER_TYPE_MAX > mShaders;
+		DrawCommand mPrevCommand;
 	};
 }

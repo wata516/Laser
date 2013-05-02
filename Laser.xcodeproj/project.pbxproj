@@ -10,11 +10,10 @@
 		BE7E370F17314BAE0004A3D2 /* DrawStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7E370E17314BAD0004A3D2 /* DrawStatus.h */; };
 		BEA6BC3B172ABD73006215BF /* OpenGLCommandClear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */; };
 		BEA6BC3C172ABD73006215BF /* OpenGLCommandClear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */; };
-		BEA6BC3D172ABD73006215BF /* OpenGLCommandShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */; };
-		BEA6BC3E172ABD73006215BF /* OpenGLCommandShader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC39172ABD73006215BF /* OpenGLCommandShader.h */; };
+		BEA6BC3D172ABD73006215BF /* OpenGLShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC38172ABD73006215BF /* OpenGLShaderProgram.cpp */; };
+		BEA6BC3E172ABD73006215BF /* OpenGLShaderProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC39172ABD73006215BF /* OpenGLShaderProgram.h */; };
 		BEA6BC3F172ABD73006215BF /* OpenGLFragmentShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */; };
 		BEA6BC42172ABD9B006215BF /* CommandClear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC40172ABD9B006215BF /* CommandClear.h */; };
-		BEA6BC43172ABD9B006215BF /* CommandShader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC41172ABD9B006215BF /* CommandShader.h */; };
 		BEA6BC46172ABFFC006215BF /* OpenGLShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC44172ABFFC006215BF /* OpenGLShader.cpp */; };
 		BEA6BC47172ABFFC006215BF /* OpenGLShader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC45172ABFFC006215BF /* OpenGLShader.h */; };
 		BEA70815172563480050B71F /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA7080A172563480050B71F /* Buffer.cpp */; };
@@ -100,11 +99,10 @@
 		BE7E370E17314BAD0004A3D2 /* DrawStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawStatus.h; path = include/Laser/DrawStatus.h; sourceTree = SOURCE_ROOT; };
 		BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandClear.cpp; sourceTree = "<group>"; };
 		BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandClear.h; sourceTree = "<group>"; };
-		BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandShader.cpp; sourceTree = "<group>"; };
-		BEA6BC39172ABD73006215BF /* OpenGLCommandShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandShader.h; sourceTree = "<group>"; };
+		BEA6BC38172ABD73006215BF /* OpenGLShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLShaderProgram.cpp; sourceTree = "<group>"; };
+		BEA6BC39172ABD73006215BF /* OpenGLShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLShaderProgram.h; sourceTree = "<group>"; };
 		BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLFragmentShader.cpp; sourceTree = "<group>"; };
 		BEA6BC40172ABD9B006215BF /* CommandClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandClear.h; path = include/Laser/CommandClear.h; sourceTree = SOURCE_ROOT; };
-		BEA6BC41172ABD9B006215BF /* CommandShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandShader.h; path = include/Laser/CommandShader.h; sourceTree = SOURCE_ROOT; };
 		BEA6BC44172ABFFC006215BF /* OpenGLShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLShader.cpp; sourceTree = "<group>"; };
 		BEA6BC45172ABFFC006215BF /* OpenGLShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLShader.h; sourceTree = "<group>"; };
 		BEA7080A172563480050B71F /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 				BEA6BC40172ABD9B006215BF /* CommandClear.h */,
 				BEA70845172563770050B71F /* CommandFactory.h */,
 				BEA87A0E172FE7F500F8833E /* CommandMaterial.h */,
-				BEA6BC41172ABD9B006215BF /* CommandShader.h */,
 				BEC880F4172C051200784B29 /* CommandVertexBuffer.h */,
 				BE7E370E17314BAD0004A3D2 /* DrawStatus.h */,
 				BEA70846172563770050B71F /* Exception.h */,
@@ -318,8 +315,8 @@
 				BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */,
 				BEA87A10172FE92B00F8833E /* OpenGLCommandMaterial.cpp */,
 				BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */,
-				BEA6BC38172ABD73006215BF /* OpenGLCommandShader.cpp */,
-				BEA6BC39172ABD73006215BF /* OpenGLCommandShader.h */,
+				BEA6BC38172ABD73006215BF /* OpenGLShaderProgram.cpp */,
+				BEA6BC39172ABD73006215BF /* OpenGLShaderProgram.h */,
 				BEC880F0172C04C200784B29 /* OpenGLCommandVertexBuffer.cpp */,
 				BEC880F1172C04C300784B29 /* OpenGLCommandVertexBuffer.h */,
 				BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */,
@@ -396,9 +393,8 @@
 				BEA7088F172572590050B71F /* OpenGLShaderFactory.h in Headers */,
 				BEA74BF1172A0A5B0089549C /* Shader.h in Headers */,
 				BEA6BC3C172ABD73006215BF /* OpenGLCommandClear.h in Headers */,
-				BEA6BC3E172ABD73006215BF /* OpenGLCommandShader.h in Headers */,
+				BEA6BC3E172ABD73006215BF /* OpenGLShaderProgram.h in Headers */,
 				BEA6BC42172ABD9B006215BF /* CommandClear.h in Headers */,
-				BEA6BC43172ABD9B006215BF /* CommandShader.h in Headers */,
 				BEA6BC47172ABFFC006215BF /* OpenGLShader.h in Headers */,
 				BEC880EB172B9B3C00784B29 /* OpenGLVertexBuffer.h in Headers */,
 				BEC880EF172BE50500784B29 /* OpenGLBufferFactory.h in Headers */,
@@ -487,7 +483,7 @@
 				BEA7088A17256EBF0050B71F /* OpenGLFragmentShader.cpp in Sources */,
 				BEA7088E172572590050B71F /* OpenGLShaderFactory.cpp in Sources */,
 				BEA6BC3B172ABD73006215BF /* OpenGLCommandClear.cpp in Sources */,
-				BEA6BC3D172ABD73006215BF /* OpenGLCommandShader.cpp in Sources */,
+				BEA6BC3D172ABD73006215BF /* OpenGLShaderProgram.cpp in Sources */,
 				BEA6BC3F172ABD73006215BF /* OpenGLFragmentShader.cpp in Sources */,
 				BEA6BC46172ABFFC006215BF /* OpenGLShader.cpp in Sources */,
 				BEC880EA172B9B3C00784B29 /* OpenGLVertexBuffer.cpp in Sources */,

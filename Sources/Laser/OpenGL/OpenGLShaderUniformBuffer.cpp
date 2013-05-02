@@ -35,7 +35,7 @@ namespace Laser
 	{
 		mLocation = location;
 		mName = name;
-		glBindBufferBase( GL_UNIFORM_BUFFER, location, mHandle );
+		//glBindBufferBase( GL_UNIFORM_BUFFER, location, mHandle );
 	}
 	
 	bool OpenGLShaderUniformBuffer::QueryInterface( const UUID &uuid, void **ppObject )

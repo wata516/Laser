@@ -22,29 +22,14 @@ namespace Laser
 			}
 
 			if( IsAvailable() ) {
-				
-/*
-				 Laser::OpenGLShader *pVertexShader;
-				 
-				 Laser::Shader *pVertexShaderTmp = Status.GetShader( Command::Shader::SHADER_TYPE_VERTEX );
-				 void *pTmp;
-				 if( pVertexShaderTmp->QueryInterface(Laser::OpenGLShader::GetUUID(), &pTmp ) ) {
-				 pVertexShader = static_cast< Laser::OpenGLShader * >( pTmp );
-				 
-				 unsigned int TransformUniformIndex = 0;
-				 //				if( pVertexShader->GetUniformIndex( mShaderUniformBuffer->GetName(), &TransformUniformIndex ) ) {
-				 glUniformBlockBinding(pVertexShader->GetHandle(), TransformUniformIndex, 0);
-				 glBindBufferBase( GL_UNIFORM_BUFFER, TransformUniformIndex, mShaderUniformBuffer->GetHandle() );
-				 //				}
-				 }*/
-				
+
 				GLuint UniformIndex = 0;
 				if( mShaderProgram.GetUniformIndex( mShaderUniformBuffer->GetName(), &UniformIndex )) {
 					glUniformBlockBinding(mShaderProgram.GetHandle(), UniformIndex, 0);
 					glBindBufferBase( GL_UNIFORM_BUFFER, UniformIndex, mShaderUniformBuffer->GetHandle() );
 				
-					mShaderProgram.Draw();
 				}
+				mShaderProgram.Draw();
 
 			}
 			

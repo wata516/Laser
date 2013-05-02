@@ -28,6 +28,7 @@ namespace Laser
 		bool IsAvailable() const;
 		GLuint GetHandle() const { return mProgram; }
 		bool GetUniformIndex( const TGUL::String &Name, GLuint *pIndex ) const;
+		bool GetTextureIndex( const TGUL::String &Name, GLuint *pIndex ) const;
 
 	private:
 		boost::array< Laser::OpenGLShader *, SHADER_TYPE_MAX > mShaders;

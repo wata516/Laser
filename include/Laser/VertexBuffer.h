@@ -21,6 +21,7 @@ namespace Laser
 		virtual bool Read( const TGUL::String &FileName ) { return false; }
 		virtual bool Create( const VertexDeclare &declare, size_t VertexNum );
 		virtual bool Write( WriteType WriteFunction );
+		size_t GetVertexNum( ) const { return mVertexNum; }
 
 	protected:
 		VertexDeclare mDeclare;

@@ -10,7 +10,8 @@ namespace Laser
 
 	boost::array< size_t, IVertexDeclare::TYPE_MAX > gSize = {
 		GetVertexSize< sizeof( float ), 4 >::value,	// P32
-		GetVertexSize< sizeof( float ), 4 >::value	// C32
+		GetVertexSize< sizeof( float ), 4 >::value,	// C32
+		GetVertexSize< sizeof( float ), 2 >::value	// T16
 	};
 
 	size_t VertexDeclare::GetSize( ) const

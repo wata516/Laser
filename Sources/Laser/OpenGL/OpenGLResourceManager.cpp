@@ -25,5 +25,17 @@ namespace Laser
 		
 		return result;
 	}
+	
+	bool OpenGLResourceManager::CreateTexture( const TGUL::String &CreateName, const TGUL::String &TextureName, Texture **ppTexture )
+	{
+		bool result = OpenGLBufferFactory::Create( CreateName, (Resource::Buffer**)ppTexture );
+		
+		if( result ) {
+			return AddTexture( TextureName, **ppTexture );
+		}
+		
+		return result;		
+	}
+
 
 }

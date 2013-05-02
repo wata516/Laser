@@ -17,6 +17,7 @@ namespace Laser
 		static const UUID OBJECT;
 		static const UUID VERTEX_BUFFER;
 		static const UUID SHADER_UNIFORM_BUFFER;
+		static const UUID TEXTURE_BUFFER;
 		static const UUID RESOURCE_IMANAGER;
 		static const UUID RESOURCE_MANAGER;
 			
@@ -24,6 +25,7 @@ namespace Laser
 		static const UUID OPENGL_FRAGMENT_SHADER;
 		static const UUID OPENGL_VERTEX_BUFFER;
 		static const UUID OPENGL_SHADER_UNIFORM_BUFFER;
+		static const UUID OPENGL_TEXTURE;
 	};
 }
 

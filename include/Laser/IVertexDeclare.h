@@ -16,6 +16,7 @@ namespace Laser
 		{
 			TYPE_P32,	//!<	POSITION float*4
 			TYPE_C32,	//!<	COLOR float*4
+			TYPE_T16,	//!<	TEXCOORD float*2
 			TYPE_MAX
 		};
 		typedef std::bitset< IVertexDeclare::TYPE_MAX > VertexType;

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BE7E370F17314BAE0004A3D2 /* DrawStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7E370E17314BAD0004A3D2 /* DrawStatus.h */; };
+		BEA2A3C817322F9D004DB6C0 /* OpenGLTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA2A3C617322F9B004DB6C0 /* OpenGLTexture.cpp */; };
+		BEA2A3C917322F9D004DB6C0 /* OpenGLTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA2A3C717322F9C004DB6C0 /* OpenGLTexture.h */; };
+		BEA2A3CB17322FF9004DB6C0 /* Texture.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA2A3CA17322FF9004DB6C0 /* Texture.h */; };
+		BEA2A3CE173231E5004DB6C0 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA2A3CC173231E4004DB6C0 /* Texture.cpp */; };
 		BEA6BC3B172ABD73006215BF /* OpenGLCommandClear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */; };
 		BEA6BC3C172ABD73006215BF /* OpenGLCommandClear.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */; };
 		BEA6BC3D172ABD73006215BF /* OpenGLShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA6BC38172ABD73006215BF /* OpenGLShaderProgram.cpp */; };
@@ -97,6 +101,10 @@
 
 /* Begin PBXFileReference section */
 		BE7E370E17314BAD0004A3D2 /* DrawStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawStatus.h; path = include/Laser/DrawStatus.h; sourceTree = SOURCE_ROOT; };
+		BEA2A3C617322F9B004DB6C0 /* OpenGLTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLTexture.cpp; sourceTree = "<group>"; };
+		BEA2A3C717322F9C004DB6C0 /* OpenGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTexture.h; sourceTree = "<group>"; };
+		BEA2A3CA17322FF9004DB6C0 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = include/Laser/Texture.h; sourceTree = SOURCE_ROOT; };
+		BEA2A3CC173231E4004DB6C0 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
 		BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandClear.cpp; sourceTree = "<group>"; };
 		BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandClear.h; sourceTree = "<group>"; };
 		BEA6BC38172ABD73006215BF /* OpenGLShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLShaderProgram.cpp; sourceTree = "<group>"; };
@@ -239,6 +247,7 @@
 				BEA87A08172FC6D800F8833E /* ShaderUniformBuffer.h */,
 				BEA7085A172563770050B71F /* Technique.h */,
 				BEA7085B172563770050B71F /* TechniqueManager.h */,
+				BEA2A3CA17322FF9004DB6C0 /* Texture.h */,
 				BEA7085C172563770050B71F /* UUID.h */,
 				BEA70859172563770050B71F /* VertexBuffer.h */,
 				BEA7085D172563770050B71F /* VertexDeclare.h */,
@@ -298,6 +307,7 @@
 				BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */,
 				BEA70820172563560050B71F /* Technique.cpp */,
 				BEA70821172563560050B71F /* TechniqueManager.cpp */,
+				BEA2A3CC173231E4004DB6C0 /* Texture.cpp */,
 				BEA70822172563560050B71F /* UUID.cpp */,
 				BEA70814172563480050B71F /* VertexBuffer.cpp */,
 				BEA70823172563560050B71F /* VertexDeclare.cpp */,
@@ -335,6 +345,8 @@
 				BEA87A0A172FCA8700F8833E /* OpenGLShaderUniformBuffer.h */,
 				BEA70832172563630050B71F /* OpenGLTechniqueManager.cpp */,
 				BEA70833172563630050B71F /* OpenGLTechniqueManager.h */,
+				BEA2A3C617322F9B004DB6C0 /* OpenGLTexture.cpp */,
+				BEA2A3C717322F9C004DB6C0 /* OpenGLTexture.h */,
 				BEC880E8172B9B3C00784B29 /* OpenGLVertexBuffer.cpp */,
 				BEC880E9172B9B3C00784B29 /* OpenGLVertexBuffer.h */,
 				BEA7088617256E7F0050B71F /* OpenGLVertexShader.cpp */,
@@ -405,6 +417,8 @@
 				BEA87A0F172FE7F500F8833E /* CommandMaterial.h in Headers */,
 				BEA87A13172FE92C00F8833E /* OpenGLCommandMaterial.h in Headers */,
 				BE7E370F17314BAE0004A3D2 /* DrawStatus.h in Headers */,
+				BEA2A3C917322F9D004DB6C0 /* OpenGLTexture.h in Headers */,
+				BEA2A3CB17322FF9004DB6C0 /* Texture.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +507,8 @@
 				BEA87A12172FE92C00F8833E /* OpenGLCommandMaterial.cpp in Sources */,
 				BEA87A15172FEEAF00F8833E /* CommandMaterial.cpp in Sources */,
 				BEA87A17172FF23400F8833E /* ShaderUniformBuffer.cpp in Sources */,
+				BEA2A3C817322F9D004DB6C0 /* OpenGLTexture.cpp in Sources */,
+				BEA2A3CE173231E5004DB6C0 /* Texture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

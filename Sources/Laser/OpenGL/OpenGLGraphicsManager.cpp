@@ -10,6 +10,7 @@
 #define GLFW_NO_GLU
 #include <GL/glew.h>
 #include <GL/glfw.h>
+#include <IL/il.h>
 
 namespace Laser
 {
@@ -34,6 +35,12 @@ namespace Laser
 		glfwOpenWindowHint(GLFW_OPENGL_VERSION_MAJOR, 3);
 		glfwOpenWindowHint(GLFW_OPENGL_VERSION_MINOR, 2);
 		glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+		if (ilGetInteger(IL_VERSION_NUM) < IL_VERSION ) {
+			return false;
+		}
+		
+		ilInit();
 
 		return true;
 	}

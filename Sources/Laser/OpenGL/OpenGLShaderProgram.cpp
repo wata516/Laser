@@ -28,10 +28,11 @@ namespace Laser
 		bool Availables = true;
 		
 		mIsAvailable = false;
-		
 
 		BOOST_FOREACH( const Laser::Shader *pShader, mShaders ) {
-			if( pShader && (pShader->IsAvailable() == false )) {
+			if( pShader == 0 ) {
+				Availables = false;
+			} else if( pShader->IsAvailable() == false ) {
 				Availables = false;
 			}
 		}
@@ -104,6 +105,20 @@ namespace Laser
 			return false;
 		}
 		GLuint index = glGetUniformBlockIndex( mProgram, Name.c_str() );
+		if( index == GL_INVALID_INDEX ) {
+			return false;
+		}
+		*pIndex = index;
+		
+		return true;
+	}
+
+	bool OpenGLShaderProgram::GetTextureIndex( const TGUL::String &Name, GLuint *pIndex ) const
+	{
+		if( mIsAvailable == false ) {
+			return false;
+		}
+		GLuint index = glGetUniformLocation( mProgram, Name.c_str() );
 		if( index == GL_INVALID_INDEX ) {
 			return false;
 		}

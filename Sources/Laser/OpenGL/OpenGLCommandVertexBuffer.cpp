@@ -27,7 +27,7 @@ namespace Laser
 		{
 			if( mVertexBuffer ) {
 				glBindVertexArray( mVertexBuffer->GetHandle() );
-				glDrawArrays( GL_TRIANGLES, 0, 3 );
+				glDrawArrays( GL_TRIANGLES, 0, (int)mVertexBuffer->GetVertexNum() );
 			}
 		}
 	}

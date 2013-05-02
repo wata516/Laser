@@ -1,6 +1,7 @@
 #include <Laser/ResourceManager.h>
 #include <Laser/Buffer.h>
 #include <Laser/Shader.h>
+#include <Laser/Texture.h>
 #include "BufferFactory.h"
 #include <TGUL/String.h>
 #include <map>
@@ -12,8 +13,10 @@ namespace Laser
 	{
 		typedef std::map< TGUL::String, Shader * > ShadersType;
 		typedef std::map< TGUL::String, Resource::Buffer * > BuffersType;
+		typedef std::map< TGUL::String, Texture * > TexturesType;
 		BuffersType mBuffers;
 		ShadersType mShaders;
+		TexturesType mTextures;
 		
 	public:
 		void Execute( );
@@ -22,6 +25,9 @@ namespace Laser
 		
 		bool AddBuffer( const TGUL::String &BufferName, Resource::Buffer &buffer );
 		bool GetBuffer( const TGUL::String &BufferName, Resource::Buffer **ppBuffer ) const;
+
+		bool AddTexture( const TGUL::String &BufferName, Texture &buffer );
+		bool GetTexture( const TGUL::String &BufferName, Texture **ppBuffer ) const;
 	};
 	
 	bool ResourceManager::Impl::AddShader( const TGUL::String &name, Shader &shader )
@@ -70,11 +76,38 @@ namespace Laser
 		return true;
 	}
 			
+	bool ResourceManager::Impl::AddTexture( const TGUL::String &name, Texture &texture )
+	{
+		if( mTextures.find( name ) != mTextures.end() ) {
+			return false;
+		}
+		
+		mTextures.insert( TexturesType::value_type( name, &texture ) );
+		return true;
+	}
+	
+	bool ResourceManager::Impl::GetTexture( const TGUL::String &BufferName, Texture **ppTexture ) const
+	{
+		TexturesType::const_iterator i = mTextures.find( BufferName );
+		if( i == mTextures.end() ) {
+			return false;
+		}
+		
+		TexturesType::value_type result = *i;
+		*ppTexture = result.second;
+		
+		return true;
+	}
+
 	void ResourceManager::Impl::Execute( )
 	{
 		BOOST_FOREACH( ShadersType::value_type &shader, mShaders ) {
 			shader.second->Execute();
 		}
+		BOOST_FOREACH( TexturesType::value_type &texture, mTextures ) {
+			texture.second->Execute();
+		}
+
 	}
 
 	ResourceManager::ResourceManager()
@@ -96,6 +129,11 @@ namespace Laser
 		return mImpl->GetBuffer( BufferName, ppBuffer );
 	}
 
+	bool ResourceManager::GetTexture( const TGUL::String &TextureName, Texture **ppTexture ) const
+	{
+		return mImpl->GetTexture( TextureName, ppTexture );
+	}
+
 	bool ResourceManager::AddShader( const TGUL::String &name, Shader &shader )
 	{
 		return mImpl->AddShader( name, shader );
@@ -104,6 +142,11 @@ namespace Laser
 	bool ResourceManager::AddBuffer( const TGUL::String &name, Resource::Buffer &buffer )
 	{
 		return mImpl->AddBuffer( name, buffer );
+	}
+
+	bool ResourceManager::AddTexture( const TGUL::String &name, Texture &texture )
+	{
+		return mImpl->AddTexture( name, texture );
 	}
 
 	bool IResourceManager::QueryInterface( const UUID &uuid, void **ppObject )

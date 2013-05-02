@@ -9,7 +9,14 @@ namespace Laser
 {
 	const boost::array< GLenum, IVertexDeclare::TYPE_MAX > gVertexType = {
 		GL_FLOAT,
+		GL_FLOAT,
 		GL_FLOAT
+	};
+	
+	const boost::array< GLenum, IVertexDeclare::TYPE_MAX > gVertexArraySize = {
+		4,
+		4,
+		2
 	};
 
 	OpenGLVertexBuffer::OpenGLVertexBuffer( )
@@ -70,7 +77,7 @@ namespace Laser
 			if( mDeclare.GetVertexType( i, &type ) ) {
 				if( pElm != 0 ) {
 					glBindBuffer( GL_ARRAY_BUFFER, mVertexBuffers[i] );
-					glVertexAttribPointer(pElm->Locate, 4, gVertexType[type], GL_FALSE, 0, 0);
+					glVertexAttribPointer(pElm->Locate, gVertexArraySize[type], gVertexType[type], GL_FALSE, 0, 0);
 					glEnableVertexAttribArray( pElm->Locate );
 				}
 			}

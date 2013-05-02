@@ -20,6 +20,7 @@ namespace Laser
 		GLuint GetHandle() const { return mTexId; }
 		void SetName( const TGUL::String &name ) { mName = name; }
 		const TGUL::String &GetName( ) const { return mName; }
+		void UpdateParameter( bool all );
 
 	private:
 		bool mAvailable;

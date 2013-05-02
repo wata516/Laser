@@ -4,6 +4,11 @@ namespace Laser
 {
 	Texture::Texture()
 	: mStatus( STATUS_NONE )
+	, mMinFilter( MIN_FILTER_NEAREST )
+	, mMagFilter( MAG_FILTER_LINEAR )
+	, mWrapS( WRAP_REPREAT )
+	, mWrapT( WRAP_REPREAT )
+	, mWrapR( WRAP_REPREAT )
 	{}
 
 	bool Texture::Load( const TGUL::String &FileName, size_t ReadSize )
@@ -29,5 +34,32 @@ namespace Laser
 		
 		return false;
 	}
+	
+	void Texture::SetMinFilter( MinFilter Filter )
+	{
+		if( (mMinFilter != Filter) ) {
+			mMinFilter = Filter;
+			mUpdate[ UPDATE_MIN_FILTER ] = 1;
+		}
+	}
+
+	void Texture::SetMagFilter( MagFilter Filter )
+	{
+		if( mMagFilter != Filter ) {
+			mMagFilter = Filter;
+			mUpdate[ UPDATE_MAG_FILTER ] = 1;
+		}
+	}
+	
+	void Texture::SetWrap( Wrap s, Wrap t, Wrap r )
+	{
+		if( ( mWrapS != s ) || (mWrapT != t ) || (mWrapR != r ) ) {
+			mWrapS = s;
+			mWrapT = t;
+			mWrapR = r;
+			mUpdate[ UPDATE_WRAP ] = 1;
+		}
+	}
+
 
 }

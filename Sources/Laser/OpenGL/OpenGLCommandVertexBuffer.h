@@ -13,13 +13,14 @@ namespace Laser
 		{
 		public:
 			OpenGLVertexBuffer( );
-			virtual bool Create( Laser::VertexBuffer *pVertexBuffer );
+			virtual bool Create( Laser::VertexBuffer *pVertexBuffer, Topology topology );
 
 		public:
 			virtual void Draw( DrawStatus &Status );
 			
 		private:
 			const Laser::OpenGLVertexBuffer *mVertexBuffer;
+			GLenum mTopology;
 		};
 	}
 }

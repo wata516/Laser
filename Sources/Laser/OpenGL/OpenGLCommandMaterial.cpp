@@ -43,6 +43,7 @@ namespace Laser
 					if( pTexture->IsAvailable() ) {
 						GLuint SamplerUniformIndex = 0;
 						if(	mShaderProgram.GetTextureIndex( pTexture->GetName(), &SamplerUniformIndex ) ) {
+							pTexture->UpdateParameter( false );
 							glActiveTexture( GL_TEXTURE0 + index );
 							glBindTexture( GL_TEXTURE_2D, pTexture->GetHandle() );
 							glUniform1i( SamplerUniformIndex, 0 );

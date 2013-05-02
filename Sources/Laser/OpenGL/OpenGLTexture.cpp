@@ -63,14 +63,62 @@ namespace Laser
 		glBindTexture( GL_TEXTURE_2D, mTexId );
 		
 		glTexImage2D( GL_TEXTURE_2D, 0, PixelPerTypes[ PixelPerBytes ], width, height, 0, PixelPerTypes[ PixelPerBytes ], Depths[ PixelDepth ], pImage );
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+
+		UpdateParameter( true );
 
 		ilDeleteImages(1, &mImgId );
 
 		mAvailable = true;
 
 		return true;
+	}
+
+	void OpenGLTexture::UpdateParameter( bool all )
+	{
+		if( all ) {
+			mUpdate.reset();
+			mUpdate.flip();
+		}
+
+		if( mUpdate.any() ) {
+			glBindTexture( GL_TEXTURE_2D, mTexId );
+		}
+
+		if( mUpdate[UPDATE_MIN_FILTER] ) {
+			boost::array< GLenum, MIN_FILTER_MAX > filters = {
+				GL_NEAREST,
+				GL_LINEAR,
+				GL_NEAREST_MIPMAP_NEAREST,
+				GL_LINEAR_MIPMAP_NEAREST,
+				GL_NEAREST_MIPMAP_LINEAR,
+				GL_LINEAR_MIPMAP_LINEAR
+			};
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, filters[ mMinFilter ]);
+			mUpdate[ UPDATE_MIN_FILTER ] = 0;
+		}
+
+		if( mUpdate[UPDATE_MAG_FILTER] ) {
+			boost::array< GLenum, MAG_FILTER_MAX > mags = {
+				GL_NEAREST,
+				GL_LINEAR,
+			};
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, mags[ mMagFilter ] );
+			mUpdate[ UPDATE_MAG_FILTER ] = 0;
+		}
+
+		if( mUpdate[UPDATE_WRAP] ) {
+			boost::array< GLenum, WRAP_MAX > wraps = {
+				GL_CLAMP_TO_EDGE,
+				GL_CLAMP_TO_BORDER,
+				GL_MIRRORED_REPEAT,
+				GL_REPEAT
+			};
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, wraps[ mWrapS ] );
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, wraps[ mWrapT ] );
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_R, wraps[ mWrapR ] );
+			mUpdate[ UPDATE_WRAP ] = 0;
+		}
+
 	}
 
 	bool OpenGLTexture::IsAvailable() const

@@ -295,13 +295,13 @@
 				BEA70811172563480050B71F /* ObjectManager.cpp */,
 				BEA70812172563480050B71F /* Pass.cpp */,
 				BEA70813172563480050B71F /* ResourceManager.cpp */,
+				BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */,
 				BEA70820172563560050B71F /* Technique.cpp */,
 				BEA70821172563560050B71F /* TechniqueManager.cpp */,
 				BEA70822172563560050B71F /* UUID.cpp */,
 				BEA70814172563480050B71F /* VertexBuffer.cpp */,
 				BEA70823172563560050B71F /* VertexDeclare.cpp */,
 				BEA70824172563560050B71F /* Window.cpp */,
-				BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -315,8 +315,6 @@
 				BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */,
 				BEA87A10172FE92B00F8833E /* OpenGLCommandMaterial.cpp */,
 				BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */,
-				BEA6BC38172ABD73006215BF /* OpenGLShaderProgram.cpp */,
-				BEA6BC39172ABD73006215BF /* OpenGLShaderProgram.h */,
 				BEC880F0172C04C200784B29 /* OpenGLCommandVertexBuffer.cpp */,
 				BEC880F1172C04C300784B29 /* OpenGLCommandVertexBuffer.h */,
 				BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */,
@@ -331,6 +329,8 @@
 				BEA6BC45172ABFFC006215BF /* OpenGLShader.h */,
 				BEA7088C172572590050B71F /* OpenGLShaderFactory.cpp */,
 				BEA7088D172572590050B71F /* OpenGLShaderFactory.h */,
+				BEA6BC38172ABD73006215BF /* OpenGLShaderProgram.cpp */,
+				BEA6BC39172ABD73006215BF /* OpenGLShaderProgram.h */,
 				BEA87A0C172FCB6700F8833E /* OpenGLShaderUniformBuffer.cpp */,
 				BEA87A0A172FCA8700F8833E /* OpenGLShaderUniformBuffer.h */,
 				BEA70832172563630050B71F /* OpenGLTechniqueManager.cpp */,

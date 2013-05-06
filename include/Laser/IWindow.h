@@ -16,5 +16,7 @@ namespace Laser
 		virtual bool IsOpen( ) = 0;
 		virtual void Render( ) const = 0;
 		virtual void Flip() = 0;
+		virtual int GetWidth() const = 0;
+		virtual int GetHeight() const = 0;
 	};
 }

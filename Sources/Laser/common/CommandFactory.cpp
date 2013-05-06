@@ -10,6 +10,7 @@
 #include "../OpenGL/OpenGLCommandVertexBuffer.h"
 #include "../OpenGL/OpenGLCommandMaterial.h"
 #include "../OpenGL/OpenGLCommandRenderTarget.h"
+#include "../OpenGL/OpenGLCommandViewport.h"
 
 namespace Laser
 {
@@ -68,6 +69,17 @@ namespace Laser
 		return true;
 	}
 
+	bool CreateViewport( Command::IBase **ppBase )
+	{
+		*ppBase = new Command::OpenGLViewport();
+		
+		if( *ppBase == 0 ) {
+			return false;
+		}
+		
+		return true;
+	}
+
 	bool CommandFactory::CreateCommand( const TGUL::String &name, Command::IBase **ppBase )
 	{
 		std::map< TGUL::String, boost::function< bool( Command::IBase **) > > functions = boost::assign::map_list_of
@@ -76,6 +88,7 @@ namespace Laser
 			("Material", boost::bind( &CreateMaterial, ppBase ))
 			("RenderTarget", boost::bind( &CreateRenderTarget, ppBase ))
 			("RenderTargetReset", boost::bind( &CreateRenderTargetReset, ppBase ))
+			("Viewport", boost::bind( &CreateViewport, ppBase ))
 		;
 
 		if( functions.find( name ) == functions.end() ) {

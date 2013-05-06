@@ -96,6 +96,9 @@
 		BEA87A13172FE92C00F8833E /* OpenGLCommandMaterial.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */; };
 		BEA87A15172FEEAF00F8833E /* CommandMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA87A14172FEEAF00F8833E /* CommandMaterial.cpp */; };
 		BEA87A17172FF23400F8833E /* ShaderUniformBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */; };
+		BEC1351D1737A6AA006FE09C /* OpenGLCommandViewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC1351B1737A6A8006FE09C /* OpenGLCommandViewport.cpp */; };
+		BEC1351E1737A6AA006FE09C /* OpenGLCommandViewport.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC1351C1737A6A9006FE09C /* OpenGLCommandViewport.h */; };
+		BEC135201737A808006FE09C /* CommandViewport.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC1351F1737A807006FE09C /* CommandViewport.h */; };
 		BEC880EA172B9B3C00784B29 /* OpenGLVertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC880E8172B9B3C00784B29 /* OpenGLVertexBuffer.cpp */; };
 		BEC880EB172B9B3C00784B29 /* OpenGLVertexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC880E9172B9B3C00784B29 /* OpenGLVertexBuffer.h */; };
 		BEC880EE172BE50500784B29 /* OpenGLBufferFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC880EC172BE50500784B29 /* OpenGLBufferFactory.cpp */; };
@@ -195,6 +198,9 @@
 		BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandMaterial.h; sourceTree = "<group>"; };
 		BEA87A14172FEEAF00F8833E /* CommandMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandMaterial.cpp; sourceTree = "<group>"; };
 		BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderUniformBuffer.cpp; sourceTree = "<group>"; };
+		BEC1351B1737A6A8006FE09C /* OpenGLCommandViewport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandViewport.cpp; sourceTree = "<group>"; };
+		BEC1351C1737A6A9006FE09C /* OpenGLCommandViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandViewport.h; sourceTree = "<group>"; };
+		BEC1351F1737A807006FE09C /* CommandViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandViewport.h; path = include/Laser/CommandViewport.h; sourceTree = SOURCE_ROOT; };
 		BEC880E8172B9B3C00784B29 /* OpenGLVertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLVertexBuffer.cpp; sourceTree = "<group>"; };
 		BEC880E9172B9B3C00784B29 /* OpenGLVertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLVertexBuffer.h; sourceTree = "<group>"; };
 		BEC880EC172BE50500784B29 /* OpenGLBufferFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLBufferFactory.cpp; sourceTree = "<group>"; };
@@ -235,6 +241,7 @@
 				BEA87A0E172FE7F500F8833E /* CommandMaterial.h */,
 				BE612379173510AB00F1A474 /* CommandRenderTarget.h */,
 				BEC880F4172C051200784B29 /* CommandVertexBuffer.h */,
+				BEC1351F1737A807006FE09C /* CommandViewport.h */,
 				BE7E370E17314BAD0004A3D2 /* DrawStatus.h */,
 				BEA70846172563770050B71F /* Exception.h */,
 				BEA70847172563770050B71F /* GraphicsManager.h */,
@@ -343,6 +350,8 @@
 				BE6123761735108400F1A474 /* OpenGLCommandRenderTarget.h */,
 				BEC880F0172C04C200784B29 /* OpenGLCommandVertexBuffer.cpp */,
 				BEC880F1172C04C300784B29 /* OpenGLCommandVertexBuffer.h */,
+				BEC1351B1737A6A8006FE09C /* OpenGLCommandViewport.cpp */,
+				BEC1351C1737A6A9006FE09C /* OpenGLCommandViewport.h */,
 				BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */,
 				BEA7088917256EBF0050B71F /* OpenGLFragmentShader.h */,
 				BEA7082C172563630050B71F /* OpenGLGraphicsManager.cpp */,
@@ -441,6 +450,8 @@
 				BE61237417350AB400F1A474 /* OpenGLRenderTarget.h in Headers */,
 				BE6123781735108400F1A474 /* OpenGLCommandRenderTarget.h in Headers */,
 				BE61237A173510AB00F1A474 /* CommandRenderTarget.h in Headers */,
+				BEC1351E1737A6AA006FE09C /* OpenGLCommandViewport.h in Headers */,
+				BEC135201737A808006FE09C /* CommandViewport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +544,7 @@
 				BEA2A3CE173231E5004DB6C0 /* Texture.cpp in Sources */,
 				BE61237317350AB400F1A474 /* OpenGLRenderTarget.cpp in Sources */,
 				BE6123771735108400F1A474 /* OpenGLCommandRenderTarget.cpp in Sources */,
+				BEC1351D1737A6AA006FE09C /* OpenGLCommandViewport.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,8 @@ namespace Laser
 			bool Open( );
 			bool IsOpen();
 			void Flip();
+			int GetWidth() const { return mWidth; }
+			int GetHeight() const { return mHeight; }
 		private:
 			bool mIsOpen;
 			TGUL::String mTitle;
@@ -52,6 +54,7 @@ namespace Laser
 			
 			glfwSwapInterval(1);
 			
+			glfwGetWindowSize( &mWidth, &mHeight );
 			mIsOpen = true;
 
 			return true;
@@ -97,4 +100,13 @@ namespace Laser
 		{
 			mImpl->Flip();
 		}
+		int OpenGLWindow::GetWidth() const
+		{
+			return mImpl->GetWidth();
+		}
+		int OpenGLWindow::GetHeight() const
+		{
+			return mImpl->GetHeight();
+		}
+
 }

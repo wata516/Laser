@@ -17,6 +17,8 @@ namespace Laser
 		virtual bool Open( );
 		virtual bool IsOpen( );
 		virtual void Flip();
+		virtual int GetWidth() const;
+		virtual int GetHeight() const;
 
 	private:
 		class Impl;

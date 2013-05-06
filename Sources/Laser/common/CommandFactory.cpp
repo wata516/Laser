@@ -9,6 +9,7 @@
 #include "../OpenGL/OpenGLCommandClear.h"
 #include "../OpenGL/OpenGLCommandVertexBuffer.h"
 #include "../OpenGL/OpenGLCommandMaterial.h"
+#include "../OpenGL/OpenGLCommandRenderTarget.h"
 
 namespace Laser
 {
@@ -45,13 +46,36 @@ namespace Laser
 		return true;
 	}
 
+	bool CreateRenderTarget( Command::IBase **ppBase )
+	{
+		*ppBase = new Command::OpenGLRenderTarget();
+		
+		if( *ppBase == 0 ) {
+			return false;
+		}
+		
+		return true;
+	}
+
+	bool CreateRenderTargetReset( Command::IBase **ppBase )
+	{
+		*ppBase = new Command::OpenGLRenderTargetReset();
+		
+		if( *ppBase == 0 ) {
+			return false;
+		}
+		
+		return true;
+	}
+
 	bool CommandFactory::CreateCommand( const TGUL::String &name, Command::IBase **ppBase )
 	{
 		std::map< TGUL::String, boost::function< bool( Command::IBase **) > > functions = boost::assign::map_list_of
 			("Clear", boost::bind( &CreateClear, ppBase ))
 			("VertexBuffer", boost::bind( &CreateVertexBuffer, ppBase ))
 			("Material", boost::bind( &CreateMaterial, ppBase ))
-		
+			("RenderTarget", boost::bind( &CreateRenderTarget, ppBase ))
+			("RenderTargetReset", boost::bind( &CreateRenderTargetReset, ppBase ))
 		;
 
 		if( functions.find( name ) == functions.end() ) {

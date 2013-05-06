@@ -2,9 +2,11 @@
 #include "OpenGLShaderUniformBuffer.h"
 #include "OpenGLShader.h"
 #include "OpenGLTexture.h"
+#include "OpenGLRenderTarget.h"
 #include <Laser/DrawStatus.h>
 #include <Laser/Shader.h>
 #include <Laser/Texture.h>
+#include <Laser/RenderTarget.h>
 #include <boost/foreach.hpp>
 
 namespace Laser
@@ -33,20 +35,35 @@ namespace Laser
 				if( mShaderProgram.GetUniformIndex( mShaderUniformBuffer->GetName(), &UniformIndex )) {
 					glUniformBlockBinding(mShaderProgram.GetHandle(), UniformIndex, 0);
 					glBindBufferBase( GL_UNIFORM_BUFFER, UniformIndex, mShaderUniformBuffer->GetHandle() );
-				
 				}
 				
 				BOOST_FOREACH( TexturesType::value_type &texture, mTextures ) {
 					uint32_t index = texture.first;
-					OpenGLTexture *pTexture = texture.second;
+					const MaterialTexture *pMaterialTexture = &texture.second;
+					OpenGLTexture *pTexture = pMaterialTexture->mTexture;
 
 					if( pTexture->IsAvailable() ) {
 						GLuint SamplerUniformIndex = 0;
-						if(	mShaderProgram.GetTextureIndex( pTexture->GetName(), &SamplerUniformIndex ) ) {
+						if(	mShaderProgram.GetTextureIndex( pMaterialTexture->mName, &SamplerUniformIndex ) ) {
 							pTexture->UpdateParameter( false );
 							glActiveTexture( GL_TEXTURE0 + index );
 							glBindTexture( GL_TEXTURE_2D, pTexture->GetHandle() );
-							glUniform1i( SamplerUniformIndex, 0 );
+							glUniform1i( SamplerUniformIndex, pTexture->GetHandle() );
+						}
+					}
+				}
+				
+				BOOST_FOREACH( RenderTargetsType::value_type &rendertarget, mRenderTargets ) {
+					uint32_t index = rendertarget.first;
+					const MaterialRenderTarget *pMaterialRenderTarget = &rendertarget.second;
+					const OpenGLRenderTarget *pRenderTarget = pMaterialRenderTarget->mRenderTarget;
+					
+					if( pRenderTarget->IsAvailable() ) {
+						GLuint SamplerUniformIndex = 0;
+						if( mShaderProgram.GetTextureIndex( pMaterialRenderTarget->mName, &SamplerUniformIndex ) ) {
+							glActiveTexture( GL_TEXTURE0 + index );
+							glBindTexture( GL_TEXTURE_2D, pRenderTarget->GetHandle() );
+							glUniform1i( GL_TEXTURE_2D, pRenderTarget->GetHandle() );
 						}
 					}
 				}
@@ -95,12 +112,19 @@ namespace Laser
 				return false;
 			}
 
-			if( find == false ) {
-				mTextures.insert( TexturesType::value_type( index, 0 ) );
-			}
+			mTextures[index] = MaterialTexture( name, static_cast< Laser::OpenGLTexture * >( pTextureBuf ) );
 
-			mTextures[index] = static_cast< Laser::OpenGLTexture * >( pTextureBuf );
-			mTextures[index]->SetName( name );
+			return true;
+		}
+		
+		bool OpenGLMaterial::SetRenderTarget( const TGUL::String &name, RenderTarget *pRenderTarget )
+		{
+			void *pRenderTargetBuf = 0;
+			if( pRenderTarget->QueryInterface( UUIDS::OPENGL_RENDER_TARGET, &pRenderTargetBuf ) == false ) {
+				return false;
+			}
+			
+			mRenderTargets[0] = MaterialRenderTarget( name, static_cast< Laser::OpenGLRenderTarget * >( pRenderTargetBuf ) );
 			
 			return true;
 		}

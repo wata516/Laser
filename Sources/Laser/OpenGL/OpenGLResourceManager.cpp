@@ -37,5 +37,16 @@ namespace Laser
 		return result;		
 	}
 
+	bool OpenGLResourceManager::CreateRenderTarget( const TGUL::String &CreateName, const TGUL::String &RenderTargetName, RenderTarget **ppRenderTarget )
+	{
+		bool result = OpenGLBufferFactory::Create( CreateName, (Resource::Buffer**)ppRenderTarget);
+
+		if( result ) {
+			return AddRenderTarget( RenderTargetName, **ppRenderTarget );
+		}
+		
+		return result;
+	}
+
 
 }

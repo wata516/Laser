@@ -67,6 +67,7 @@ namespace Laser
 		UpdateParameter( true );
 
 		ilDeleteImages(1, &mImgId );
+		glBindTexture( GL_TEXTURE_2D, 0 );
 
 		mAvailable = true;
 

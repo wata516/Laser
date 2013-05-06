@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE6123701735054300F1A474 /* RenderTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = BE61236F1735054300F1A474 /* RenderTarget.h */; };
+		BE61237317350AB400F1A474 /* OpenGLRenderTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE61237117350AB400F1A474 /* OpenGLRenderTarget.cpp */; };
+		BE61237417350AB400F1A474 /* OpenGLRenderTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = BE61237217350AB400F1A474 /* OpenGLRenderTarget.h */; };
+		BE6123771735108400F1A474 /* OpenGLCommandRenderTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE6123751735108400F1A474 /* OpenGLCommandRenderTarget.cpp */; };
+		BE6123781735108400F1A474 /* OpenGLCommandRenderTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6123761735108400F1A474 /* OpenGLCommandRenderTarget.h */; };
+		BE61237A173510AB00F1A474 /* CommandRenderTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = BE612379173510AB00F1A474 /* CommandRenderTarget.h */; };
 		BE7E370F17314BAE0004A3D2 /* DrawStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7E370E17314BAD0004A3D2 /* DrawStatus.h */; };
 		BEA2A3C817322F9D004DB6C0 /* OpenGLTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA2A3C617322F9B004DB6C0 /* OpenGLTexture.cpp */; };
 		BEA2A3C917322F9D004DB6C0 /* OpenGLTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA2A3C717322F9C004DB6C0 /* OpenGLTexture.h */; };
@@ -100,6 +106,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE61236F1735054300F1A474 /* RenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderTarget.h; path = include/Laser/RenderTarget.h; sourceTree = SOURCE_ROOT; };
+		BE61237117350AB400F1A474 /* OpenGLRenderTarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLRenderTarget.cpp; sourceTree = "<group>"; };
+		BE61237217350AB400F1A474 /* OpenGLRenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLRenderTarget.h; sourceTree = "<group>"; };
+		BE6123751735108400F1A474 /* OpenGLCommandRenderTarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandRenderTarget.cpp; sourceTree = "<group>"; };
+		BE6123761735108400F1A474 /* OpenGLCommandRenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandRenderTarget.h; sourceTree = "<group>"; };
+		BE612379173510AB00F1A474 /* CommandRenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandRenderTarget.h; path = include/Laser/CommandRenderTarget.h; sourceTree = SOURCE_ROOT; };
 		BE7E370E17314BAD0004A3D2 /* DrawStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawStatus.h; path = include/Laser/DrawStatus.h; sourceTree = SOURCE_ROOT; };
 		BEA2A3C617322F9B004DB6C0 /* OpenGLTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLTexture.cpp; sourceTree = "<group>"; };
 		BEA2A3C717322F9C004DB6C0 /* OpenGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTexture.h; sourceTree = "<group>"; };
@@ -221,6 +233,7 @@
 				BEA6BC40172ABD9B006215BF /* CommandClear.h */,
 				BEA70845172563770050B71F /* CommandFactory.h */,
 				BEA87A0E172FE7F500F8833E /* CommandMaterial.h */,
+				BE612379173510AB00F1A474 /* CommandRenderTarget.h */,
 				BEC880F4172C051200784B29 /* CommandVertexBuffer.h */,
 				BE7E370E17314BAD0004A3D2 /* DrawStatus.h */,
 				BEA70846172563770050B71F /* Exception.h */,
@@ -242,6 +255,7 @@
 				BEA70855172563770050B71F /* ObjectManager.h */,
 				BEA70856172563770050B71F /* Pass.h */,
 				BEA70857172563770050B71F /* Platform.h */,
+				BE61236F1735054300F1A474 /* RenderTarget.h */,
 				BEA70858172563770050B71F /* ResourceManager.h */,
 				BEA74BF0172A0A5B0089549C /* Shader.h */,
 				BEA87A08172FC6D800F8833E /* ShaderUniformBuffer.h */,
@@ -325,6 +339,8 @@
 				BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */,
 				BEA87A10172FE92B00F8833E /* OpenGLCommandMaterial.cpp */,
 				BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */,
+				BE6123751735108400F1A474 /* OpenGLCommandRenderTarget.cpp */,
+				BE6123761735108400F1A474 /* OpenGLCommandRenderTarget.h */,
 				BEC880F0172C04C200784B29 /* OpenGLCommandVertexBuffer.cpp */,
 				BEC880F1172C04C300784B29 /* OpenGLCommandVertexBuffer.h */,
 				BEA6BC3A172ABD73006215BF /* OpenGLFragmentShader.cpp */,
@@ -333,6 +349,8 @@
 				BEA7082D172563630050B71F /* OpenGLGraphicsManager.h */,
 				BEA7082E172563630050B71F /* OpenGLKeyboard.cpp */,
 				BEA7082F172563630050B71F /* OpenGLKeyboard.h */,
+				BE61237117350AB400F1A474 /* OpenGLRenderTarget.cpp */,
+				BE61237217350AB400F1A474 /* OpenGLRenderTarget.h */,
 				BEA70830172563630050B71F /* OpenGLResourceManager.cpp */,
 				BEA70831172563630050B71F /* OpenGLResourceManager.h */,
 				BEA6BC44172ABFFC006215BF /* OpenGLShader.cpp */,
@@ -419,6 +437,10 @@
 				BE7E370F17314BAE0004A3D2 /* DrawStatus.h in Headers */,
 				BEA2A3C917322F9D004DB6C0 /* OpenGLTexture.h in Headers */,
 				BEA2A3CB17322FF9004DB6C0 /* Texture.h in Headers */,
+				BE6123701735054300F1A474 /* RenderTarget.h in Headers */,
+				BE61237417350AB400F1A474 /* OpenGLRenderTarget.h in Headers */,
+				BE6123781735108400F1A474 /* OpenGLCommandRenderTarget.h in Headers */,
+				BE61237A173510AB00F1A474 /* CommandRenderTarget.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +531,8 @@
 				BEA87A17172FF23400F8833E /* ShaderUniformBuffer.cpp in Sources */,
 				BEA2A3C817322F9D004DB6C0 /* OpenGLTexture.cpp in Sources */,
 				BEA2A3CE173231E5004DB6C0 /* Texture.cpp in Sources */,
+				BE61237317350AB400F1A474 /* OpenGLRenderTarget.cpp in Sources */,
+				BE6123771735108400F1A474 /* OpenGLCommandRenderTarget.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

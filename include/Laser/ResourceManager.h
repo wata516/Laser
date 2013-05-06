@@ -21,6 +21,7 @@ namespace Laser
 	class Shader;
 	class Buffer;
 	class Texture;
+	class RenderTarget;
 
 	class ResourceManager : IResourceManager
 	{
@@ -31,18 +32,21 @@ namespace Laser
 		virtual bool CreateBuffer( const TGUL::String &CreateName, const TGUL::String &BufferName, Resource::Buffer **ppBuffer ) = 0;
 		virtual bool CreateShader( const TGUL::String &CreateName, const TGUL::String &ShaderName, Shader **ppShader ) = 0;
 		virtual bool CreateTexture( const TGUL::String &CreateName, const TGUL::String &TextureName, Texture **ppBuffer ) = 0;
-		
+		virtual bool CreateRenderTarget( const TGUL::String &CreateName, const TGUL::String &RenderTargetName, RenderTarget **ppRenderTarget ) = 0;
 		void Execute();
 
 	public:
 		bool GetShader( const TGUL::String &ShaderName, Shader **ppShader ) const;
 		bool GetBuffer( const TGUL::String &BufferName, Resource::Buffer **ppBuffer ) const;
 		bool GetTexture( const TGUL::String &BufferName, Texture **ppTexture ) const;
+		bool GetRenderTarget( const TGUL::String &BufferName, RenderTarget **ppRenderTarget ) const;
+		
 
 	protected:
 		bool AddShader( const TGUL::String &name, Shader &shader );
 		bool AddBuffer( const TGUL::String &name, Resource::Buffer &buffer );
 		bool AddTexture( const TGUL::String &name, Texture &texture );
+		bool AddRenderTarget( const TGUL::String &name, RenderTarget &RenderTarget );
 
 	private:
 		class Impl;

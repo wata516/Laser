@@ -2,7 +2,7 @@
 #include "OpenGLVertexBuffer.h"
 #include "OpenGLShaderUniformBuffer.h"
 #include "OpenGLTexture.h"
-
+#include "OpenGLRenderTarget.h"
 #include <TGUL/String.h>
 
 #include <boost/assign.hpp>
@@ -44,6 +44,17 @@ namespace Laser
 		return true;
 	}
 
+	bool CreateOpenGLRenderTarget( const TGUL::String &name, Resource::Buffer **ppBuffer )
+	{
+		*ppBuffer = new OpenGLRenderTarget( );
+		
+		if( *ppBuffer == 0 ) {
+			return false;
+		}
+		
+		return true;
+	}
+
 	bool OpenGLBufferFactory::Create( const TGUL::String &name, Resource::Buffer **ppBuffer )
 	{
 		std::map< TGUL::String, boost::function< bool( const TGUL::String &, Resource::Buffer ** ) > > functions
@@ -51,6 +62,7 @@ namespace Laser
 		( "VertexBuffer", boost::bind( &CreateOpenGLVertexBuffer, name, ppBuffer ))		// VertexBuffer
 		( "UniformBuffer", boost::bind( &CreateOpenGLShaderUniformBuffer, name, ppBuffer ))		// Uniform
 		( "Texture", boost::bind( &CreateOpenGLTexture, name, ppBuffer ))		// Texture
+		( "RenderTarget", boost::bind( &CreateOpenGLRenderTarget, name, ppBuffer ))		// RenderTarget
 		;
 		*ppBuffer = 0;
 		

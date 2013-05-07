@@ -1,6 +1,6 @@
 #pragma once
 
-#include <OpenGLShader.h>
+#include "OpenGLShader.h"
 #include <GL/glew.h>
 
 namespace TGUL

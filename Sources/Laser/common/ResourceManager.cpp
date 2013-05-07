@@ -2,6 +2,7 @@
 #include <Laser/Buffer.h>
 #include <Laser/Shader.h>
 #include <Laser/Texture.h>
+#include <Laser/ShaderUniformBuffer.h>
 #include <Laser/RenderTarget.h>
 #include "BufferFactory.h"
 #include <TGUL/String.h>
@@ -13,10 +14,14 @@ namespace Laser
 	class ResourceManager::Impl
 	{
 		typedef std::map< TGUL::String, Shader * > ShadersType;
-		typedef std::map< TGUL::String, Resource::Buffer * > BuffersType;
+		typedef std::map< TGUL::String, VertexBuffer * > VertexBuffersType;
+		typedef std::map< TGUL::String, IndexBuffer * > IndexBuffersType;
+		typedef std::map< TGUL::String, ShaderUniformBuffer * > UniformBuffersType;
 		typedef std::map< TGUL::String, Texture * > TexturesType;
 		typedef std::map< TGUL::String, RenderTarget * > RenderTargetsType;
-		BuffersType mBuffers;
+		VertexBuffersType mVertexBuffers;
+		IndexBuffersType mIndexBuffers;
+		UniformBuffersType mUniformBuffers;
 		ShadersType mShaders;
 		TexturesType mTextures;
 		RenderTargetsType mRenderTargets;
@@ -26,8 +31,14 @@ namespace Laser
 		bool AddShader( const TGUL::String &ShaderName, Shader &shader );
 		bool GetShader( const TGUL::String &ShaderName, Shader **ppShader ) const;
 		
-		bool AddBuffer( const TGUL::String &BufferName, Resource::Buffer &buffer );
-		bool GetBuffer( const TGUL::String &BufferName, Resource::Buffer **ppBuffer ) const;
+		bool AddVertexBuffer( const TGUL::String &BufferName, VertexBuffer &buffer );
+		bool GetVertexBuffer( const TGUL::String &BufferName, VertexBuffer **ppBuffer ) const;
+
+		bool AddIndexBuffer( const TGUL::String &BufferName, IndexBuffer &buffer );
+		bool GetIndexBuffer( const TGUL::String &BufferName, IndexBuffer **ppBuffer ) const;
+
+		bool AddUniformBuffer( const TGUL::String &BufferName, ShaderUniformBuffer &buffer );
+		bool GetUniformBuffer( const TGUL::String &BufferName, ShaderUniformBuffer **ppBuffer ) const;
 
 		bool AddTexture( const TGUL::String &BufferName, Texture &buffer );
 		bool GetTexture( const TGUL::String &BufferName, Texture **ppBuffer ) const;
@@ -59,29 +70,75 @@ namespace Laser
 		return true;
 	}
 	
-	bool ResourceManager::Impl::AddBuffer( const TGUL::String &name, Resource::Buffer &buffer )
+	bool ResourceManager::Impl::AddVertexBuffer( const TGUL::String &name, VertexBuffer &buffer )
 	{
-		if( mBuffers.find( name ) != mBuffers.end() ) {
+		if( mVertexBuffers.find( name ) != mVertexBuffers.end() ) {
 			return false;
 		}
 		
-		mBuffers.insert( BuffersType::value_type( name, &buffer ) );
+		mVertexBuffers.insert( VertexBuffersType::value_type( name, &buffer ) );
 		return true;
 	}
 	
-	bool ResourceManager::Impl::GetBuffer( const TGUL::String &BufferName, Resource::Buffer **ppBuffer ) const
+	bool ResourceManager::Impl::GetVertexBuffer( const TGUL::String &BufferName, VertexBuffer **ppBuffer ) const
 	{
-		BuffersType::const_iterator i = mBuffers.find( BufferName );
-		if( i == mBuffers.end() ) {
+		VertexBuffersType::const_iterator i = mVertexBuffers.find( BufferName );
+		if( i == mVertexBuffers.end() ) {
 			return false;
 		}
 		
-		BuffersType::value_type result = *i;
+		VertexBuffersType::value_type result = *i;
 		*ppBuffer = result.second;
 		
 		return true;
 	}
-			
+
+	bool ResourceManager::Impl::AddIndexBuffer( const TGUL::String &name, IndexBuffer &buffer )
+	{
+		if( mIndexBuffers.find( name ) != mIndexBuffers.end() ) {
+			return false;
+		}
+
+		mIndexBuffers.insert( IndexBuffersType::value_type( name, &buffer ) );
+		return true;
+	}
+
+	bool ResourceManager::Impl::GetIndexBuffer( const TGUL::String &BufferName, IndexBuffer **ppBuffer ) const
+	{
+		IndexBuffersType::const_iterator i = mIndexBuffers.find( BufferName );
+		if( i == mIndexBuffers.end() ) {
+			return false;
+		}
+
+		IndexBuffersType::value_type result = *i;
+		*ppBuffer = result.second;
+
+		return true;
+	}
+
+	bool ResourceManager::Impl::AddUniformBuffer( const TGUL::String &name, ShaderUniformBuffer &buffer )
+	{
+		if( mUniformBuffers.find( name ) != mUniformBuffers.end() ) {
+			return false;
+		}
+
+		mUniformBuffers.insert( UniformBuffersType::value_type( name, &buffer ) );
+		return true;
+	}
+
+	bool ResourceManager::Impl::GetUniformBuffer( const TGUL::String &BufferName, ShaderUniformBuffer **ppBuffer ) const
+	{
+		UniformBuffersType::const_iterator i = mUniformBuffers.find( BufferName );
+		if( i == mUniformBuffers.end() ) {
+			return false;
+		}
+
+		UniformBuffersType::value_type result = *i;
+		*ppBuffer = result.second;
+
+		return true;
+	}
+
 	bool ResourceManager::Impl::AddTexture( const TGUL::String &name, Texture &texture )
 	{
 		if( mTextures.find( name ) != mTextures.end() ) {
@@ -153,9 +210,18 @@ namespace Laser
 		return mImpl->GetShader( ShaderName, ppShader );
 	}
 
-	bool ResourceManager::GetBuffer( const TGUL::String &BufferName, Resource::Buffer **ppBuffer ) const
+	bool ResourceManager::GetVertexBuffer( const TGUL::String &BufferName, VertexBuffer **ppBuffer ) const
 	{
-		return mImpl->GetBuffer( BufferName, ppBuffer );
+		return mImpl->GetVertexBuffer( BufferName, ppBuffer );
+	}
+
+	bool ResourceManager::GetIndexBuffer( const TGUL::String &BufferName, IndexBuffer **ppBuffer ) const
+	{
+		return mImpl->GetIndexBuffer( BufferName, ppBuffer );
+	}
+	bool ResourceManager::GetUniformBuffer( const TGUL::String &BufferName, ShaderUniformBuffer **ppBuffer ) const
+	{
+		return mImpl->GetUniformBuffer( BufferName, ppBuffer );
 	}
 
 	bool ResourceManager::GetTexture( const TGUL::String &TextureName, Texture **ppTexture ) const
@@ -173,9 +239,19 @@ namespace Laser
 		return mImpl->AddShader( name, shader );
 	}
 	
-	bool ResourceManager::AddBuffer( const TGUL::String &name, Resource::Buffer &buffer )
+	bool ResourceManager::AddVertexBuffer( const TGUL::String &name, VertexBuffer &buffer )
 	{
-		return mImpl->AddBuffer( name, buffer );
+		return mImpl->AddVertexBuffer( name, buffer );
+	}
+
+	bool ResourceManager::AddIndexBuffer( const TGUL::String &name, IndexBuffer &buffer )
+	{
+		return mImpl->AddIndexBuffer( name, buffer );
+	}
+
+	bool ResourceManager::AddUniformBuffer( const TGUL::String &name, ShaderUniformBuffer &buffer )
+	{
+		return mImpl->AddUniformBuffer( name, buffer );
 	}
 
 	bool ResourceManager::AddTexture( const TGUL::String &name, Texture &texture )

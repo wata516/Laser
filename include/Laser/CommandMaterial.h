@@ -22,7 +22,7 @@ namespace Laser
 
 			virtual bool Create( Shader *pVertexShader, Shader *pFragmentShader, ShaderUniformBuffer *pShaderUniformBuffer ) = 0;
 			virtual void UpdateShaderUniformBuffer( const ShaderUniformBufferClassBase &base, int location, const TGUL::String &name ) = 0;
-			virtual bool SetTexture( uint32_t index, const TGUL::String &name, Texture *pTexture ) = 0;
+			virtual bool SetTexture( unsigned int index, const TGUL::String &name, Texture *pTexture ) = 0;
 			virtual bool SetRenderTarget( const TGUL::String &name, RenderTarget *pRenderTarget ) = 0;
 			virtual bool IsAvailable() const = 0;
 

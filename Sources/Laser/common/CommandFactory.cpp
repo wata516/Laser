@@ -8,6 +8,7 @@
 
 #include "../OpenGL/OpenGLCommandClear.h"
 #include "../OpenGL/OpenGLCommandVertexBuffer.h"
+#include "../OpenGL/OpenGLCommandPrimitive.h"
 #include "../OpenGL/OpenGLCommandMaterial.h"
 #include "../OpenGL/OpenGLCommandRenderTarget.h"
 #include "../OpenGL/OpenGLCommandViewport.h"
@@ -33,6 +34,17 @@ namespace Laser
 			return false;
 		}
 		
+		return true;
+	}
+
+	bool CreatePrimitive( Command::IBase **ppBase )
+	{
+		*ppBase = new Command::OpenGLPrimitive();
+
+		if( *ppBase == 0 ) {
+			return false;
+		}
+
 		return true;
 	}
 
@@ -85,6 +97,7 @@ namespace Laser
 		std::map< TGUL::String, boost::function< bool( Command::IBase **) > > functions = boost::assign::map_list_of
 			("Clear", boost::bind( &CreateClear, ppBase ))
 			("VertexBuffer", boost::bind( &CreateVertexBuffer, ppBase ))
+			("Primitive", boost::bind( &CreatePrimitive, ppBase ))
 			("Material", boost::bind( &CreateMaterial, ppBase ))
 			("RenderTarget", boost::bind( &CreateRenderTarget, ppBase ))
 			("RenderTargetReset", boost::bind( &CreateRenderTargetReset, ppBase ))

@@ -94,7 +94,7 @@ namespace Laser
 			return mShaderProgram.IsAvailable();
 		}
 
-		bool OpenGLMaterial::SetTexture( uint32_t index, const TGUL::String &name, Texture *pTexture )
+		bool OpenGLMaterial::SetTexture( unsigned int index, const TGUL::String &name, Texture *pTexture )
 		{
 			TexturesType::iterator i = mTextures.find(index);
 			bool find = ( i != mTextures.end() );

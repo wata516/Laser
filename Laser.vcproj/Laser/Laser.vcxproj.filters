@@ -150,7 +150,85 @@
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandClear.h">
       <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandShader.h">
+    <ClInclude Include="..\..\include\Laser\CommandFactory.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\CommandMaterial.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\CommandRenderTarget.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\CommandVertexBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\CommandViewPort.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\DrawStatus.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\RenderTarget.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\ShaderUniformBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\Texture.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\VertexBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLBufferFactory.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandMaterial.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandRenderTarget.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandVertexBuffer.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandViewport.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLRenderTarget.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShader.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShaderProgram.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShaderUniformBuffer.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLTexture.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLVertexBuffer.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\IndexBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLIndexBuffer.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandIndexBuffer.h">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\CommandIndexBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Laser\CommandPrimitive.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandPrimitive.h">
       <Filter>ソース ファイル\OpenGL</Filter>
     </ClInclude>
   </ItemGroup>
@@ -194,9 +272,6 @@
     <ClCompile Include="..\..\Sources\Laser\common\ResourceManager.cpp">
       <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\common\SysmemBuffer.cpp">
-      <Filter>ソース ファイル\Common</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Sources\Laser\common\Technique.cpp">
       <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
@@ -227,10 +302,61 @@
     <ClCompile Include="..\..\Sources\Laser\common\Shader.cpp">
       <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandShader.cpp">
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandClear.cpp">
       <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandClear.cpp">
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLBufferFactory.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandMaterial.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandRenderTarget.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandVertexBuffer.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandViewport.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLRenderTarget.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShader.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShaderProgram.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShaderUniformBuffer.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLTexture.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLVertexBuffer.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\CommandMaterial.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\ShaderUniformBuffer.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\Texture.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\common\VertexBuffer.cpp">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLIndexBuffer.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandIndexBuffer.cpp">
+      <Filter>ソース ファイル\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandPrimitive.cpp">
       <Filter>ソース ファイル\OpenGL</Filter>
     </ClCompile>
   </ItemGroup>

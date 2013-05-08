@@ -88,7 +88,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../include;../../Sources;C:\Program Files\boost\boost_1_53_0;../../../TGUL/Sources;../../../glfw-2.7.8.bin.WIN64/include;../../../glew-1.9.0\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../include;../../Sources;C:\Program Files\boost\boost_1_53_0;../../../TGUL/Sources;../../../glfw-2.7.8.bin.WIN64/include;../../../glew-1.9.0\include;../../../devil-1.7.8\include</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)../../include/Laser/Platform.h</ForcedIncludeFiles>
       <TreatSpecificWarningsAsErrors>
       </TreatSpecificWarningsAsErrors>
@@ -142,12 +142,21 @@
     <ClInclude Include="..\..\include\Laser\Buffer.h" />
     <ClInclude Include="..\..\include\Laser\ClassID.h" />
     <ClInclude Include="..\..\include\Laser\CommandClear.h" />
+    <ClInclude Include="..\..\include\Laser\CommandFactory.h" />
+    <ClInclude Include="..\..\include\Laser\CommandIndexBuffer.h" />
+    <ClInclude Include="..\..\include\Laser\CommandMaterial.h" />
+    <ClInclude Include="..\..\include\Laser\CommandPrimitive.h" />
+    <ClInclude Include="..\..\include\Laser\CommandRenderTarget.h" />
     <ClInclude Include="..\..\include\Laser\CommandShader.h" />
+    <ClInclude Include="..\..\include\Laser\CommandVertexBuffer.h" />
+    <ClInclude Include="..\..\include\Laser\CommandViewPort.h" />
+    <ClInclude Include="..\..\include\Laser\DrawStatus.h" />
     <ClInclude Include="..\..\include\Laser\Exception.h" />
     <ClInclude Include="..\..\include\Laser\GraphicsManager.h" />
     <ClInclude Include="..\..\include\Laser\IBase.h" />
     <ClInclude Include="..\..\include\Laser\IGraphicsManager.h" />
     <ClInclude Include="..\..\include\Laser\IKeyboard.h" />
+    <ClInclude Include="..\..\include\Laser\IndexBuffer.h" />
     <ClInclude Include="..\..\include\Laser\IPass.h" />
     <ClInclude Include="..\..\include\Laser\IResourceManager.h" />
     <ClInclude Include="..\..\include\Laser\IShader.h" />
@@ -162,24 +171,41 @@
     <ClInclude Include="..\..\include\Laser\ObjectManager.h" />
     <ClInclude Include="..\..\include\Laser\Pass.h" />
     <ClInclude Include="..\..\include\Laser\Platform.h" />
+    <ClInclude Include="..\..\include\Laser\RenderTarget.h" />
     <ClInclude Include="..\..\include\Laser\ResourceManager.h" />
     <ClInclude Include="..\..\include\Laser\Shader.h" />
+    <ClInclude Include="..\..\include\Laser\ShaderUniformBuffer.h" />
     <ClInclude Include="..\..\include\Laser\SysmemBuffer.h" />
     <ClInclude Include="..\..\include\Laser\Technique.h" />
     <ClInclude Include="..\..\include\Laser\TechniqueManager.h" />
+    <ClInclude Include="..\..\include\Laser\Texture.h" />
     <ClInclude Include="..\..\include\Laser\UUID.h" />
+    <ClInclude Include="..\..\include\Laser\VertexBuffer.h" />
     <ClInclude Include="..\..\include\Laser\VertexDeclare.h" />
     <ClInclude Include="..\..\include\Laser\Window.h" />
     <ClInclude Include="..\..\Sources\Laser\common\BufferFactory.h" />
     <ClInclude Include="..\..\Sources\Laser\common\CommandFactory.h" />
-    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandShader.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLBufferFactory.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandIndexBuffer.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandMaterial.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandPrimitive.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandRenderTarget.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandClear.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandVertexBuffer.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLCommandViewport.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLFragmentShader.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLIndexBuffer.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLKeyboard.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLRenderTarget.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLResourceManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShader.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShaderFactory.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShaderProgram.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLShaderUniformBuffer.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLTechniqueManager.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLTexture.h" />
+    <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLVertexBuffer.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLVertexShader.h" />
     <ClInclude Include="..\..\Sources\Laser\OpenGL\OpenGLWindow.h" />
   </ItemGroup>
@@ -187,6 +213,7 @@
     <ClCompile Include="..\..\Sources\Laser\common\Buffer.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\BufferFactory.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\CommandFactory.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\CommandMaterial.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\GraphicsManager.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\ManagerFactory.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\Object.cpp" />
@@ -194,20 +221,35 @@
     <ClCompile Include="..\..\Sources\Laser\common\Pass.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\ResourceManager.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\Shader.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\common\SysmemBuffer.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\ShaderUniformBuffer.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\Technique.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\TechniqueManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\Texture.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\UUID.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\common\VertexBuffer.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\VertexDeclare.cpp" />
     <ClCompile Include="..\..\Sources\Laser\common\Window.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLBufferFactory.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandClear.cpp" />
-    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandShader.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandIndexBuffer.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandMaterial.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandPrimitive.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandRenderTarget.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandVertexBuffer.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLCommandViewport.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLFragmentShader.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLGraphicsManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLIndexBuffer.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLKeyboard.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLRenderTarget.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLResourceManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShader.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShaderFactory.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShaderProgram.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLShaderUniformBuffer.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLTechniqueManager.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLTexture.cpp" />
+    <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLVertexBuffer.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLVertexShader.cpp" />
     <ClCompile Include="..\..\Sources\Laser\OpenGL\OpenGLWindow.cpp" />
   </ItemGroup>

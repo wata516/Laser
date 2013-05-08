@@ -68,6 +68,68 @@ namespace Laser
 					}
 				}
 
+				if( mState[ STATE_BLEND ] ) {
+					boost::array< GLenum, BLEND_MAX > blends = {
+						GL_ZERO,
+						GL_ONE,
+						GL_SRC_COLOR,
+						GL_ONE_MINUS_SRC_COLOR,
+						GL_DST_COLOR,
+						GL_ONE_MINUS_DST_COLOR,
+						GL_SRC_ALPHA,
+						GL_ONE_MINUS_SRC_ALPHA,
+						GL_DST_ALPHA,
+						GL_ONE_MINUS_DST_ALPHA,
+						GL_CONSTANT_COLOR,
+						GL_ONE_MINUS_CONSTANT_COLOR,
+						GL_CONSTANT_ALPHA,
+						GL_ONE_MINUS_CONSTANT_ALPHA,
+						GL_SRC_ALPHA_SATURATE,
+						GL_SRC1_COLOR,
+						GL_ONE_MINUS_SRC1_COLOR,
+						GL_SRC1_ALPHA,
+						GL_ONE_MINUS_SRC1_ALPHA
+					};
+					glEnable( GL_BLEND );
+					glBlendFunc( blends[mBlendSource], blends[mBlendDest] );
+				} else {
+					glEnable( GL_BLEND );
+				}
+
+				if( mState[ STATE_DEPTH ] ) {
+					boost::array< GLenum, DEPTH_MAX > depthfuncs = {
+						GL_NEVER,
+						GL_LESS,
+						GL_EQUAL,
+						GL_LEQUAL,
+						GL_GREATER,
+						GL_NOTEQUAL,
+						GL_GEQUAL,
+						GL_ALWAYS
+					};
+					glEnable( GL_DEPTH_TEST );
+					glDepthFunc( depthfuncs[mDepthFunc] );
+				} else {
+					glDisable( GL_DEPTH_TEST );
+				}
+
+				if( mState[ STATE_STENCIL ] ) {
+					boost::array< GLenum, STENCIL_MAX > stencilfuncs = {
+						GL_NEVER,
+						GL_LESS,
+						GL_LEQUAL,
+						GL_GREATER,
+						GL_GEQUAL,
+						GL_EQUAL,
+						GL_NOTEQUAL,
+						GL_ALWAYS
+					};
+					glEnable( GL_STENCIL_TEST );
+					glStencilFunc( stencilfuncs[ mStencilFunc ], mStencilRef, mStencilMask );
+				} else {
+					glDisable( GL_STENCIL_TEST );
+				}
+
 				mShaderProgram.Draw();
 
 			}

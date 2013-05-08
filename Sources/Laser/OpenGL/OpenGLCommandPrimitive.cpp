@@ -19,7 +19,7 @@ namespace Laser
 				if( pIndexBuffer->QueryInterface( UUIDS::OPENGL_INDEX_BUFFER, &pGLBuffer ) == false ) {
 					return false;
 				}
-				pIndexBuffer = static_cast< Laser::OpenGLIndexBuffer * >( pGLBuffer );
+				mIndexBuffer = static_cast< Laser::OpenGLIndexBuffer * >( pGLBuffer );
 			}
 
 			if( pVertexBuffer->QueryInterface( UUIDS::OPENGL_VERTEX_BUFFER, &pGLBuffer ) == false ) {
@@ -47,9 +47,17 @@ namespace Laser
 
 		void OpenGLPrimitive::Draw( DrawStatus &Status )
 		{
-			if( mVertexBuffer ) {
+			GLsizei VertexNum = static_cast< GLsizei >( mVertexBuffer->GetVertexNum() );
+
+			if( mVertexBuffer && mIndexBuffer ) {
+				glBindBuffer( GL_ARRAY_BUFFER, mVertexBuffer->GetHandle() );
+				glBindBuffer( GL_ELEMENT_ARRAY_BUFFER, mIndexBuffer->GetHandle() );
+				glDrawElements( mTopology, VertexNum, GL_UNSIGNED_SHORT, 0 );
+			}
+
+			if( mVertexBuffer && !(mIndexBuffer) ) {
 				glBindVertexArray( mVertexBuffer->GetHandle() );
-				glDrawArrays( mTopology, 0, static_cast< GLsizei >( mVertexBuffer->GetVertexNum() ) );
+				glDrawArrays( mTopology, 0, VertexNum );
 			}
 		}
 	}

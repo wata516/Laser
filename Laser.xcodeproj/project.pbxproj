@@ -96,6 +96,16 @@
 		BEA87A13172FE92C00F8833E /* OpenGLCommandMaterial.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */; };
 		BEA87A15172FEEAF00F8833E /* CommandMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA87A14172FEEAF00F8833E /* CommandMaterial.cpp */; };
 		BEA87A17172FF23400F8833E /* ShaderUniformBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */; };
+		BEB2BE3F173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB2BE39173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.cpp */; };
+		BEB2BE40173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2BE3A173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.h */; };
+		BEB2BE41173A7F6100EB1ACB /* OpenGLCommandPrimitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB2BE3B173A7F6100EB1ACB /* OpenGLCommandPrimitive.cpp */; };
+		BEB2BE42173A7F6100EB1ACB /* OpenGLCommandPrimitive.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2BE3C173A7F6100EB1ACB /* OpenGLCommandPrimitive.h */; };
+		BEB2BE43173A7F6100EB1ACB /* OpenGLIndexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB2BE3D173A7F6100EB1ACB /* OpenGLIndexBuffer.cpp */; };
+		BEB2BE44173A7F6100EB1ACB /* OpenGLIndexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2BE3E173A7F6100EB1ACB /* OpenGLIndexBuffer.h */; };
+		BEB2BE48173A7F7900EB1ACB /* CommandIndexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2BE45173A7F7900EB1ACB /* CommandIndexBuffer.h */; };
+		BEB2BE49173A7F7900EB1ACB /* CommandPrimitive.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2BE46173A7F7900EB1ACB /* CommandPrimitive.h */; };
+		BEB2BE4A173A7F7900EB1ACB /* IndexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2BE47173A7F7900EB1ACB /* IndexBuffer.h */; };
+		BEB2BE4C173A7F8F00EB1ACB /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB2BE4B173A7F8F00EB1ACB /* Shader.cpp */; };
 		BEC1351D1737A6AA006FE09C /* OpenGLCommandViewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC1351B1737A6A8006FE09C /* OpenGLCommandViewport.cpp */; };
 		BEC1351E1737A6AA006FE09C /* OpenGLCommandViewport.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC1351C1737A6A9006FE09C /* OpenGLCommandViewport.h */; };
 		BEC135201737A808006FE09C /* CommandViewport.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC1351F1737A807006FE09C /* CommandViewport.h */; };
@@ -198,6 +208,16 @@
 		BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandMaterial.h; sourceTree = "<group>"; };
 		BEA87A14172FEEAF00F8833E /* CommandMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandMaterial.cpp; sourceTree = "<group>"; };
 		BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderUniformBuffer.cpp; sourceTree = "<group>"; };
+		BEB2BE39173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandIndexBuffer.cpp; sourceTree = "<group>"; };
+		BEB2BE3A173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandIndexBuffer.h; sourceTree = "<group>"; };
+		BEB2BE3B173A7F6100EB1ACB /* OpenGLCommandPrimitive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandPrimitive.cpp; sourceTree = "<group>"; };
+		BEB2BE3C173A7F6100EB1ACB /* OpenGLCommandPrimitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandPrimitive.h; sourceTree = "<group>"; };
+		BEB2BE3D173A7F6100EB1ACB /* OpenGLIndexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLIndexBuffer.cpp; sourceTree = "<group>"; };
+		BEB2BE3E173A7F6100EB1ACB /* OpenGLIndexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLIndexBuffer.h; sourceTree = "<group>"; };
+		BEB2BE45173A7F7900EB1ACB /* CommandIndexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandIndexBuffer.h; path = include/Laser/CommandIndexBuffer.h; sourceTree = SOURCE_ROOT; };
+		BEB2BE46173A7F7900EB1ACB /* CommandPrimitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandPrimitive.h; path = include/Laser/CommandPrimitive.h; sourceTree = SOURCE_ROOT; };
+		BEB2BE47173A7F7900EB1ACB /* IndexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexBuffer.h; path = include/Laser/IndexBuffer.h; sourceTree = SOURCE_ROOT; };
+		BEB2BE4B173A7F8F00EB1ACB /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		BEC1351B1737A6A8006FE09C /* OpenGLCommandViewport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLCommandViewport.cpp; sourceTree = "<group>"; };
 		BEC1351C1737A6A9006FE09C /* OpenGLCommandViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommandViewport.h; sourceTree = "<group>"; };
 		BEC1351F1737A807006FE09C /* CommandViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandViewport.h; path = include/Laser/CommandViewport.h; sourceTree = SOURCE_ROOT; };
@@ -238,7 +258,9 @@
 				BEA70843172563770050B71F /* ClassID.h */,
 				BEA6BC40172ABD9B006215BF /* CommandClear.h */,
 				BEA70845172563770050B71F /* CommandFactory.h */,
+				BEB2BE45173A7F7900EB1ACB /* CommandIndexBuffer.h */,
 				BEA87A0E172FE7F500F8833E /* CommandMaterial.h */,
+				BEB2BE46173A7F7900EB1ACB /* CommandPrimitive.h */,
 				BE612379173510AB00F1A474 /* CommandRenderTarget.h */,
 				BEC880F4172C051200784B29 /* CommandVertexBuffer.h */,
 				BEC1351F1737A807006FE09C /* CommandViewport.h */,
@@ -248,6 +270,7 @@
 				BEA70848172563770050B71F /* IBase.h */,
 				BEA70849172563770050B71F /* IGraphicsManager.h */,
 				BEA7084A172563770050B71F /* IKeyboard.h */,
+				BEB2BE47173A7F7900EB1ACB /* IndexBuffer.h */,
 				BEA7084B172563770050B71F /* IPass.h */,
 				BEA7084C172563770050B71F /* IResourceManager.h */,
 				BEA70882172568AC0050B71F /* IShader.h */,
@@ -325,6 +348,7 @@
 				BEA70811172563480050B71F /* ObjectManager.cpp */,
 				BEA70812172563480050B71F /* Pass.cpp */,
 				BEA70813172563480050B71F /* ResourceManager.cpp */,
+				BEB2BE4B173A7F8F00EB1ACB /* Shader.cpp */,
 				BEA87A16172FF23400F8833E /* ShaderUniformBuffer.cpp */,
 				BEA70820172563560050B71F /* Technique.cpp */,
 				BEA70821172563560050B71F /* TechniqueManager.cpp */,
@@ -344,8 +368,12 @@
 				BEC880ED172BE50500784B29 /* OpenGLBufferFactory.h */,
 				BEA6BC36172ABD73006215BF /* OpenGLCommandClear.cpp */,
 				BEA6BC37172ABD73006215BF /* OpenGLCommandClear.h */,
+				BEB2BE39173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.cpp */,
+				BEB2BE3A173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.h */,
 				BEA87A10172FE92B00F8833E /* OpenGLCommandMaterial.cpp */,
 				BEA87A11172FE92B00F8833E /* OpenGLCommandMaterial.h */,
+				BEB2BE3B173A7F6100EB1ACB /* OpenGLCommandPrimitive.cpp */,
+				BEB2BE3C173A7F6100EB1ACB /* OpenGLCommandPrimitive.h */,
 				BE6123751735108400F1A474 /* OpenGLCommandRenderTarget.cpp */,
 				BE6123761735108400F1A474 /* OpenGLCommandRenderTarget.h */,
 				BEC880F0172C04C200784B29 /* OpenGLCommandVertexBuffer.cpp */,
@@ -356,6 +384,8 @@
 				BEA7088917256EBF0050B71F /* OpenGLFragmentShader.h */,
 				BEA7082C172563630050B71F /* OpenGLGraphicsManager.cpp */,
 				BEA7082D172563630050B71F /* OpenGLGraphicsManager.h */,
+				BEB2BE3D173A7F6100EB1ACB /* OpenGLIndexBuffer.cpp */,
+				BEB2BE3E173A7F6100EB1ACB /* OpenGLIndexBuffer.h */,
 				BEA7082E172563630050B71F /* OpenGLKeyboard.cpp */,
 				BEA7082F172563630050B71F /* OpenGLKeyboard.h */,
 				BE61237117350AB400F1A474 /* OpenGLRenderTarget.cpp */,
@@ -452,6 +482,12 @@
 				BE61237A173510AB00F1A474 /* CommandRenderTarget.h in Headers */,
 				BEC1351E1737A6AA006FE09C /* OpenGLCommandViewport.h in Headers */,
 				BEC135201737A808006FE09C /* CommandViewport.h in Headers */,
+				BEB2BE40173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.h in Headers */,
+				BEB2BE42173A7F6100EB1ACB /* OpenGLCommandPrimitive.h in Headers */,
+				BEB2BE44173A7F6100EB1ACB /* OpenGLIndexBuffer.h in Headers */,
+				BEB2BE48173A7F7900EB1ACB /* CommandIndexBuffer.h in Headers */,
+				BEB2BE49173A7F7900EB1ACB /* CommandPrimitive.h in Headers */,
+				BEB2BE4A173A7F7900EB1ACB /* IndexBuffer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +581,10 @@
 				BE61237317350AB400F1A474 /* OpenGLRenderTarget.cpp in Sources */,
 				BE6123771735108400F1A474 /* OpenGLCommandRenderTarget.cpp in Sources */,
 				BEC1351D1737A6AA006FE09C /* OpenGLCommandViewport.cpp in Sources */,
+				BEB2BE3F173A7F6100EB1ACB /* OpenGLCommandIndexBuffer.cpp in Sources */,
+				BEB2BE41173A7F6100EB1ACB /* OpenGLCommandPrimitive.cpp in Sources */,
+				BEB2BE43173A7F6100EB1ACB /* OpenGLIndexBuffer.cpp in Sources */,
+				BEB2BE4C173A7F8F00EB1ACB /* Shader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
